@@ -1,0 +1,525 @@
+# Development Setup
+
+## Purpose
+
+The purpose of this document is to define the development environment, tools, technologies, and setup process required for building the Master Portfolio project.
+
+This document serves as a reference for setting up the project from scratch and helps maintain consistency throughout the development lifecycle.
+
+---
+
+# Development Environment
+
+## Operating System
+
+Current Development Environment:
+
+* Windows 11
+
+The project should remain platform-independent and work on Windows, Linux, and macOS.
+
+---
+
+## Code Editor
+
+### Visual Studio Code
+
+Purpose:
+
+Primary code editor for development.
+
+Reasons for Selection:
+
+* Lightweight
+* Large extension ecosystem
+* Excellent React support
+* Git integration
+* Terminal integration
+
+Official Responsibilities:
+
+* Writing code
+* Debugging
+* Version control management
+* Project navigation
+
+---
+
+# Required Software
+
+## Node.js
+
+Purpose:
+
+JavaScript runtime used to execute development tools and build processes.
+
+Responsibilities:
+
+* Package management support
+* Development server execution
+* Build generation
+
+Verification Command:
+
+```bash
+node -v
+```
+
+Expected Result:
+
+Displays installed Node.js version.
+
+---
+
+## npm
+
+Purpose:
+
+Package manager used to install and manage project dependencies.
+
+Responsibilities:
+
+* Dependency installation
+* Script execution
+* Package updates
+
+Verification Command:
+
+```bash
+npm -v
+```
+
+Expected Result:
+
+Displays installed npm version.
+
+---
+
+## Git
+
+Purpose:
+
+Version control system used to track project changes.
+
+Responsibilities:
+
+* Source code tracking
+* Commit history management
+* Branch management
+* Collaboration
+
+Verification Command:
+
+```bash
+git --version
+```
+
+Expected Result:
+
+Displays installed Git version.
+
+---
+
+# Recommended VS Code Extensions
+
+## ESLint
+
+Purpose:
+
+Identify code quality issues and enforce coding standards.
+
+---
+
+## Prettier
+
+Purpose:
+
+Automatically format code.
+
+Benefits:
+
+* Consistent formatting
+* Improved readability
+
+---
+
+## Tailwind CSS IntelliSense
+
+Purpose:
+
+Autocomplete support for Tailwind classes.
+
+---
+
+## GitLens
+
+Purpose:
+
+Enhanced Git integration.
+
+Benefits:
+
+* Commit history visibility
+* File history tracking
+
+---
+
+## Error Lens
+
+Purpose:
+
+Display errors directly within the editor.
+
+---
+
+## Auto Rename Tag
+
+Purpose:
+
+Automatically rename matching HTML and JSX tags.
+
+---
+
+# Technology Stack
+
+## Frontend Framework
+
+React
+
+Purpose:
+
+Build reusable UI components.
+
+---
+
+## Build Tool
+
+Vite
+
+Purpose:
+
+Provide a fast development environment.
+
+Advantages:
+
+* Fast startup
+* Fast hot reload
+* Lightweight configuration
+
+---
+
+## Styling Framework
+
+Tailwind CSS
+
+Purpose:
+
+Utility-first CSS framework.
+
+Advantages:
+
+* Rapid UI development
+* Consistent styling
+* Responsive design support
+
+---
+
+## Version Control
+
+Git
+
+Purpose:
+
+Track and manage source code changes.
+
+---
+
+## Repository Hosting
+
+GitHub
+
+Purpose:
+
+Store project source code and documentation.
+
+---
+
+## Deployment Platform
+
+Vercel
+
+Purpose:
+
+Host and deploy the portfolio application.
+
+Benefits:
+
+* Simple deployment
+* Fast performance
+* GitHub integration
+
+---
+
+# Project Initialization Plan
+
+## Step 1
+
+Verify Development Environment
+
+Commands:
+
+```bash
+node -v
+npm -v
+git --version
+```
+
+Objective:
+
+Confirm all required tools are installed.
+
+---
+
+## Step 2
+
+Create React Project
+
+Command:
+
+```bash
+npm create vite@latest
+```
+
+Objective:
+
+Generate the React project structure.
+
+---
+
+## Step 3
+
+Install Dependencies
+
+Command:
+
+```bash
+npm install
+```
+
+Objective:
+
+Install project packages.
+
+---
+
+## Step 4
+
+Configure Tailwind CSS
+
+Objective:
+
+Prepare styling system.
+
+---
+
+## Step 5
+
+Create Folder Structure
+
+Objective:
+
+Organize project architecture.
+
+---
+
+## Step 6
+
+Start Development Server
+
+Command:
+
+```bash
+npm run dev
+```
+
+Objective:
+
+Launch local development environment.
+
+---
+
+# Planned Folder Structure
+
+```text
+src/
+│
+├── assets/
+├── components/
+│   ├── common/
+│   ├── layout/
+│   ├── hero/
+│   ├── about/
+│   ├── experience/
+│   ├── skills/
+│   ├── projects/
+│   ├── github/
+│   ├── journey/
+│   └── contact/
+│
+├── pages/
+├── data/
+├── hooks/
+├── context/
+├── utils/
+├── styles/
+│
+├── App.jsx
+└── main.jsx
+```
+
+Purpose:
+
+Maintain scalability and organization.
+
+---
+
+# Git Workflow Strategy
+
+## Daily Workflow
+
+### Check Status
+
+```bash
+git status
+```
+
+Purpose:
+
+Review project changes.
+
+---
+
+### Stage Specific Files
+
+```bash
+git add filename
+```
+
+Purpose:
+
+Track only relevant changes.
+
+---
+
+### Commit Changes
+
+```bash
+git commit -m "meaningful message"
+```
+
+Purpose:
+
+Create project checkpoints.
+
+---
+
+### Push Changes
+
+```bash
+git push
+```
+
+Purpose:
+
+Upload commits to GitHub.
+
+---
+
+# Development Principles
+
+## Documentation First
+
+Document major decisions before implementation whenever possible.
+
+---
+
+## Small Commits
+
+Create focused and meaningful commits.
+
+---
+
+## Reusable Components
+
+Avoid duplicate code.
+
+---
+
+## Mobile-First Design
+
+Ensure responsiveness from the beginning.
+
+---
+
+## Incremental Development
+
+Build one feature at a time.
+
+---
+
+# Learning Objectives
+
+Through the development phase, the following concepts will be learned:
+
+## React
+
+* Components
+* JSX
+* Props
+* State Management
+* Routing
+
+---
+
+## Tailwind CSS
+
+* Utility Classes
+* Responsive Design
+* Layout Systems
+* Dark Mode
+
+---
+
+## Git
+
+* Branching
+* Merging
+* Commit Management
+* Repository Maintenance
+
+---
+
+## Deployment
+
+* Build Process
+* Hosting
+* Production Deployment
+
+---
+
+# Success Criteria
+
+The development setup phase will be considered successful if:
+
+* Development environment is fully configured.
+* React project is initialized.
+* Tailwind CSS is integrated.
+* Folder structure is established.
+* Git workflow is operational.
+* Development can begin without setup-related blockers.
+
+---
+
+# Conclusion
+
+This document establishes the foundation for the development phase of the Master Portfolio project. By defining the environment, tools, workflow, and architecture upfront, development can proceed in a structured, scalable, and maintainable manner.
