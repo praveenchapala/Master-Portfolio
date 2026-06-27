@@ -1,5 +1,5 @@
 const site = {
-  logo: "Praveen.dev",
+  logo: "<Praveen.Dev.QA.AI/>",
 
   title: "Chapala Praveen Portfolio",
 
