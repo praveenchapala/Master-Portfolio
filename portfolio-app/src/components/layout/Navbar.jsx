@@ -1,22 +1,25 @@
 import navigation from "../../data/navigation";
+import site from "../../data/site";
 
 function Navbar() {
   return (
-    <nav className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
+    <nav className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-xl font-bold">
-          Praveen.dev
-        </h1>
+        <a
+          href="#home"
+          className="text-2xl font-bold tracking-wide text-cyan-400 hover:text-cyan-300 transition-colors"
+        >
+          {site.logo}
+        </a>
 
         {/* Navigation Links */}
-        <div className="flex gap-6">
+        <div className="hidden md:flex items-center gap-8">
           {navigation.map((item) => (
             <a
               key={item.id}
               href={item.href}
-              className="hover:text-cyan-400 transition-colors"
+              className="text-slate-300 hover:text-cyan-400 transition-colors duration-300"
             >
               {item.name}
             </a>
