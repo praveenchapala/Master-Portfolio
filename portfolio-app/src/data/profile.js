@@ -1,27 +1,24 @@
 const profile = {
   name: "Chapala Praveen",
 
-  role: "QA Automation Engineer | Java Full Stack Developer",
+  role:
+  "QA Automation Engineer • Software Developer • Agentic AI Enthusiast",
 
   tagline:
-    "Building reliable software through testing, automation, and modern web technologies.",
+    "Engineering reliable software, automating workflows, and building AI-powered solutions.",
 
-  location: "Andhra Pradesh, India",
-
-  email: "your-email@example.com",
+  location: "Bangalore , Karnataka ,India",
 
   availability: "Open to Work",
+
+  email: "praveenpraveensimhadri@gmail.com",
 
   resume: "/resume.pdf",
 
   profileImage: "/images/profile.png",
 
-  bio: `
-Final-year Computer Science (AI & ML) student passionate about
-QA Automation, Java Full Stack Development, React, Agentic AI,
-and building real-world software projects while documenting
-my complete learning journey.
-`,
+  bio:
+    "Final-year Computer Science (AI & ML) student passionate about Software Testing, QA Automation, Java Full Stack Development, React, and Agentic AI.",
 };
 
 export default profile;
