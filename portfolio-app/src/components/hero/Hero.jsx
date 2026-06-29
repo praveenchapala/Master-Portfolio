@@ -1,8 +1,7 @@
 import HeroContent from "./HeroContent";
 import HeroButtons from "./HeroButtons";
 import HeroSocials from "./HeroSocials";
-import HeroImage from "./HeroImage";
-import HeroCards from "./HeroCards";
+import HeroNetwork from "./HeroNetwork";
 
 function Hero() {
   return (
@@ -20,9 +19,18 @@ function Hero() {
         </div>
 
         {/* Right Side */}
-        <div className="relative hidden lg:flex justify-center">
-          <HeroImage />
-          <HeroCards />
+        <div
+          className="
+            relative
+            hidden
+            lg:flex
+            justify-center
+            items-center
+            pt-20
+            translate-x-12
+          "
+        >
+          <HeroNetwork />
         </div>
 
       </div>
