@@ -19,17 +19,7 @@ function Hero() {
         </div>
 
         {/* Right Side */}
-        <div
-          className="
-            relative
-            hidden
-            lg:flex
-            justify-center
-            items-center
-            pt-20
-            translate-x-12
-          "
-        >
+        <div className="relative hidden lg:flex justify-center">
           <HeroNetwork />
         </div>
 

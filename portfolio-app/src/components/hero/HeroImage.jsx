@@ -4,14 +4,24 @@ function HeroImage() {
   return (
     <div className="relative flex items-center justify-center">
       {/* Outer Glow */}
-      <div className="absolute w-[360px] h-[360px] bg-cyan-500/15 blur-[100px] rounded-full animate-pulse"></div>
+      <div
+        className="
+          absolute
+          w-[320px]
+          h-[320px]
+          bg-cyan-500/15
+          blur-[100px]
+          rounded-full
+          animate-pulse
+        "
+      />
 
       {/* Decorative Ring */}
       <div
         className="
           absolute
-          w-[310px]
-          h-[310px]
+          w-[250px]
+          h-[250px]
           rounded-full
           border
           border-cyan-400/20
@@ -24,8 +34,8 @@ function HeroImage() {
         alt="Praveen"
         className="
           relative
-          w-64
-          h-64
+          w-52
+          h-52
           rounded-full
           object-cover
           object-top
