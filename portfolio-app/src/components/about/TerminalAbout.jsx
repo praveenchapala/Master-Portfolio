@@ -36,75 +36,98 @@ function TerminalAbout() {
       </div>
 
       {/* Terminal Body */}
-      <div className="p-8 font-mono">
-        {aboutTerminal.map((item, index) => (
-          <div
-  key={index}
-  className="
-    mb-8
-    p-3
-    rounded-xl
-    border
-    border-transparent
-    transition-all
-    duration-300
-    hover:bg-slate-900/70
-    hover:border-cyan-500/20
-    hover:shadow-lg
-    hover:shadow-cyan-500/10
-  "
->
-            {/* Command */}
-            <div className="flex flex-wrap items-center">
-  <span className="text-green-400">
-    praveen
-  </span>
+<div className="p-8 font-mono">
 
-  <span className="text-cyan-400">
-    @portfolio
-  </span>
+  {/* ASCII Art */}
+  <pre
+    className="
+      text-cyan-400
+      text-[8px]
+      md:text-[10px]
+      leading-tight
+      mb-10
+      overflow-x-auto
+    "
+  >
+{`
+██████╗ ██████╗  █████╗ ██╗   ██╗███████╗███████╗███╗   ██╗
+██╔══██╗██╔══██╗██╔══██╗██║   ██║██╔════╝██╔════╝████╗  ██║
+██████╔╝██████╔╝███████║██║   ██║█████╗  █████╗  ██╔██╗ ██║
+██╔═══╝ ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══╝  ██║╚██╗██║
+██║     ██║  ██║██║  ██║ ╚████╔╝ ███████╗███████╗██║ ╚████║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═══╝
+`}
+  </pre>
 
-  <span className="text-slate-300">
-    :~$
-  </span>
+  {aboutTerminal.map((item, index) => (
+    <div
+      key={index}
+      className="
+        mb-8
+        p-3
+        rounded-xl
+        border
+        border-transparent
+        transition-all
+        duration-300
+        hover:bg-slate-900/70
+        hover:border-cyan-500/20
+        hover:shadow-lg
+        hover:shadow-cyan-500/10
+      "
+    >
+      {/* Command */}
+      <div className="flex flex-wrap items-center">
+        <span className="text-green-400">
+          praveen
+        </span>
 
-  <span className="text-white ml-2">
-    {item.command}
-  </span>
-</div>
+        <span className="text-cyan-400">
+          @portfolio
+        </span>
 
-            {/* Output */}
-            <div className="ml-6 mt-3 text-slate-300">
-              <TypeAnimation
-                sequence={[
-                  item.output,
-                  1000,
-                ]}
-                speed={60}
-                cursor={false}
-              />
-            </div>
-          </div>
-        ))}
+        <span className="text-slate-300">
+          :~$
+        </span>
 
-        <div className="flex items-center mt-10">
-  <span className="text-green-400">
-    praveen
-  </span>
-
-  <span className="text-cyan-400">
-    @portfolio
-  </span>
-
-  <span className="text-slate-300">
-    :~$
-  </span>
-
-  <span className="text-green-400 animate-pulse ml-2">
-    █
-  </span>
-</div>
+        <span className="text-white ml-2">
+          {item.command}
+        </span>
       </div>
+
+      {/* Output */}
+      <div className="ml-6 mt-3 text-slate-300">
+        <TypeAnimation
+          sequence={[
+            item.output,
+            1000,
+          ]}
+          speed={60}
+          cursor={false}
+        />
+      </div>
+    </div>
+  ))}
+
+  {/* Blinking Cursor */}
+  <div className="flex items-center mt-10">
+    <span className="text-green-400">
+      praveen
+    </span>
+
+    <span className="text-cyan-400">
+      @portfolio
+    </span>
+
+    <span className="text-slate-300">
+      :~$
+    </span>
+
+    <span className="text-green-400 animate-pulse ml-2">
+      █
+    </span>
+  </div>
+</div>
     </div>
   );
 }

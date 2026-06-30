@@ -122,7 +122,6 @@ function HeroNetwork() {
   number="3"
   icon="🤖"
   title="Building Agentic AI Systems"
-  description="Designing autonomous AI agents"
   color="text-purple-400"
   className="top-20 right-[-20px]"
 />

@@ -12,9 +12,11 @@ function HeroButtons() {
 
       <a
         href={socials.resume}
+        target="_blank"
+        rel="noopener noreferrer"
         className="px-6 py-3 border border-slate-700 rounded-xl hover:border-cyan-400 hover:text-cyan-400 transition"
       >
-        Download Resume
+        View Resume
       </a>
     </div>
   );

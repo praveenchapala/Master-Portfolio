@@ -5,7 +5,7 @@ const socials = {
 
   email: "mailto:praveenpraveensimhadri@gmail.com",
 
-  resume: "/resume.pdf",
+  resume: "https://drive.google.com/file/d/1X03VDLoWsTI3qqbMImntKgYWSU7lMuw7/view?usp=sharing",
 
   portfolio: "https://your-portfolio-url.com",
 };
