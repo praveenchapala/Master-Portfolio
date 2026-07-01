@@ -122,7 +122,39 @@ const projects = {
       demo: "",
       image: "",
     },
+
+
+    {
+      id: 4,
+      title: "AI-OnCall-Engineer-Assistant",
+
+      description:
+        "AI On-Call Engineer Assistant is an enterprise-grade multi-agent system that automatically investigates production incidents, identifies root causes, recommends recovery actions, and generates stakeholder communications to reduce incident resolution time.",
+
+      problem:
+        "Production incidents often require manual coordination, increasing response time and downtime.",
+
+      features: [
+        "Automated Root cause Analysis",
+        "Incident Impact Assessment",
+        "Recovery Recommendation",
+        "Executive incident Reporting",
+      ],
+
+      tech: [
+        "n8n",
+        "Groq.ai",
+        "JavaScript",
+      ],
+
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
   ],
+
 
   others: [
     {
@@ -180,6 +212,7 @@ const projects = {
 
       github: "",
     },
+
   ],
 };
 
