@@ -395,6 +395,96 @@ const projects = {
       image: "",
     },
 
+{
+      id: 16,
+      title: "AI-Cloud Cost Optimizor Advisor",
+
+      description:
+        "AI-Cloud Cost Optimizor Advisor is an AI-powered system that analyzes cloud usage patterns and provides actionable insights for optimizing cloud costs.",
+
+      problem:
+        "Organizations struggle to identify cloud resource inefficiencies and optimize infrastructure spending, resulting in unnecessary cloud costs and budget overruns.",
+
+      features: [
+  "Automated Cost Optimization Recommendations",
+  "Cloud Usage Analysis",
+  "Budget Forecasting",
+  "Executive Decision Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "JavaScript",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+    
+{
+      id: 17,
+      title: "AI Production Change Risk Assessment",
+
+      description:
+        "AI Production Change Risk Assessment is an intelligent system that analyzes production changes and predicts their potential impact, failure risks, and deployment outcomes before release.",
+
+      problem:
+        "Engineering teams struggle to assess the risks of production changes, leading to failed deployments, service outages, and costly rollbacks.",
+
+      features: [
+  "Deployment Risk Prediction",
+  "Change Impact Analysis",
+  "Rollback Recommendation Engine",
+  "Executive Risk Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "GitHub API",
+  "Jira API",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+    
+{
+      id: 18,
+      title: "AI-Log Analyzer",
+
+      description:
+        "AI-Log Analyzer is an AI-powered system that analyzes log data and provides actionable insights for troubleshooting and optimizing system performance.",
+
+      problem:
+        "Engineering teams struggle to manually analyze massive volumes of logs during production incidents, resulting in delayed root cause identification and prolonged outages.",
+
+      features: [
+  "Automated Log Analysis",
+  "Anomaly Detection",
+  "Root Cause Identification",
+  "Incident Intelligence Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "Elasticsearch",
+  "JavaScript",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
 
 
 
