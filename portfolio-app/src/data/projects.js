@@ -64,7 +64,7 @@ const projects = {
 
     {
       id: 3,
-      title: "HappyPaws",
+      title: "Spring Pet Clinic Application",
 
       description:
         "A full-stack pet clinic management system for managing owners, pets, and visits.",
@@ -94,7 +94,7 @@ const projects = {
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Professional Portfolio",
 
       description:
@@ -125,7 +125,7 @@ const projects = {
 
 
     {
-      id: 4,
+      id: 6,
       title: "AI-OnCall-Engineer-Assistant",
 
       description:
@@ -153,6 +153,258 @@ const projects = {
       demo: "",
       image: "",
     },
+    {
+      id: 7,
+      title: "AI-Developer-Productivity Analytics System",
+
+      description:
+        "AI Developer Productivity Analytics System is an intelligent platform that analyzes engineering metrics, identifies development bottlenecks, and provides actionable insights to improve team productivity and software delivery performance.",
+
+      problem:
+        "It helps engineering leaders identify bottlenecks and improve software delivery by turning engineering data into actionable insights.",
+
+      features: [
+        "Developer Productivity Scoring",
+  "PR & Delivery Analytics",
+  "Engineering Bottleneck Detection",
+  "AI-Powered Improvement Recommendations",
+      ],
+
+      tech: [
+        "n8n",
+  "Google Gemini AI",
+  "GitHub API",
+  "JavaScript",
+      ],
+
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+    {
+      id: 8,
+      title: "AI-Production Impact Predictor",
+
+      description:
+        "AI Production Impact Predictor is an intelligent system that forecasts the potential impact of code changes on production environments, helping teams make informed decisions and reduce deployment risks.",
+
+      problem:
+        "Production incidents often start as small issues, but engineering teams struggle to quickly understand their potential impact on customers, revenue, and business operations. As a result, incidents may be misprioritized, response efforts can be delayed, and organizations may experience significant financial losses, SLA breaches, and customer dissatisfaction.",
+
+      features: [
+  "Incident Impact Prediction",
+  "Business Risk Assessment",
+  "Revenue Loss Estimation",
+  "Executive Impact Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "JavaScript",
+],
+
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+    {
+      id: 9,
+      title: "AI-PullRequest Investigation Copilot",
+
+      description:
+        "AI PullRequest Investigation Copilot is an intelligent system that assists developers in analyzing and understanding the implications of code changes, helping to improve code quality and reduce review time.",
+
+      problem:
+        "Engineering teams spend significant time manually investigating pull requests to understand code changes, assess risks, identify potential issues, and determine their impact on deployments and production systems.",
+
+      features: [
+  "Automated PR Risk Analysis",
+  "Code Change Impact Assessment",
+  "Deployment Risk Prediction",
+  "AI-Powered Review Recommendations",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "GitHub API",
+  "JavaScript",
+],
+
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+    {
+      id: 10,
+      title: "AI-Production War Room",
+
+      description:
+        "AI Production War Room is an intelligent system that provides real-time insights and analytics for production environments, helping teams monitor performance and respond to issues quickly.",
+
+      problem:
+        "During major production incidents, engineering teams struggle to quickly correlate logs, metrics, deployments, and communications, resulting in slow root cause identification and prolonged outages.",
+
+      features: [
+  "Automated Root Cause Analysis",
+  "Cross-System Incident Correlation",
+  "AI Recovery Recommendations",
+  "Real-Time Stakeholder Communication",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "Gmail API",
+],
+
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+    {
+      id: 11,
+      title: "Autonomous Hotfix Decision Engine",
+
+      description:
+        "Autonomous Hotfix Decision Engine is an AI-powered system that analyzes production incidents and automatically recommends whether to apply a hotfix, rollback, or defer changes based on risk and business impact.",
+
+      problem:
+        "Engineering teams struggle to quickly decide the safest recovery action during production incidents, leading to delayed resolutions and increased business impact.",
+
+      features: [
+  "Automated Hotfix Recommendations",
+  "Rollback Risk Assessment",
+  "Production Impact Analysis",
+  "Executive Decision Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "JavaScript",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+    {
+      id: 12,
+      title: "Autonomous Project Delivery Manager",
+
+      description:
+        "Autonomous Project Delivery Manager is an intelligent system that monitors project progress, predicts delivery risks, and provides actionable recommendations to keep software projects on track.",
+
+      problem:
+        "Project managers often lack real-time visibility into delivery risks, bottlenecks, and schedule slippages, leading to delayed releases and missed deadlines.",
+
+      features: [
+  "Delivery Risk Prediction",
+  "Project Progress Monitoring",
+  "Bottleneck Identification",
+  "AI-Powered Delivery Recommendations",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "JavaScript",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+
+{
+      id: 14,
+      title: "Customer Escalation Management",
+
+      description:
+        "Customer Escalation Management is an AI-powered system that automatically prioritizes customer escalations, identifies root causes, and recommends actions to accelerate resolution and improve customer satisfaction",
+
+      problem:
+        "Support teams struggle to manage and prioritize customer escalations efficiently, resulting in delayed resolutions, SLA breaches, and poor customer experience.",
+
+      features: [
+  "Automated Escalation Prioritization",
+  "Root Cause Analysis",
+  "Actionable Resolution Recommendations",
+  "Executive Decision Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "PostgreSQL",
+  "JavaScript",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+
+    
+{
+      id: 15,
+      title: "AI-Powered Production Logs Incident Intelligence Platform",
+
+      description:
+        "AI-Powered Production Logs Incident Intelligence Platform is an AI-powered system that analyzes production logs and automatically identifies incidents, providing actionable insights for faster resolution.",
+      problem:
+        "Production logs are difficult to analyze at scale, making it hard to quickly identify incidents, root causes, and affected services.",
+
+      features: [
+  "Automated Incident Identification",
+  "Root Cause Analysis",
+  "Actionable Resolution Recommendations",
+  "Executive Decision Reporting",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "Elasticsearch",
+  "Kibana",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+
+
+
+
+
+    
+    
+
+
+
   ],
 
 
