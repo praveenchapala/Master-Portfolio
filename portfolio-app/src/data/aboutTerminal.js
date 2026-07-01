@@ -28,6 +28,10 @@ const aboutTerminal = [
   output: "Java | Spring Boot | React | Node.js | SQL | n8n | GIT | Github| Cloud Platforms | Manual Testing(QA)",
 },
 {
+  command: "location",
+  output: "📍 India , Bangalore",
+},
+{
   command: "fun_fact",
   output: "I enjoy turning repetitive tasks into automations.",
 },
