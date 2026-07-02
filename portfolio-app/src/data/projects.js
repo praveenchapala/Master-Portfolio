@@ -487,6 +487,38 @@ const projects = {
     },
 
 
+    
+{
+      id: 19,
+      title: "AI-Customer Support Agent",
+
+      description:
+        "AI Customer Support Agent is an intelligent system that automatically handles customer queries, resolves common issues, and escalates critical cases to the appropriate teams.",
+
+      problem:
+        "Support teams struggle to manage large volumes of customer requests efficiently, leading to slow response times, SLA breaches, and poor customer experience.",
+
+      features: [
+  "Automated Ticket Resolution",
+  "Customer Sentiment Analysis",
+  "Smart Ticket Routing",
+  "AI-Powered Escalation Management",
+],
+
+      tech: [
+  "n8n",
+  "Google Gemini AI",
+  "Zendesk API",
+  "Salesforce API",
+],
+      status: "Completed",
+
+      github: "",
+      demo: "",
+      image: "",
+    },
+
+
 
 
 
@@ -511,7 +543,7 @@ const projects = {
         "CSS",
       ],
 
-      github: "",
+      github: "https://github.com/praveenchapala/api-learning-journey",
     },
 
     {
@@ -524,35 +556,22 @@ const projects = {
         "SQL",
       ],
 
-      github: "",
+      github: "https://github.com/praveenchapala/Master-SQL-With-Me",
     },
 
-    {
-      id: 7,
-      title: "Software Testing Learning Journey",
-      description:
-        "Learning and documenting software testing concepts.",
-
-      tech: [
-        "QA",
-        "Manual Testing",
-      ],
-
-      github: "",
-    },
 
     {
       id: 8,
-      title: "Mini Workflow Automations",
+      title: "Building-Agentic-AI-Systems",
       description:
-        "Collection of automation workflows built using n8n.",
+        "Collection of Workflow automations and Building Agentic AI Systems built using n8n.",
 
       tech: [
         "n8n",
         "Automation",
       ],
 
-      github: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems",
     },
 
   ],
