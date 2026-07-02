@@ -17,6 +17,56 @@ function Skills() {
 
         <MandalaSkills />
 
+        {/* Divider */}
+        <div
+          className="
+            w-32
+            h-px
+            bg-slate-700
+            mx-auto
+            mt-24
+            mb-12
+          "
+        />
+
+        {/* Closing Quote */}
+        <div className="text-center">
+          <p
+            className="
+              text-3xl
+              md:text-4xl
+              text-slate-300
+              italic
+              leading-relaxed
+            "
+          >
+            Technology is not a collection of tools.
+          </p>
+
+          <p
+            className="
+              text-xl
+              text-slate-500
+              mt-4
+            "
+          >
+            It is a connected ecosystem of ideas.
+          </p>
+        </div>
+    <div className="mt-10 flex justify-center">
+  <p
+    className="
+      text-cyan-400
+      text-2xl
+      md:text-3xl
+      font-semibold
+      tracking-[0.3em]
+      text-center
+    "
+  >
+    Code. Automate. Innovate.
+  </p>
+</div>
         <StatsBar />
       </div>
     </section>
