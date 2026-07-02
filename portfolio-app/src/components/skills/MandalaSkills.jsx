@@ -1,6 +1,13 @@
 import SkillCircle from "./SkillCircle";
 import TechBadge from "./TechBadge";
 
+import {
+  Monitor,
+  Server,
+  Bot,
+  Wrench,
+  Code2,
+} from "lucide-react";
 function MandalaSkills() {
   return (
     <div className="relative h-[1450px] overflow-hidden">
@@ -25,49 +32,129 @@ function MandalaSkills() {
 
       {/* SVG Lines */}
       <svg
+      
         className="absolute inset-0 w-full h-full"
         viewBox="0 0 1400 1450"
       >
         <line
-          x1="700"
-          y1="700"
-          x2="700"
-          y2="300"
-          stroke="#d946ef"
-          strokeWidth="2"
-          strokeDasharray="10 10"
-        />
+  x1="700"
+  y1="700"
+  x2="700"
+  y2="300"
+  stroke="#d946ef"
+  strokeWidth="2"
+  strokeDasharray="10 10"
+  style={{
+    animation: "flow 8s linear infinite",
+  }}
+/>
 
         <line
-          x1="700"
-          y1="700"
-          x2="1120"
-          y2="700"
-          stroke="#22d3ee"
-          strokeWidth="2"
-          strokeDasharray="10 10"
-        />
+  x1="700"
+  y1="700"
+  x2="1120"
+  y2="700"
+  stroke="#22d3ee"
+  strokeWidth="2"
+  strokeDasharray="10 10"
+  style={{
+    animation: "flow 8s linear infinite",
+  }}
+/>
 
         <line
-          x1="700"
-          y1="700"
-          x2="280"
-          y2="700"
-          stroke="#facc15"
-          strokeWidth="2"
-          strokeDasharray="10 10"
-        />
+  x1="700"
+  y1="700"
+  x2="280"
+  y2="700"
+  stroke="#facc15"
+  strokeWidth="2"
+  strokeDasharray="10 10"
+  style={{
+    animation: "flow 8s linear infinite",
+  }}
+/>
 
         <line
-          x1="700"
-          y1="700"
-          x2="700"
-          y2="1120"
-          stroke="#22c55e"
-          strokeWidth="2"
-          strokeDasharray="10 10"
-        />
+  x1="700"
+  y1="700"
+  x2="700"
+  y2="1120"
+  stroke="#22c55e"
+  strokeWidth="2"
+  strokeDasharray="10 10"
+  style={{
+    animation: "flow 8s linear infinite",
+  }}
+/>
       </svg>
+      {/* Frontend Node */}
+<div
+  className="
+    absolute
+    top-[320px]
+    left-1/2
+    -translate-x-1/2
+    w-5
+    h-5
+    rounded-full
+    bg-fuchsia-400
+    shadow-[0_0_20px_rgba(217,70,239,1)]
+    animate-pulse
+    z-20
+  "
+/>
+
+{/* Backend Node */}
+<div
+  className="
+    absolute
+    top-1/2
+    right-[370px]
+    -translate-y-1/2
+    w-5
+    h-5
+    rounded-full
+    bg-cyan-400
+    shadow-[0_0_20px_rgba(34,211,238,1)]
+    animate-pulse
+    z-20
+  "
+/>
+
+{/* AI Node */}
+<div
+  className="
+    absolute
+    top-1/2
+    left-[370px]
+    -translate-y-1/2
+    w-5
+    h-5
+    rounded-full
+    bg-yellow-400
+    shadow-[0_0_20px_rgba(250,204,21,1)]
+    animate-pulse
+    z-20
+  "
+/>
+
+{/* Tools Node */}
+<div
+  className="
+    absolute
+    bottom-[320px]
+    left-1/2
+    -translate-x-1/2
+    w-5
+    h-5
+    rounded-full
+    bg-green-400
+    shadow-[0_0_20px_rgba(34,197,94,1)]
+    animate-pulse
+    z-20
+  "
+/>
 
       {/* Outer Ring */}
       <div
@@ -143,7 +230,7 @@ function MandalaSkills() {
           z-20
         "
       >
-        <div className="text-8xl">&lt;/&gt;</div>
+        <div className="text-8xl"><Code2 size={90} /></div>
 
         <p className="text-xs text-center mt-2 text-cyan-300">
           Full Stack Developer
@@ -154,7 +241,12 @@ function MandalaSkills() {
 
       {/* Frontend */}
       <SkillCircle
-        icon="🖥️"
+        icon={
+  <Monitor
+    size={50}
+    className="text-fuchsia-400"
+  />
+}
         title="FRONTEND"
         description="Crafting engaging user experiences"
         color="
@@ -171,7 +263,12 @@ function MandalaSkills() {
 
       {/* Backend */}
       <SkillCircle
-        icon="🗄️"
+        icon={
+  <Server
+    size={50}
+    className="text-cyan-400"
+  />
+}
         title="BACKEND"
         description="Powering robust applications"
         color="
@@ -188,7 +285,12 @@ function MandalaSkills() {
 
       {/* AI */}
       <SkillCircle
-  icon="🤖"
+  icon={
+  <Bot
+    size={55}
+    className="text-yellow-400"
+  />
+}
   title={`AI\n+\nAUTOMATION`}
   description="Building intelligent automation systems"
   size="large"
@@ -205,21 +307,27 @@ function MandalaSkills() {
 />
 
       {/* Tools */}
-      <SkillCircle
-        icon="🛠️"
-        title="TOOLS"
-        description="Essential tools for development"
-        color="
-          border-green-500/40
-          shadow-[0_0_100px_rgba(34,197,94,0.35)]
-        "
-        className="
-          absolute
-          bottom-20
-          left-1/2
-          -translate-x-1/2
-        "
-      />
+<SkillCircle
+  icon={
+    <Wrench
+      size={50}
+      className="text-green-400"
+    />
+  }
+  title="TOOLS"
+  description="Essential tools for development"
+  size="large"
+  color="
+    border-green-500/40
+    shadow-[0_0_100px_rgba(34,197,94,0.35)]
+  "
+  className="
+    absolute
+    bottom-20
+    left-1/2
+    -translate-x-1/2
+  "
+/>
 
       {/* ===== FRONTEND BADGES ===== */}
       <TechBadge label="React" className="top-[220px] left-[320px] border-fuchsia-500/40 text-fuchsia-300" />
@@ -254,8 +362,8 @@ function MandalaSkills() {
       <TechBadge
   label="Workflow Automation"
   className="
-    top-[760px]
-    left-[20px]
+    top-[810px]
+    left-[60px]
     border-yellow-500/40
     text-yellow-300
   "
