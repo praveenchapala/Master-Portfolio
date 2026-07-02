@@ -1,32 +1,63 @@
 function SkillCircle({
   title,
-  children,
+  description,
+  icon,
+  color,
   className,
 }) {
   return (
     <div
       className={`
-        w-64
-        h-64
+        w-60
+        h-60
         rounded-full
         border
-        border-cyan-500/40
-        bg-slate-950/80
-        backdrop-blur-md
+        bg-slate-950/95
+        backdrop-blur-xl
         flex
         flex-col
         items-center
         justify-center
         text-center
-        shadow-[0_0_60px_rgba(34,211,238,0.25)]
+        p-8
+        transition-all
+        duration-500
+        hover:scale-105
+        hover:-translate-y-2
+        hover:shadow-2xl
+        ${color}
         ${className}
       `}
     >
-      <h3 className="text-2xl font-bold">
+      {/* Icon */}
+      <div className="text-5xl mb-4">
+        {icon}
+      </div>
+
+      {/* Title */}
+      <h3
+        className="
+          text-2xl
+          font-bold
+          text-white
+          mb-4
+          leading-tight
+        "
+      >
         {title}
       </h3>
 
-      {children}
+      {/* Description */}
+      <p
+        className="
+          text-slate-300
+          text-sm
+          leading-7
+          max-w-[180px]
+        "
+      >
+        {description}
+      </p>
     </div>
   );
 }
