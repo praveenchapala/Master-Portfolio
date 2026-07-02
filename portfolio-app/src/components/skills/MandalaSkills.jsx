@@ -3,7 +3,7 @@ import TechBadge from "./TechBadge";
 
 function MandalaSkills() {
   return (
-    <div className="relative h-[1200px] overflow-hidden">
+    <div className="relative h-[1450px] overflow-hidden">
       {/* Background Pattern */}
       <div
         className="
@@ -22,21 +22,17 @@ function MandalaSkills() {
       <div className="absolute bottom-48 right-72 w-2 h-2 bg-green-400 rounded-full animate-ping" />
       <div className="absolute top-40 left-96 w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
       <div className="absolute top-80 right-96 w-2 h-2 bg-fuchsia-400 rounded-full animate-ping" />
-      <div className="absolute bottom-80 left-[500px] w-2 h-2 bg-yellow-400 rounded-full animate-ping" />
-      <div className="absolute bottom-80 right-[500px] w-2 h-2 bg-green-400 rounded-full animate-ping" />
-      <div className="absolute top-[500px] left-[200px] w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
-      <div className="absolute top-[500px] right-[200px] w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
 
-      {/* SVG Connections */}
+      {/* SVG Lines */}
       <svg
         className="absolute inset-0 w-full h-full"
-        viewBox="0 0 1400 1200"
+        viewBox="0 0 1400 1450"
       >
         <line
           x1="700"
-          y1="600"
+          y1="700"
           x2="700"
-          y2="250"
+          y2="300"
           stroke="#d946ef"
           strokeWidth="2"
           strokeDasharray="10 10"
@@ -44,9 +40,9 @@ function MandalaSkills() {
 
         <line
           x1="700"
-          y1="600"
-          x2="1180"
-          y2="600"
+          y1="700"
+          x2="1120"
+          y2="700"
           stroke="#22d3ee"
           strokeWidth="2"
           strokeDasharray="10 10"
@@ -54,9 +50,9 @@ function MandalaSkills() {
 
         <line
           x1="700"
-          y1="600"
-          x2="220"
-          y2="600"
+          y1="700"
+          x2="280"
+          y2="700"
           stroke="#facc15"
           strokeWidth="2"
           strokeDasharray="10 10"
@@ -64,9 +60,9 @@ function MandalaSkills() {
 
         <line
           x1="700"
-          y1="600"
+          y1="700"
           x2="700"
-          y2="940"
+          y2="1120"
           stroke="#22c55e"
           strokeWidth="2"
           strokeDasharray="10 10"
@@ -139,6 +135,7 @@ function MandalaSkills() {
           bg-slate-950
           shadow-[0_0_120px_rgba(34,211,238,0.5)]
           flex
+          flex-col
           items-center
           justify-center
           text-cyan-400
@@ -146,13 +143,13 @@ function MandalaSkills() {
           z-20
         "
       >
-        <div className="text-center">
-  <div className="text-7xl">&lt;/&gt;</div>
+        <div className="text-8xl">&lt;/&gt;</div>
 
-  <p className="text-cyan-300 mt-2 text-sm">
-    Full Stack Developer&nbsp;|&nbsp;Agentic AI Enthusiast&nbsp;|&nbsp;Automation Advocate
-  </p>
-</div>
+        <p className="text-xs text-center mt-2 text-cyan-300">
+          Full Stack Developer
+          <br />
+          Agentic AI Enthusiast
+        </p>
       </div>
 
       {/* Frontend */}
@@ -166,7 +163,7 @@ function MandalaSkills() {
         "
         className="
           absolute
-          top-0
+          top-20
           left-1/2
           -translate-x-1/2
         "
@@ -174,25 +171,25 @@ function MandalaSkills() {
 
       {/* Backend */}
       <SkillCircle
-  icon="🗄️"
-  title="BACKEND"
-  description="Powering robust applications"
-  color="
-    border-cyan-500/40
-    shadow-[0_0_100px_rgba(34,211,238,0.35)]
-  "
-  className="
-    absolute
-    top-1/2
-    right-20
-    -translate-y-1/2
-  "
-/>
+        icon="🗄️"
+        title="BACKEND"
+        description="Powering robust applications"
+        color="
+          border-cyan-500/40
+          shadow-[0_0_100px_rgba(34,211,238,0.35)]
+        "
+        className="
+          absolute
+          top-1/2
+          right-28
+          -translate-y-1/2
+        "
+      />
 
       {/* AI */}
       <SkillCircle
         icon="🤖"
-        title="AI  AUTOMATION"
+        title="AI AUTOMATION"
         description="Building intelligent automation systems"
         color="
           border-yellow-500/40
@@ -201,7 +198,7 @@ function MandalaSkills() {
         className="
           absolute
           top-1/2
-          left-0
+          left-28
           -translate-y-1/2
         "
       />
@@ -217,95 +214,47 @@ function MandalaSkills() {
         "
         className="
           absolute
-          bottom-0
+          bottom-20
           left-1/2
           -translate-x-1/2
         "
       />
 
-      {/* Frontend Badges */}
-      <TechBadge
-        label="React"
-        className="top-[230px] left-[430px] border-fuchsia-500/40 text-fuchsia-300"
-      />
+      {/* ===== FRONTEND BADGES ===== */}
+      <TechBadge label="React" className="top-[220px] left-[320px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge label="JavaScript" className="top-[290px] left-[230px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge label="HTML" className="top-[380px] left-[180px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge label="CSS" className="top-[380px] right-[180px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge label="Tailwind" className="top-[290px] right-[230px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge label="Vite" className="top-[220px] right-[320px] border-fuchsia-500/40 text-fuchsia-300" />
 
-      <TechBadge
-        label="HTML"
-        className="top-[340px] left-[340px] border-fuchsia-500/40 text-fuchsia-300"
-      />
+      {/* ===== BACKEND BADGES ===== */}
+      <TechBadge label="Java" className="top-[430px] right-[200px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="Spring Boot" className="top-[520px] right-[110px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="Node.js" className="top-[620px] right-[80px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="SQL" className="top-[720px] right-[110px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="MongoDB" className="top-[810px] right-[190px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="PostgreSQL" className="top-[900px] right-[280px] border-cyan-500/40 text-cyan-300" />
+      <TechBadge label="REST APIs" className="top-[980px] right-[380px] border-cyan-500/40 text-cyan-300" />
 
-      <TechBadge
-        label="CSS"
-        className="top-[340px] right-[340px] border-fuchsia-500/40 text-fuchsia-300"
-      />
+      {/* ===== AI BADGES ===== */}
+      <TechBadge label="Gemini" className="top-[430px] left-[200px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="Agentic AI" className="top-[520px] left-[110px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="n8n" className="top-[620px] left-[80px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="Prompt Engineering" className="top-[720px] left-[60px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="Workflow Automation" className="top-[810px] left-[90px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="LLM Integration" className="top-[900px] left-[200px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge label="AI Agents" className="top-[980px] left-[320px] border-yellow-500/40 text-yellow-300" />
 
-      <TechBadge
-        label="Tailwind"
-        className="top-[230px] right-[430px] border-fuchsia-500/40 text-fuchsia-300"
-      />
-
-      {/* Backend */}
-      <TechBadge
-        label="Java"
-        className="top-[470px] right-[180px] border-cyan-500/40 text-cyan-300"
-      />
-
-      <TechBadge
-        label="Spring Boot"
-        className="top-[580px] right-[120px] border-cyan-500/40 text-cyan-300"
-      />
-
-      <TechBadge
-        label="Node.js"
-        className="bottom-[390px] right-[160px] border-cyan-500/40 text-cyan-300"
-      />
-
-      <TechBadge
-        label="SQL"
-        className="bottom-[300px] right-[200px] border-cyan-500/40 text-cyan-300"
-      />
-
-      {/* AI */}
-      <TechBadge
-        label="Gemini"
-        className="top-[470px] left-[180px] border-yellow-500/40 text-yellow-300"
-      />
-
-      <TechBadge
-        label="Agentic AI"
-        className="top-[580px] left-[100px] border-yellow-500/40 text-yellow-300"
-      />
-
-      <TechBadge
-        label="n8n"
-        className="bottom-[390px] left-[160px] border-yellow-500/40 text-yellow-300"
-      />
-
-      <TechBadge
-        label="Automation"
-        className="bottom-[300px] left-[90px] border-yellow-500/40 text-yellow-300"
-      />
-
-      {/* Tools */}
-      <TechBadge
-        label="Git"
-        className="bottom-[190px] left-[430px] border-green-500/40 text-green-300"
-      />
-
-      <TechBadge
-        label="GitHub"
-        className="bottom-[90px] left-[330px] border-green-500/40 text-green-300"
-      />
-
-      <TechBadge
-        label="Postman"
-        className="bottom-[90px] right-[330px] border-green-500/40 text-green-300"
-      />
-
-      <TechBadge
-        label="VS Code"
-        className="bottom-[190px] right-[430px] border-green-500/40 text-green-300"
-      />
+      {/* ===== TOOLS BADGES ===== */}
+      <TechBadge label="Git" className="bottom-[230px] left-[350px] border-green-500/40 text-green-300" />
+      <TechBadge label="GitHub" className="bottom-[150px] left-[250px] border-green-500/40 text-green-300" />
+      <TechBadge label="Postman" className="bottom-[150px] left-[470px] border-green-500/40 text-green-300" />
+      <TechBadge label="VS Code" className="bottom-[230px] right-[350px] border-green-500/40 text-green-300" />
+      <TechBadge label="Docker" className="bottom-[150px] right-[250px] border-green-500/40 text-green-300" />
+      <TechBadge label="Jira" className="bottom-[150px] right-[470px] border-green-500/40 text-green-300" />
+      <TechBadge label="Figma" className="bottom-[70px] left-[430px] border-green-500/40 text-green-300" />
+      <TechBadge label="Firebase" className="bottom-[70px] right-[430px] border-green-500/40 text-green-300" />
     </div>
   );
 }

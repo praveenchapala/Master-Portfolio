@@ -6,7 +6,7 @@ function SkillsHeader() {
       </p>
 
       <h2 className="text-6xl font-bold">
-        Mandala of{" "}
+        Stack Of{" "}
         <span className="text-cyan-400">
           Technologies
         </span>
