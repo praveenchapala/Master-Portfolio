@@ -188,20 +188,21 @@ function MandalaSkills() {
 
       {/* AI */}
       <SkillCircle
-        icon="🤖"
-        title="AI AUTOMATION"
-        description="Building intelligent automation systems"
-        color="
-          border-yellow-500/40
-          shadow-[0_0_100px_rgba(250,204,21,0.35)]
-        "
-        className="
-          absolute
-          top-1/2
-          left-28
-          -translate-y-1/2
-        "
-      />
+  icon="🤖"
+  title={`AI\n+\nAUTOMATION`}
+  description="Building intelligent automation systems"
+  size="large"
+  color="
+    border-yellow-500/40
+    shadow-[0_0_100px_rgba(250,204,21,0.35)]
+  "
+  className="
+    absolute
+    top-1/2
+    left-20
+    -translate-y-1/2
+  "
+/>
 
       {/* Tools */}
       <SkillCircle
@@ -241,8 +242,24 @@ function MandalaSkills() {
       <TechBadge label="Gemini" className="top-[430px] left-[200px] border-yellow-500/40 text-yellow-300" />
       <TechBadge label="Agentic AI" className="top-[520px] left-[110px] border-yellow-500/40 text-yellow-300" />
       <TechBadge label="n8n" className="top-[620px] left-[80px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge label="Prompt Engineering" className="top-[720px] left-[60px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge label="Workflow Automation" className="top-[810px] left-[90px] border-yellow-500/40 text-yellow-300" />
+      <TechBadge
+  label="Prompt Engineering"
+  className="
+    top-[680px]
+    left-[10px]
+    border-yellow-500/40
+    text-yellow-300
+  "
+/>
+      <TechBadge
+  label="Workflow Automation"
+  className="
+    top-[760px]
+    left-[20px]
+    border-yellow-500/40
+    text-yellow-300
+  "
+/>
       <TechBadge label="LLM Integration" className="top-[900px] left-[200px] border-yellow-500/40 text-yellow-300" />
       <TechBadge label="AI Agents" className="top-[980px] left-[320px] border-yellow-500/40 text-yellow-300" />
 
