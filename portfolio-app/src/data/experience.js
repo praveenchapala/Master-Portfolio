@@ -4,12 +4,12 @@ const experience = [
     stage: "Foundation",
     icon: "🎓",
     role: "B.Tech CSE (AI & ML)",
-    company: "SVCET",
+    company: "Sri Venkateswara College of Engineering & Technology",
     duration: "2022 - Present",
     achievements: [
       "Built strong foundations in Computer Science",
       "Learned Java, SQL and Software Engineering",
-      "Explored Full Stack Development",
+      "Explored Full Stack Development and Problem Solving",
     ],
     technologies: [
       "Java",
@@ -17,6 +17,7 @@ const experience = [
       "DSA",
       "Web Development",
     ],
+    status: "Completed",
     color: "border-violet-500",
   },
 
@@ -38,6 +39,7 @@ const experience = [
       "REST APIs",
       "MySQL",
     ],
+    status: "Completed",
     color: "border-cyan-500",
   },
 
@@ -49,17 +51,18 @@ const experience = [
     company: "Neeroma Technologies",
     duration: "Mar 2026 - Jun 2026",
     achievements: [
-      "Performed manual testing",
-      "Reported and tracked bugs",
-      "Worked closely with development teams",
-      "Improved software quality",
+      "Performed manual testing and bug reporting",
+      "Worked closely with developers to improve quality",
+      "Validated product functionality and SDLC processes",
+      "Contributed to product quality assurance initiatives",
     ],
     technologies: [
-      "Testing",
+      "Manual Testing",
       "Jira",
       "SDLC",
       "Bug Reporting",
     ],
+    status: "Completed",
     color: "border-emerald-500",
   },
 
@@ -69,11 +72,12 @@ const experience = [
     icon: "⚙️",
     role: "AI Automation Builder",
     company: "Personal Projects",
-    duration: "2026",
+    duration: "2026 - Present",
     achievements: [
-      "Built enterprise workflows",
-      "Designed AI automations",
-      "Created incident management systems",
+      "Built enterprise AI workflows using n8n",
+      "Designed intelligent automation systems",
+      "Developed production incident management solutions",
+      "Created multiple agentic AI applications",
     ],
     technologies: [
       "n8n",
@@ -81,6 +85,7 @@ const experience = [
       "PostgreSQL",
       "JavaScript",
     ],
+    status: "Current Focus",
     color: "border-yellow-500",
   },
 
@@ -92,16 +97,18 @@ const experience = [
     company: "Future Vision",
     duration: "Next Chapter",
     achievements: [
-      "Building systems that think and learn",
+      "Building autonomous software factories",
       "Designing enterprise AI platforms",
-      "Creating autonomous software factories",
+      "Creating intelligent systems that learn and adapt",
+      "Engineering scalable AI solutions",
     ],
     technologies: [
       "AI Agents",
       "LLMs",
       "Automation",
-      "Architecture",
+      "System Architecture",
     ],
+    status: "Future Vision",
     color: "border-fuchsia-500",
   },
 ];

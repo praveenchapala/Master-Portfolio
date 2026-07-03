@@ -1,6 +1,7 @@
 function JourneyCard({
   stage,
   icon,
+  status,
   role,
   company,
   duration,
@@ -66,9 +67,31 @@ function JourneyCard({
       </p>
 
       {/* Duration */}
-      <p className="text-slate-500 text-sm mb-6">
+      <p className="text-slate-500 text-sm mb-4">
         {duration}
       </p>
+
+      {/* Status Badge */}
+      <div className="mb-6">
+        <span
+          className={`
+            px-4
+            py-2
+            rounded-full
+            text-sm
+            font-medium
+            ${
+              status === "Completed"
+                ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                : status === "Current Focus"
+                ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30"
+                : "bg-fuchsia-500/20 text-fuchsia-400 border border-fuchsia-500/30"
+            }
+          `}
+        >
+          {status}
+        </span>
+      </div>
 
       {/* Achievements */}
       <div className="mb-6">
