@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function JourneyCard({
   stage,
   icon,
@@ -9,8 +11,31 @@ function JourneyCard({
   technologies,
   color,
 }) {
+  const slideDirection =
+    stage === "Foundation" ||
+    stage === "Quality Engineering" ||
+    stage === "Intelligent Systems"
+      ? -100
+      : 100;
+
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        x: slideDirection,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{
+        once: true,
+        amount: 0.3,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
       className={`
         bg-slate-900/60
         border
@@ -22,6 +47,7 @@ function JourneyCard({
         duration-500
         hover:-translate-y-2
         hover:shadow-2xl
+        hover:shadow-cyan-500/20
       `}
     >
       {/* Stage + Icon */}
@@ -141,7 +167,7 @@ function JourneyCard({
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
