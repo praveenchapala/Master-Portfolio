@@ -1,5 +1,6 @@
 import ContactHeader from "./ContactHeader";
 import ContactCard from "./ContactCard";
+import CallCard from "./CallCard";
 
 function Contact() {
   return (
@@ -15,6 +16,7 @@ function Contact() {
         <ContactHeader />
 
         <ContactCard />
+        <CallCard />
       </div>
     </section>
   );
