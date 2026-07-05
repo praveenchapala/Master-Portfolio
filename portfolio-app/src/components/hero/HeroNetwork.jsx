@@ -6,19 +6,22 @@ function HeroNetwork() {
     <div
       className="
         relative
-        w-[320px]
-        h-[320px]
+        w-full
+        max-w-[340px]
+        h-[340px]
         md:w-[600px]
+        md:max-w-[600px]
         md:h-[600px]
+        mx-auto
       "
     >
-      {/* Hide network visualization on mobile */}
+      {/* Desktop Version */}
       <div className="hidden md:block">
         <svg
           className="absolute inset-0 w-full h-full"
           viewBox="0 0 560 560"
         >
-          {/* Top */}
+          {/* Paths */}
           <path
             id="path1"
             d="M280 260 L280 90"
@@ -27,7 +30,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Top Left */}
           <path
             id="path2"
             d="M250 250 Q180 180 90 120"
@@ -36,7 +38,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Top Right */}
           <path
             id="path3"
             d="M310 250 Q380 180 470 120"
@@ -45,7 +46,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Middle Left */}
           <path
             id="path4"
             d="M230 290 Q150 300 70 320"
@@ -54,7 +54,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Middle Right */}
           <path
             id="path5"
             d="M330 290 Q410 300 490 320"
@@ -63,7 +62,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Bottom Left */}
           <path
             id="path6"
             d="M250 330 Q190 420 130 500"
@@ -72,7 +70,6 @@ function HeroNetwork() {
             fill="none"
           />
 
-          {/* Bottom Right */}
           <path
             id="path7"
             d="M310 330 Q370 420 430 500"
@@ -90,7 +87,7 @@ function HeroNetwork() {
           <circle cx="130" cy="500" r="8" fill="#22d3ee" />
           <circle cx="430" cy="500" r="8" fill="#fde047" />
 
-          {/* Moving Dots */}
+          {/* Moving Data Flow */}
           <circle
             r="5"
             fill="#22c55e"
@@ -204,7 +201,7 @@ function HeroNetwork() {
           </circle>
         </svg>
 
-        {/* Desktop Profile */}
+        {/* Profile */}
         <div
           className="
             absolute
@@ -217,7 +214,7 @@ function HeroNetwork() {
           <HeroImage />
         </div>
 
-        {/* Desktop Nodes */}
+        {/* Network Cards */}
         <NetworkNode
           number="1"
           delay={0}
@@ -243,6 +240,7 @@ function HeroNetwork() {
           delay={0.6}
           icon="🤖"
           title="Building Agentic AI Systems"
+          description="Developing autonomous AI solutions"
           color="text-purple-400"
           className="top-20 right-[-20px]"
         />
@@ -251,8 +249,8 @@ function HeroNetwork() {
           number="4"
           delay={0.9}
           icon="🧠"
-          title="AI-Powered Applications"
-          description="Building smart applications with AI"
+          title="AI Applications"
+          description="Building smart AI products"
           color="text-orange-400"
           className="top-[250px] left-[-70px]"
         />
@@ -262,7 +260,7 @@ function HeroNetwork() {
           delay={1.2}
           icon="💻"
           title="Building in Public"
-          description="Sharing my journey and learnings"
+          description="Sharing my learning journey"
           color="text-pink-400"
           className="top-[250px] right-[-70px]"
         />
@@ -271,8 +269,8 @@ function HeroNetwork() {
           number="6"
           delay={1.5}
           icon="⚡"
-          title="Built 50+ Workflow Automations"
-          description="Automating processes with n8n & AI"
+          title="50+ Automations"
+          description="n8n & AI Workflow Builder"
           color="text-cyan-300"
           className="bottom-[-10px] left-6"
         />
@@ -281,8 +279,8 @@ function HeroNetwork() {
           number="7"
           delay={1.8}
           icon="🌍"
-          title="Solving Real-World Problems"
-          description="Working on industry bottlenecks"
+          title="Real-World Problems"
+          description="Building practical solutions"
           color="text-yellow-300"
           className="bottom-[-10px] right-6"
         />
@@ -295,23 +293,35 @@ function HeroNetwork() {
           flex
           flex-col
           items-center
-          gap-5
+          justify-center
+          gap-6
           pt-6
+          px-4
+          text-center
+          w-full
         "
       >
         <HeroImage />
 
-        <div className="flex flex-wrap justify-center gap-3">
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30">
-            Open to Work
+        <div
+          className="
+            flex
+            flex-wrap
+            justify-center
+            gap-3
+            max-w-sm
+          "
+        >
+          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
+            💼 Open to Work
           </span>
 
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30">
-            AI Builder
+          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
+            🤖 AI Builder
           </span>
 
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30">
-            50+ Automations
+          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
+            ⚡ 50+ Automations
           </span>
         </div>
       </div>
