@@ -303,27 +303,112 @@ function HeroNetwork() {
       >
         <HeroImage />
 
-        <div
-          className="
-            flex
-            flex-wrap
-            justify-center
-            gap-3
-            max-w-sm
-          "
-        >
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
-            💼 Open to Work
-          </span>
+        {/* Mobile Version */}
+<div
+  className="
+    md:hidden
+    relative
+    w-[340px]
+    h-[550px]
+    mx-auto
+  "
+>
+  {/* Top */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 scale-75">
+    <NetworkNode
+      number="1"
+      delay={0}
+      icon="💼"
+      title="Open to Work"
+      description=""
+      color="text-green-400"
+      className=""
+    />
+  </div>
 
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
-            🤖 AI Builder
-          </span>
+  {/* Top Left */}
+  <div className="absolute top-16 left-[-10px] scale-[0.65]">
+    <NetworkNode
+      number="2"
+      delay={0.3}
+      icon="🚀"
+      title="Open Source"
+      description=""
+      color="text-cyan-400"
+      className=""
+    />
+  </div>
 
-          <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm">
-            ⚡ 50+ Automations
-          </span>
-        </div>
+  {/* Top Right */}
+  <div className="absolute top-16 right-[-10px] scale-[0.65]">
+    <NetworkNode
+      number="3"
+      delay={0.6}
+      icon="🤖"
+      title="AI Systems"
+      description=""
+      color="text-purple-400"
+      className=""
+    />
+  </div>
+
+  {/* Profile */}
+  <div className="absolute top-[150px] left-1/2 -translate-x-1/2">
+    <HeroImage />
+  </div>
+
+  {/* Bottom Left */}
+  <div className="absolute bottom-20 left-[-10px] scale-[0.65]">
+    <NetworkNode
+      number="4"
+      delay={0.9}
+      icon="🧠"
+      title="AI Apps"
+      description=""
+      color="text-orange-400"
+      className=""
+    />
+  </div>
+
+  {/* Bottom Right */}
+  <div className="absolute bottom-20 right-[-10px] scale-[0.65]">
+    <NetworkNode
+      number="5"
+      delay={1.2}
+      icon="💻"
+      title="Public"
+      description=""
+      color="text-pink-400"
+      className=""
+    />
+  </div>
+
+  {/* Bottom Center Left */}
+  <div className="absolute bottom-0 left-[55px] scale-[0.65]">
+    <NetworkNode
+      number="6"
+      delay={1.5}
+      icon="⚡"
+      title="Automations"
+      description=""
+      color="text-cyan-300"
+      className=""
+    />
+  </div>
+
+  {/* Bottom Center Right */}
+  <div className="absolute bottom-0 right-[55px] scale-[0.65]">
+    <NetworkNode
+      number="7"
+      delay={1.8}
+      icon="🌍"
+      title="Problems"
+      description=""
+      color="text-yellow-300"
+      className=""
+    />
+  </div>
+</div>
       </div>
     </div>
   );

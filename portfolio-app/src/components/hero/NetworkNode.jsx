@@ -17,21 +17,23 @@ function NetworkNode({
       `}
     >
       <motion.div
-  animate={{
-    y: [0, -28, 0],
-    rotate: [-3, 3, -3],
-    scale: [1, 1.02, 1],
-  }}
-  transition={{
-    duration: 3.2,
-    repeat: Infinity,
-    ease: "easeInOut",
-    delay,
-  }}
-
+        animate={{
+          y: [0, -28, 0],
+          rotate: [-3, 3, -3],
+          scale: [1, 1.02, 1],
+        }}
+        transition={{
+          duration: 3.2,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay,
+        }}
         className="
-          w-[160px]
-          h-[165px]
+          relative
+          w-[140px]
+          h-[145px]
+          md:w-[160px]
+          md:h-[165px]
           bg-slate-900/80
           backdrop-blur-md
           border
@@ -57,8 +59,10 @@ function NetworkNode({
             -top-4
             left-1/2
             -translate-x-1/2
-            w-9
-            h-9
+            w-8
+            h-8
+            md:w-9
+            md:h-9
             rounded-full
             bg-slate-950
             border
@@ -67,7 +71,8 @@ function NetworkNode({
             items-center
             justify-center
             font-bold
-            text-base
+            text-sm
+            md:text-base
             ${color}
           `}
         >
@@ -77,7 +82,8 @@ function NetworkNode({
         {/* Icon */}
         <div
           className={`
-            text-3xl
+            text-2xl
+            md:text-3xl
             mb-2
             ${color}
           `}
@@ -88,9 +94,11 @@ function NetworkNode({
         {/* Title */}
         <h3
           className={`
-            text-base
+            text-sm
+            md:text-base
             font-bold
-            leading-6
+            leading-5
+            md:leading-6
             mb-2
             ${color}
           `}
@@ -99,7 +107,15 @@ function NetworkNode({
         </h3>
 
         {/* Description */}
-        <p className="text-slate-300 text-xs leading-5">
+        <p
+          className="
+            text-slate-300
+            text-[10px]
+            md:text-xs
+            leading-4
+            md:leading-5
+          "
+        >
           {description}
         </p>
       </motion.div>
