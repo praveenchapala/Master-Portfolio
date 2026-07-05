@@ -75,8 +75,7 @@ function HeroImage() {
           src={profileImg}
           alt="Praveen"
           className="
-            w-52
-            h-52
+            w-40 h-40 md:w-52 md:h-52
             rounded-full
             object-cover
             object-top
