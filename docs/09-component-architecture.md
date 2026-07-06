@@ -1,577 +1,584 @@
-# Component Architecture
+Component Architecture
+Document Information
+Property	Value
+Project	Master Portfolio
+Document	Component Architecture
+Version	2.0
+Last Updated	July 2026
+Status	Active
+Purpose
 
-## Purpose
+This document defines the complete frontend architecture of the Master Portfolio project.
 
-The purpose of this document is to define the React component structure for the Master Portfolio project.
+The objective of this architecture is to build a portfolio that is:
 
-Component architecture helps break large user interfaces into smaller, reusable, maintainable, and scalable building blocks.
+Modular
+Scalable
+Reusable
+Maintainable
+Easy to understand
+Easy to extend
 
-This document serves as the blueprint for frontend development.
+The project follows modern React development principles by breaking large interfaces into small, independent, reusable components.
 
----
+This document serves as the blueprint for frontend implementation and future enhancements.
 
-# Architecture Philosophy
+Architecture Vision
 
-The portfolio should follow:
+The portfolio should be developed like a real-world software product instead of a simple static website.
 
-* Reusability
-* Scalability
-* Maintainability
-* Separation of Concerns
+The architecture should:
 
-Each component should have a single responsibility.
+✅ Support future growth
 
----
+✅ Encourage component reusability
 
-# Application Structure
+✅ Reduce code duplication
 
-```text
-App
+✅ Improve maintainability
+
+✅ Separate business logic from UI
+
+✅ Follow professional frontend engineering practices
+
+Architecture Principles
+1. Single Responsibility Principle (SRP)
+
+Every component should have one responsibility.
+
+Example:
+
+HeroContent
+
+Only displays:
+
+Name
+Title
+Description
+
+It should not handle:
+
+Navigation
+Theme management
+API calls
+2. Reusability
+
+Reusable components reduce duplicate code.
+
+Examples:
+
+Button
+Card
+Badge
+SectionTitle
+SocialLinks
+3. Separation of Concerns
+
+UI, data, and logic should remain independent.
+
+Example:
+
+Component
+↓
+Receives Data
+↓
+Renders UI
+4. Scalability
+
+The architecture should support future features such as:
+
+Blog System
+AI Assistant
+Project Details Pages
+Analytics Dashboard
+Learning Journey System
+
+without major restructuring.
+
+5. Maintainability
+
+New developers should understand the codebase quickly.
+
+Folder organization and component naming should remain simple and predictable.
+
+High Level Architecture
+Application
 │
-├── Layout
+├── Layout Layer
+├── Page Layer
+├── Feature Components
+├── Reusable Components
+├── Data Layer
+├── Context Layer
+├── Hooks Layer
+└── Utility Layer
+Application Architecture
+App
 │
 ├── Navbar
 ├── Hero
 ├── About
-├── Experience
+├── Projects
 ├── Skills
-├── FeaturedProjects
-├── LearningJourney
-├── GitHubActivity
+├── Experience
+├── Certifications
 ├── Contact
-└── Footer
-```
-
----
-
-# Page Architecture
-
-## Home Page
-
-```text
-HomePage
+├── Footer
+└── ScrollToTop
+Current Application Flow
+App
 │
-├── HeroSection
-├── AboutSection
-├── ExperienceSection
-├── SkillsSection
-├── FeaturedProjectsSection
-├── LearningJourneySection
-├── GitHubActivitySection
-├── ContactSection
-└── Footer
-```
-
-Purpose:
-
-Provide a complete overview of the portfolio.
-
----
-
-## Projects Page
-
-```text
-ProjectsPage
+├── Loader
 │
-├── PageHeader
-├── SearchBar
-├── FilterBar
-├── ProjectsGrid
-└── Pagination
-```
-
-Purpose:
-
-Display all projects.
-
----
-
-## Project Detail Page
-
-```text
-ProjectDetailPage
-│
-├── ProjectHero
-├── ProjectOverview
-├── ProblemStatement
-├── SolutionApproach
-├── ArchitectureSection
-├── TechStackSection
-├── ScreenshotsSection
-├── LessonsLearned
-└── ProjectLinks
-```
-
-Purpose:
-
-Provide technical depth.
-
----
-
-# Layout Components
-
-## Layout
-
-Purpose:
-
-Wrap all pages.
-
-Responsibilities:
-
-* Theme Management
-* Global Layout
-* Shared Structure
-
----
-
-## Navbar
-
-Purpose:
-
-Site navigation.
-
-Features:
-
-* Navigation Links
-* Resume Button
-* Theme Toggle
-* Mobile Menu
-
-Reusable:
-
-Yes
-
----
-
-## Footer
-
-Purpose:
-
-Site footer information.
-
-Features:
-
-* Social Links
-* Copyright
-* Contact Information
-
-Reusable:
-
-Yes
-
----
-
-# Hero Components
-
-## HeroSection
-
-Purpose:
-
-Create first impression.
-
-Contains:
-
-```text
-HeroSection
-│
-├── HeroContent
-├── HeroActions
-└── HeroVisual
-```
-
----
-
-## HeroContent
-
-Displays:
-
-* Name
-* Role
-* Introduction
-
----
-
-## HeroActions
-
-Displays:
-
-* View Projects Button
-* Resume Download Button
-
----
-
-## HeroVisual
-
-Displays:
-
-* Profile Image
-  OR
-* Developer Illustration
-  OR
-* Terminal UI
-
----
-
-# About Components
-
-## AboutSection
-
-Purpose:
-
-Professional introduction.
-
-Contains:
-
-```text
-AboutSection
-│
-├── ProfileImage
-└── AboutContent
-```
-
----
-
-# Experience Components
-
-## ExperienceSection
-
-Purpose:
-
-Display experience timeline.
-
-Contains:
-
-```text
-ExperienceSection
-│
-└── Timeline
-       │
-       └── TimelineItem
-```
-
----
-
-## TimelineItem
-
-Reusable Component
-
-Used For:
-
-* Experience
-* Education
-* Certifications
-
----
-
-# Skills Components
-
-## SkillsSection
-
-Purpose:
-
-Display categorized skills.
-
-Contains:
-
-```text
-SkillsSection
-│
-└── SkillCategory
-       │
-       └── SkillBadge
-```
-
----
-
-## SkillCategory
-
-Examples:
-
-* Frontend
-* Backend
-* Database
-* Tools
-
----
-
-## SkillBadge
-
-Examples:
-
-* React
-* Java
-* Git
-
-Reusable:
-
-Yes
-
----
-
-# Projects Components
-
-## FeaturedProjectsSection
-
-Purpose:
-
-Showcase top projects.
-
-Contains:
-
-```text
-FeaturedProjectsSection
-│
-└── ProjectCard
-```
-
----
-
-## ProjectCard
-
-Displays:
-
-* Project Name
-* Description
-* Tech Stack
-* GitHub Link
-* Demo Link
-
-Reusable:
-
-Highly Reusable
-
-Used Across:
-
-* Homepage
-* Projects Page
-
----
-
-# Learning Journey Components
-
-## LearningJourneySection
-
-Purpose:
-
-Show growth and consistency.
-
-Contains:
-
-```text
-LearningJourneySection
-│
-└── JourneyCard
-```
-
----
-
-## JourneyCard
-
-Displays:
-
-* Learning Topic
-* Progress
-* Description
-
-Examples:
-
-* APIs
-* ServiceNow
-* n8n
-* Java
-
-Reusable:
-
-Yes
-
----
-
-# GitHub Activity Components
-
-## GitHubActivitySection
-
-Purpose:
-
-Show coding activity.
-
-Contains:
-
-```text
-GitHubActivitySection
-│
-├── GitHubStats
-├── ContributionGraph
-└── RepositoryList
-```
-
----
-
-# Contact Components
-
-## ContactSection
-
-Purpose:
-
-Allow communication.
-
-Contains:
-
-```text
-ContactSection
-│
-├── ContactForm
-├── ContactInfo
-└── SocialLinks
-```
-
----
-
-## SocialLinks
-
-Reusable Component
-
-Used In:
-
-* Hero Section
-* Footer
-* Contact Section
-
----
-
-# Common Reusable Components
-
-These components should be reused throughout the application.
-
-```text
-Button
-Card
-SectionTitle
-Container
-Badge
-Tag
-ThemeToggle
-SocialLinks
-TimelineItem
-ProjectCard
-JourneyCard
-```
-
----
-
-# State Management Plan
-
-## Global State
-
-Potential Shared State:
-
-```text
-Theme Mode
-Navigation State
-```
-
-Management Method:
-
-React Context API
-
----
-
-## Local State
-
-Examples:
-
-```text
-Search Input
-Filters
-Mobile Menu
-```
-
-Management Method:
-
-useState()
-
----
-
-# Folder Structure Plan
-
-```text
+└── Main Layout
+      │
+      ├── Navbar
+      ├── Hero
+      ├── About
+      ├── Projects
+      ├── Skills
+      ├── Experience
+      ├── Certifications
+      ├── Contact
+      ├── Footer
+      └── ScrollToTop
+Folder Structure
 src/
 │
-├── components/
-│   ├── common/
-│   ├── layout/
-│   ├── hero/
-│   ├── about/
-│   ├── skills/
-│   ├── projects/
-│   ├── journey/
-│   ├── contact/
-│   └── github/
+├── assets/
 │
-├── pages/
+├── components/
+│   ├── about/
+│   ├── certifications/
+│   ├── common/
+│   ├── contact/
+│   ├── experience/
+│   ├── footer/
+│   ├── hero/
+│   ├── layout/
+│   ├── projects/
+│   └── skills/
+│
+├── context/
 │
 ├── data/
 │
 ├── hooks/
 │
-├── context/
+├── layouts/
 │
-├── assets/
+├── pages/
 │
-└── utils/
-```
+├── services/
+│
+├── styles/
+│
+├── utils/
+│
+├── App.jsx
+└── main.jsx
+Folder Responsibilities
+assets/
 
----
+Stores:
 
-# Component Design Principles
+Images
+Icons
+Resume
+Logos
 
-## Single Responsibility
+Examples:
 
-One component should have one purpose.
+profile-image.jpg
+LogoPortfolio.png
+resume.pdf
+components/
 
----
+Contains all UI components.
 
-## Reusability
+Each feature has its own folder.
 
-Avoid duplicate code.
+Benefits:
 
----
+Better organization
+Easier maintenance
+Feature isolation
+context/
 
-## Readability
+Stores global state.
 
-Component names should clearly describe functionality.
+Examples:
 
----
+ThemeContext
+NavigationContext
+hooks/
 
-## Scalability
+Stores custom React hooks.
 
-Architecture should support future features.
+Examples:
 
----
+useTheme()
+useScrollPosition()
+useIntersectionObserver()
+services/
 
-# Development Benefits
+Stores:
 
-This architecture will:
+API integrations
+External services
+GitHub APIs
+Analytics APIs
+utils/
 
-* Reduce duplicate code.
-* Improve maintainability.
-* Support future growth.
-* Simplify testing.
-* Improve project organization.
+Stores helper functions.
 
----
+Examples:
 
-# Success Criteria
+formatDate()
+scrollToSection()
+calculateExperience()
+styles/
+
+Stores:
+
+Global styles
+Animations
+Tailwind customizations
+data/
+
+Stores static application data.
+
+Examples:
+
+projects.js
+skills.js
+experience.js
+navigation.js
+site.js
+Component Hierarchy
+Navbar Architecture
+Navbar
+│
+├── Logo
+├── Navigation Links
+├── Resume Button
+├── Theme Toggle
+└── Mobile Menu
+
+Responsibilities:
+
+Navigation
+Active links
+Mobile menu state
+Hero Architecture
+
+The Hero section is the most complex component in the application.
+
+Hero Component Tree
+Hero
+│
+├── HeroContent
+├── HeroButtons
+├── HeroSocials
+└── HeroNetwork
+HeroContent
+
+Displays:
+
+Name
+Role
+Professional Summary
+Availability Status
+HeroButtons
+
+Displays:
+
+View Projects
+Download Resume
+Contact Me
+HeroSocials
+
+Displays:
+
+GitHub
+LinkedIn
+Email
+Other platforms
+HeroNetwork
+
+Responsible for:
+
+Interactive AI visualization
+Profile image
+Floating cards
+Animated data flow
+HeroNetwork Architecture
+HeroNetwork
+│
+├── SVG Network
+├── HeroImage
+├── NetworkNode
+├── Flow Animation
+└── Mobile Layout
+HeroImage
+
+Responsibilities:
+
+Profile image
+Floating animation
+Glowing rings
+NetworkNode
+
+Reusable card component.
+
+Used for:
+
+Open to Work
+AI Builder
+Projects
+Automations
+Open Source
+
+Features:
+
+Floating motion
+Hover effects
+Responsive design
+About Architecture
+About
+│
+├── AboutImage
+├── AboutContent
+├── Statistics
+└── CTA
+
+Responsibilities:
+
+Professional introduction
+Career goals
+Background
+Skills Architecture
+Skills
+│
+├── SectionTitle
+├── SkillCategory
+└── SkillBadge
+SkillCategory
+
+Examples:
+
+Languages
+Frontend
+Backend
+Database
+Tools
+SkillBadge
+
+Displays:
+
+Icon
+Name
+Experience level
+
+Reusable:
+
+Yes
+
+Experience Architecture
+Experience
+│
+└── Timeline
+      │
+      └── TimelineItem
+TimelineItem
+
+Reusable component.
+
+Used for:
+
+Experience
+Education
+Certifications
+Learning Journey
+Projects Architecture
+Projects
+│
+├── SectionTitle
+├── ProjectsGrid
+└── ProjectCard
+ProjectCard
+
+Displays:
+
+Project image
+Description
+Tech stack
+GitHub link
+Demo link
+Details button
+
+Reusable:
+
+Highly reusable.
+
+Certifications Architecture
+Certifications
+│
+└── CertificationCard
+Contact Architecture
+Contact
+│
+├── ContactInfo
+├── ContactForm
+└── SocialLinks
+Footer Architecture
+Footer
+│
+├── Logo
+├── Quick Links
+├── Social Links
+└── Copyright
+Common Components
+
+The application should use reusable components whenever possible.
+
+Button
+Card
+Badge
+Container
+SectionTitle
+Tag
+Loader
+SocialLinks
+TimelineItem
+ProjectCard
+CertificationCard
+NetworkNode
+State Management Architecture
+Local State
+
+Managed using:
+
+useState()
+
+Examples:
+
+Mobile menu
+Loading state
+Form state
+Filters
+Global State
+
+Managed using:
+
+React Context API
+
+Potential shared states:
+
+Theme
+Navigation
+Dark Mode
+Analytics
+Data Flow Architecture
+Static Data
+      ↓
+Components
+      ↓
+UI Rendering
+      ↓
+User Interaction
+      ↓
+State Update
+      ↓
+Re-render
+Future API Architecture
+GitHub API
+      ↓
+Services
+      ↓
+Hooks
+      ↓
+Components
+Future Routing Architecture
+/
+│
+├── /
+├── /projects
+├── /projects/:slug
+├── /journey
+├── /blog
+└── /contact
+Future Feature Architecture
+Blog System
+Blog
+│
+├── BlogList
+├── BlogCard
+└── BlogDetails
+Learning Journey
+Journey
+│
+├── Timeline
+├── JourneyCard
+└── JourneyDetails
+AI Assistant
+AI Assistant
+│
+├── Chat Window
+├── Message List
+├── Suggestions
+└── Knowledge Base
+Performance Architecture
+
+The application should follow:
+
+Lazy loading
+Code splitting
+Memoization
+Optimized images
+Component reuse
+Development Benefits
+
+This architecture provides:
+
+✅ Better organization
+
+✅ Easier debugging
+
+✅ Faster development
+
+✅ Reduced duplication
+
+✅ Improved scalability
+
+✅ Easier onboarding
+
+✅ Better maintainability
+
+Architecture Success Criteria
 
 The component architecture is successful if:
 
-* Components are reusable.
-* Folder structure remains organized.
-* Features can be added easily.
-* Code remains maintainable.
-* Development becomes faster and more structured.
+Components are highly reusable.
+Features can be added easily.
+The project remains organized.
+Developers can understand the code quickly.
+The application scales without major restructuring.
+Future enhancements can be integrated smoothly.
+Final Architecture Vision
 
----
+The Master Portfolio should be engineered like a real software product.
 
-# Conclusion
+The architecture should make the project feel like:
 
-This component architecture provides the foundation for implementing the portfolio using React while following modern frontend development practices.
+Professional Portfolio
++
+Interactive Web Application
++
+Developer Dashboard
++
+Engineering Showcase
+
+rather than a collection of static pages.
+
+The ultimate goal of this architecture is to create a codebase that demonstrates not only frontend development skills but also software engineering thinking, project organization, and long-term maintainability.
