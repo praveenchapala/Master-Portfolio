@@ -1,181 +1,66 @@
-# Entry 02
+# Learning Log - Entry 02
 
-## Date
+---
+
+# Date
 
 June 24, 2026
 
-## Phase
+---
 
-Phase 0 - Planning & Documentation
+# Project
 
-Phase 1 - Design
-
-## Topics Learned
-
-### Software Development Life Cycle (SDLC)
-
-* Requirement Gathering
-* Planning
-* Design
-* Development Preparation
-
-### Product Thinking
-
-* Defining project goals
-* Identifying target audience
-* Prioritizing features
-* Creating project roadmap
-
-### Information Architecture
-
-* Site structure planning
-* User navigation design
-* Content hierarchy
-* User flow definition
-
-### Wireframing
-
-* Layout planning
-* Section organization
-* Mobile-first considerations
-* Content placement strategy
-
-### Design Systems
-
-* Color systems
-* Typography systems
-* Component consistency
-* Dark mode strategy
-
-### Component Architecture
-
-* React component planning
-* Reusable components
-* Folder structure design
-* Separation of concerns
-
-### Git & GitHub
-
-* Staging specific files
-* Commit organization
-* Repository structure
-* Documentation versioning
+Master Portfolio
 
 ---
 
-## Activities Performed
+# Current Phase
 
-* Created Project Overview document.
-* Created Project Vision document.
-* Defined target audience.
-* Planned portfolio features.
-* Created project roadmap.
-* Created learning log.
-* Designed information architecture.
-* Created portfolio wireframes.
-* Defined design system.
-* Designed React component architecture.
-* Planned development setup.
-* Published documentation to GitHub.
+✅ Phase 0 – Planning & Documentation
+
+🔄 Phase 1 – Design & Architecture
 
 ---
 
-## Challenges Faced
+# Session Goal
 
-### Challenge 1
+The objective of this session was to create a strong foundation for the portfolio project before starting development.
 
-Understanding the difference between:
+Instead of immediately writing code, the focus was on understanding how real software projects are planned, documented, and designed.
 
-* Wireframes
-* Information Architecture
-* Design System
-* Component Architecture
+This session emphasized:
 
-### Solution
-
-Studied the purpose of each artifact and how they fit into the SDLC.
-
----
-
-### Challenge 2
-
-Determining how to organize a portfolio for both recruiters and technical interviewers.
-
-### Solution
-
-Created a dual-focus strategy:
-
-* Recruiters in 30 seconds
-* Technical Interviewers in 10 minutes
+- Product thinking
+- Software engineering practices
+- Project documentation
+- Architecture planning
+- User-centered design
 
 ---
 
-### Challenge 3
-
-Avoiding feature overload.
-
-### Solution
-
-Prioritized features into:
-
-* Must Have
-* Should Have
-* Nice to Have
-* Future Scope
+# Topics Learned
 
 ---
 
-## Key Takeaways
+# 1. Software Development Life Cycle (SDLC)
 
-* Good software projects begin with planning.
-* Documentation reduces confusion during development.
-* Information Architecture defines structure.
-* Wireframes define layout.
-* Design Systems define visual rules.
-* Component Architecture defines implementation structure.
-* Git history should tell the story of the project.
-* Building a portfolio is similar to building a real software product.
+## Concepts Explored
 
----
-
-## Skills Gained
-
-### Project Planning
-
-Improved
-
-### Documentation
-
-Improved
-
-### Git & GitHub
-
-Improved
-
-### UI/UX Thinking
-
-Improved
-
-### React Architecture
-
-Foundation Established
-
-### Software Engineering Mindset
-
-Improved
+- Requirement Gathering
+- Project Planning
+- System Design
+- Development Preparation
+- Testing Strategy
+- Deployment Planning
+- Maintenance Planning
 
 ---
 
-## Outcome
+## Key Understanding
 
-Successfully completed:
+Software projects should not begin with coding.
 
-✅ Planning Phase
+Successful software projects begin with:
 
-✅ Design Phase
-
-Prepared for:
-
-⏳ Development Phase
-
-The project now has a complete blueprint for implementation and is ready for React development.
+```text
+Understand → Plan → Design → Build → Test → Deploy
