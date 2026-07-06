@@ -1,214 +1,293 @@
-# Development Setup
+Development Setup
+Document Information
+Property	Value
+Project	Master Portfolio
+Document	Development Setup
+Version	2.0
+Last Updated	July 2026
+Status	Active
+Purpose
 
-## Purpose
+The purpose of this document is to define the complete development environment, tools, technologies, workflows, and setup process required to build and maintain the Master Portfolio project.
 
-The purpose of this document is to define the development environment, tools, technologies, and setup process required for building the Master Portfolio project.
+This document serves as:
 
-This document serves as a reference for setting up the project from scratch and helps maintain consistency throughout the development lifecycle.
+A project setup guide
+An onboarding document
+A reference for future maintenance
+A reproducible development environment specification
 
----
+The goal is to ensure that the project can be set up from scratch quickly and consistently on any machine.
 
-# Development Environment
+Development Philosophy
 
-## Operating System
+The development environment should be:
 
-Current Development Environment:
+✅ Simple
 
-* Windows 11
+✅ Reproducible
 
-The project should remain platform-independent and work on Windows, Linux, and macOS.
+✅ Scalable
 
----
+✅ Beginner Friendly
 
-## Code Editor
+✅ Professional
 
-### Visual Studio Code
+✅ Suitable for long-term maintenance
+
+The project should follow real-world software engineering practices rather than ad-hoc development.
+
+Development Environment
+Operating System
+
+Current Environment:
+
+Windows 11
+
+Supported Platforms:
+
+Windows
+Linux
+macOS
+
+The project should remain platform-independent.
+
+Hardware Requirements
+
+Minimum:
+
+Component	Requirement
+RAM	8 GB
+Storage	5 GB Free
+Processor	Intel i5 / Ryzen 5
+Internet	Required
+
+Recommended:
+
+Component	Requirement
+RAM	16 GB
+Storage	SSD
+Processor	Intel i7 / Ryzen 7
+Development Workspace
+Code Editor
+Visual Studio Code
 
 Purpose:
 
-Primary code editor for development.
+Primary IDE for development.
 
-Reasons for Selection:
+Official Website:
 
-* Lightweight
-* Large extension ecosystem
-* Excellent React support
-* Git integration
-* Terminal integration
+Visual Studio Code
 
-Official Responsibilities:
+Reasons for Selection
+Lightweight
+Fast startup
+Excellent React support
+Integrated terminal
+Large extension ecosystem
+Git integration
+Cross-platform support
+Responsibilities
+Writing code
+Debugging
+Refactoring
+Running terminal commands
+Git operations
+Project navigation
+Required Software
+Node.js
 
-* Writing code
-* Debugging
-* Version control management
-* Project navigation
+Official Website:
 
----
+Node.js
 
-# Required Software
+Purpose
 
-## Node.js
+JavaScript runtime used for:
 
-Purpose:
-
-JavaScript runtime used to execute development tools and build processes.
-
-Responsibilities:
-
-* Package management support
-* Development server execution
-* Build generation
-
-Verification Command:
-
-```bash
+Development server
+Package management
+Build generation
+Dependency execution
+Verification
 node -v
-```
 
-Expected Result:
+Example:
 
-Displays installed Node.js version.
-
----
-
-## npm
+v24.16.0
+npm
 
 Purpose:
 
-Package manager used to install and manage project dependencies.
+Package manager for JavaScript dependencies.
 
 Responsibilities:
 
-* Dependency installation
-* Script execution
-* Package updates
-
-Verification Command:
-
-```bash
+Installing packages
+Updating dependencies
+Running scripts
+Managing project packages
+Verification
 npm -v
-```
 
-Expected Result:
+Example:
 
-Displays installed npm version.
+11.13.0
+Git
 
----
+Official Website:
 
-## Git
+Git
 
 Purpose:
 
-Version control system used to track project changes.
+Version control system.
 
 Responsibilities:
 
-* Source code tracking
-* Commit history management
-* Branch management
-* Collaboration
-
-Verification Command:
-
-```bash
+Track changes
+Maintain history
+Enable collaboration
+Support rollback
+Verification
 git --version
-```
 
-Expected Result:
+Example:
 
-Displays installed Git version.
+git version 2.47.1.windows.2
+Browser
 
----
+Recommended:
 
-# Recommended VS Code Extensions
+Google Chrome
+Microsoft Edge
 
-## ESLint
+Used for:
+
+Development testing
+Responsive testing
+Debugging
+Developer Tools
+
+Required:
+
+Chrome DevTools
+Network Tab
+Console
+Lighthouse
+Performance Tab
+Recommended VS Code Extensions
+ESLint
 
 Purpose:
 
-Identify code quality issues and enforce coding standards.
-
----
-
-## Prettier
-
-Purpose:
-
-Automatically format code.
+Code quality analysis.
 
 Benefits:
 
-* Consistent formatting
-* Improved readability
-
----
-
-## Tailwind CSS IntelliSense
+Detects errors
+Enforces best practices
+Improves consistency
+Prettier
 
 Purpose:
 
-Autocomplete support for Tailwind classes.
-
----
-
-## GitLens
-
-Purpose:
-
-Enhanced Git integration.
+Automatic formatting.
 
 Benefits:
 
-* Commit history visibility
-* File history tracking
-
----
-
-## Error Lens
+Consistent code style
+Improved readability
+Tailwind CSS IntelliSense
 
 Purpose:
 
-Display errors directly within the editor.
+Tailwind autocomplete.
 
----
+Benefits:
 
-## Auto Rename Tag
+Faster development
+Reduces mistakes
+GitLens
 
 Purpose:
 
-Automatically rename matching HTML and JSX tags.
+Advanced Git integration.
 
----
+Benefits:
 
-# Technology Stack
+Commit history
+File history
+Author tracking
+Error Lens
 
-## Frontend Framework
+Purpose:
 
+Inline error visualization.
+
+Benefits:
+
+Faster debugging
+Auto Rename Tag
+
+Purpose:
+
+Automatically updates matching JSX tags.
+
+Material Icon Theme
+
+Purpose:
+
+Better file and folder icons.
+
+Thunder Client
+
+Purpose:
+
+API testing inside VS Code.
+
+Useful for future API integrations.
+
+Technology Stack
+Frontend Framework
 React
 
+Version:
+
+React 19
+
 Purpose:
 
-Build reusable UI components.
+Build component-based user interfaces.
 
----
+Reasons:
 
-## Build Tool
+Reusable components
+Large ecosystem
+Industry standard
+Easy scalability
+Build Tool
+Vite
+
+Official Website:
 
 Vite
 
 Purpose:
 
-Provide a fast development environment.
+Modern frontend tooling.
 
 Advantages:
 
-* Fast startup
-* Fast hot reload
-* Lightweight configuration
+Fast startup
+Fast hot reload
+Lightweight configuration
+Optimized production builds
+Styling Framework
+Tailwind CSS
 
----
-
-## Styling Framework
+Official Website:
 
 Tailwind CSS
 
@@ -218,308 +297,296 @@ Utility-first CSS framework.
 
 Advantages:
 
-* Rapid UI development
-* Consistent styling
-* Responsive design support
+Rapid development
+Responsive design
+Consistent styling
+Easy maintenance
+Animation Library
+Framer Motion
 
----
+Official Website:
 
-## Version Control
+Framer Motion
 
+Purpose:
+
+Advanced animations.
+
+Used for:
+
+Floating profile image
+Floating cards
+Hero animations
+Scroll animations
+Interactive effects
+Version Control
 Git
 
 Purpose:
 
-Track and manage source code changes.
+Track source code changes.
 
----
+Repository Hosting
+GitHub
 
-## Repository Hosting
+Official Website:
 
 GitHub
 
 Purpose:
 
-Store project source code and documentation.
+Source code hosting
+Documentation
+Portfolio showcase
+Version management
+Deployment Platform
+Vercel
 
----
-
-## Deployment Platform
+Official Website:
 
 Vercel
 
 Purpose:
 
-Host and deploy the portfolio application.
+Hosting
+CI/CD
+Production deployment
 
 Benefits:
 
-* Simple deployment
-* Fast performance
-* GitHub integration
-
----
-
-# Project Initialization Plan
-
-## Step 1
+Free hosting
+GitHub integration
+Automatic deployments
+SSL support
+Project Initialization
+Step 1
 
 Verify Development Environment
 
-Commands:
-
-```bash
 node -v
 npm -v
 git --version
-```
+Step 2
 
-Objective:
+Create Project
 
-Confirm all required tools are installed.
-
----
-
-## Step 2
-
-Create React Project
-
-Command:
-
-```bash
 npm create vite@latest
-```
-
-Objective:
-
-Generate the React project structure.
-
----
-
-## Step 3
+Step 3
 
 Install Dependencies
 
-Command:
-
-```bash
 npm install
-```
+Step 4
 
-Objective:
+Install Tailwind CSS
 
-Install project packages.
+npm install tailwindcss @tailwindcss/vite
+Step 5
 
----
+Install Framer Motion
 
-## Step 4
-
-Configure Tailwind CSS
-
-Objective:
-
-Prepare styling system.
-
----
-
-## Step 5
-
-Create Folder Structure
-
-Objective:
-
-Organize project architecture.
-
----
-
-## Step 6
+npm install framer-motion
+Step 6
 
 Start Development Server
 
-Command:
-
-```bash
 npm run dev
-```
+Step 7
 
-Objective:
+Open Application
 
-Launch local development environment.
+http://localhost:5173
+Current Project Dependencies
 
----
+Core Dependencies:
 
-# Planned Folder Structure
-
-```text
-src/
+react
+react-dom
+vite
+tailwindcss
+framer-motion
+Project Structure
+portfolio-app/
 │
-├── assets/
-├── components/
-│   ├── common/
-│   ├── layout/
-│   ├── hero/
-│   ├── about/
-│   ├── experience/
-│   ├── skills/
-│   ├── projects/
-│   ├── github/
-│   ├── journey/
-│   └── contact/
+├── public/
 │
-├── pages/
-├── data/
-├── hooks/
-├── context/
-├── utils/
-├── styles/
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── resume/
+│   │
+│   ├── components/
+│   │   ├── about/
+│   │   ├── certifications/
+│   │   ├── common/
+│   │   ├── contact/
+│   │   ├── experience/
+│   │   ├── footer/
+│   │   ├── hero/
+│   │   ├── layout/
+│   │   ├── projects/
+│   │   └── skills/
+│   │
+│   ├── context/
+│   ├── data/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   ├── utils/
+│   │
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── App.jsx
-└── main.jsx
-```
-
-Purpose:
-
-Maintain scalability and organization.
-
----
-
-# Git Workflow Strategy
-
-## Daily Workflow
-
-### Check Status
-
-```bash
+├── package.json
+├── vite.config.js
+└── README.md
+Development Workflow
+Start Development Server
+npm run dev
+Production Build
+npm run build
+Preview Production Build
+npm run preview
+Git Workflow Strategy
+Check Status
 git status
-```
+Stage Files
+git add .
 
-Purpose:
+or
 
-Review project changes.
-
----
-
-### Stage Specific Files
-
-```bash
 git add filename
-```
+Commit Changes
+git commit -m "Meaningful commit message"
 
-Purpose:
+Example:
 
-Track only relevant changes.
+git commit -m "Add animated hero network visualization"
+Push Changes
+git push origin main
+Commit Strategy
 
----
+The project should follow:
 
-### Commit Changes
+Feature → Commit
+Bug Fix → Commit
+Documentation → Commit
+Refactor → Commit
 
-```bash
-git commit -m "meaningful message"
-```
+Example:
 
-Purpose:
+feat:
+fix:
+docs:
+refactor:
+style:
+Development Principles
+Documentation First
 
-Create project checkpoints.
+Major decisions should be documented before implementation.
 
----
+Small Commits
 
-### Push Changes
+Commits should be focused and meaningful.
 
-```bash
-git push
-```
-
-Purpose:
-
-Upload commits to GitHub.
-
----
-
-# Development Principles
-
-## Documentation First
-
-Document major decisions before implementation whenever possible.
-
----
-
-## Small Commits
-
-Create focused and meaningful commits.
-
----
-
-## Reusable Components
+Component Reusability
 
 Avoid duplicate code.
 
----
+Mobile First
 
-## Mobile-First Design
+Responsiveness should be considered during development.
 
-Ensure responsiveness from the beginning.
-
----
-
-## Incremental Development
+Incremental Development
 
 Build one feature at a time.
 
----
+Clean Code
 
-# Learning Objectives
+Code should be:
 
-Through the development phase, the following concepts will be learned:
+Readable
+Consistent
+Maintainable
+Learning Objectives
+React
+JSX
+Components
+Props
+State Management
+Hooks
+Reusable architecture
+Tailwind CSS
+Utility classes
+Responsive design
+Layout systems
+Custom styling
+Framer Motion
+Animation principles
+Motion components
+Interactive effects
+Git & GitHub
+Version control
+Commit strategy
+Repository management
+Collaboration workflows
+Deployment
+Production build
+Hosting
+CI/CD
+Domain configuration
+Performance Goals
 
-## React
+Target:
 
-* Components
-* JSX
-* Props
-* State Management
-* Routing
+Metric	Goal
+Lighthouse Score	90+
+First Load	Under 3 seconds
+Mobile Performance	85+
+Accessibility	90+
+Environment Variables (Future)
 
----
+Example:
 
-## Tailwind CSS
+VITE_EMAIL_SERVICE_ID=
+VITE_EMAIL_TEMPLATE_ID=
+VITE_EMAIL_PUBLIC_KEY=
+Future Integrations
+GitHub API
+Analytics
+Blog CMS
+AI Assistant
+Contact Form Services
+Success Criteria
 
-* Utility Classes
-* Responsive Design
-* Layout Systems
-* Dark Mode
+The development setup is successful if:
 
----
+✅ Development environment is fully configured.
 
-## Git
+✅ Dependencies are installed.
 
-* Branching
-* Merging
-* Commit Management
-* Repository Maintenance
+✅ Development server runs successfully.
 
----
+✅ Folder structure is established.
 
-## Deployment
+✅ Git workflow is operational.
 
-* Build Process
-* Hosting
-* Production Deployment
+✅ Production build works.
 
----
+✅ Deployment pipeline is ready.
 
-# Success Criteria
+Conclusion
 
-The development setup phase will be considered successful if:
+This development setup establishes the technical foundation of the Master Portfolio project.
 
-* Development environment is fully configured.
-* React project is initialized.
-* Tailwind CSS is integrated.
-* Folder structure is established.
-* Git workflow is operational.
-* Development can begin without setup-related blockers.
+It provides:
 
----
+A reproducible development environment
+A professional workflow
+A scalable architecture
+Industry-standard tooling
+A structured approach to development
 
-# Conclusion
-
-This document establishes the foundation for the development phase of the Master Portfolio project. By defining the environment, tools, workflow, and architecture upfront, development can proceed in a structured, scalable, and maintainable manner.
+The goal is not only to build a portfolio website but also to gain practical experience with modern frontend development, software engineering practices, version control, and deployment workflows.
