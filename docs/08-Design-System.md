@@ -1,535 +1,578 @@
-# Design System
+Design System
+Document Version
+Property	Value
+Project	Master Portfolio
+Document	Design System
+Version	2.0
+Last Updated	July 2026
+Status	Active
+Purpose
 
-## Purpose
+The Design System defines the visual language, design principles, reusable components, and interaction patterns used throughout the Master Portfolio project.
 
-The Design System defines the visual rules, styling standards, and reusable design patterns for the Master Portfolio project.
+The objective of this document is to ensure:
 
-The goal is to create a modern developer-focused portfolio that balances professionalism with a strong technical identity.
+Visual consistency
+Professional presentation
+Scalability
+Reusability
+Accessibility
+Maintainability
 
-The design should feel like it belongs to a software engineer while remaining accessible to recruiters and hiring managers.
+The design should communicate:
 
----
+Professionalism
+Technical expertise
+Developer identity
+Creativity
+Attention to detail
 
-# Design Philosophy
+while remaining easy to navigate for recruiters and technical interviewers.
 
-## Core Theme
+Design Vision
+Vision Statement
 
-Professional Developer Portfolio
+Build a portfolio that feels like an AI-powered developer workspace rather than a traditional resume website.
 
-The portfolio should communicate:
+The portfolio should create the impression of:
 
-* Technical Expertise
-* Professionalism
-* Consistency
-* Attention to Detail
-* Modern Engineering Mindset
+A modern engineering dashboard
+An interactive software product
+A professional developer profile
+A technical showcase
+A living engineering journal
+Design Philosophy
 
----
+The portfolio follows five principles.
 
-## Design Style
+1. Professional First
 
-### Primary Style
+The portfolio is ultimately a professional product.
 
-Modern Developer Experience
+Every design decision should support:
 
-Inspired by:
+Readability
+Clarity
+Professionalism
 
-* GitHub
-* VS Code
-* Linear
-* Vercel
-* Stripe
+The design should never distract from the content.
 
----
+2. Developer Identity
 
-## User Experience Goals
+The portfolio should immediately communicate:
 
-### Recruiters
+This person is a software engineer.
 
-Should immediately understand:
+Elements that support this:
 
-* Who I am
-* What I do
-* My experience
-* My projects
+Code snippets
+Terminal-inspired UI
+Monospace typography
+GitHub-inspired colors
+Interactive technical visuals
+3. Content First
 
-Within 30 seconds.
+Content is more important than decoration.
 
----
+Animations and visuals should support the content instead of competing with it.
 
-### Technical Interviewers
+4. Interactive Experience
 
-Should quickly access:
+The portfolio should feel alive.
 
-* Architecture
-* Case Studies
-* GitHub Repositories
-* Learning Journey
+Examples:
 
-Within 10 minutes.
+Floating cards
+Animated network visualization
+Data flow animations
+Smooth scrolling
+Hover interactions
+5. Scalability
 
----
+The design should allow future additions without requiring major redesign.
 
-# Color System
+Future additions:
 
-## Dark Theme (Primary)
+Blog System
+Learning Journey
+AI Assistant
+Project Case Studies
+Analytics Dashboard
+Brand Personality
 
-Background:
+The portfolio personality can be described as:
 
-```text
-#0D1117
-```
+Attribute	Description
+Professional	Suitable for recruiters and hiring managers
+Technical	Strong engineering identity
+Modern	Inspired by current developer tools
+Interactive	Dynamic and engaging
+Minimal	Clean and uncluttered
+Trustworthy	Professional presentation
+Design Inspiration
 
-Inspired by GitHub Dark Mode.
+The design language is inspired by:
 
----
+GitHub
+Dark theme
+Typography
+Developer identity
+Vercel
+Simplicity
+Layout spacing
+Modern aesthetics
+Linear
+Animations
+Interactions
+Motion design
+Stripe
+Professional presentation
+Clean sections
+Premium feel
+VS Code
+Developer experience
+Technical branding
+User Experience Goals
+Recruiters
 
-Primary Surface:
+Should understand:
 
-```text
-#161B22
-```
+Who I am
+My role
+My skills
+My experience
+My projects
 
----
+within:
 
-Secondary Surface:
+30 seconds
+Technical Interviewers
 
-```text
-#21262D
-```
+Should explore:
 
----
+Projects
+Architecture
+Technical decisions
+Learning journey
 
-Primary Text:
+within:
 
-```text
-#F0F6FC
-```
+10 minutes
+Developers
 
----
+Should understand:
 
-Secondary Text:
+How the project is structured
+How it was built
+How it was documented
+Color System
+Primary Theme
 
-```text
-#8B949E
-```
+Dark Mode (Default)
 
----
+Reason:
 
-Accent Color:
+Developer portfolios generally perform better with a dark technical aesthetic.
 
-```text
-#58A6FF
-```
+Color Palette
+Background
+#020617
+
+Tailwind Equivalent:
+
+bg-slate-950
+Primary Surface
+#0F172A
+
+Tailwind:
+
+bg-slate-900
+Secondary Surface
+#1E293B
+
+Tailwind:
+
+bg-slate-800
+Border Color
+#334155
+
+Tailwind:
+
+border-slate-700
+Primary Text
+#F8FAFC
+
+Tailwind:
+
+text-slate-50
+Secondary Text
+#CBD5E1
+
+Tailwind:
+
+text-slate-300
+Accent Colors
+Cyan
+#22D3EE
 
 Used for:
 
-* Buttons
-* Links
-* Highlights
-
----
-
-Success Color:
-
-```text
-#3FB950
-```
+Primary actions
+Hero highlights
+Buttons
+Interactive elements
+Green
+#22C55E
 
 Used for:
 
-* Achievement indicators
-* GitHub activity elements
+Open to Work
+Success indicators
+Purple
+#A855F7
 
----
+Used for:
 
-# Typography System
+AI Systems
+Innovation indicators
+Orange
+#F59E0B
 
-## Philosophy
+Used for:
 
-Readable for recruiters.
+AI Applications
+Skills
+Pink
+#EC4899
 
-Developer-inspired for branding.
+Used for:
 
----
+Building in Public
+Creative sections
+Yellow
+#FDE047
 
-## Primary Font
+Used for:
 
+Problem Solving
+Highlights
+Typography System
+Primary Font
 Inter
 
-Usage:
+Used for:
 
-* Body Text
-* Headings
-* Navigation
+Headings
+Body Text
+Navigation
+Cards
 
 Reason:
 
-Professional and highly readable.
-
----
-
-## Secondary Font
-
+Excellent readability
+Professional appearance
+Modern web standard
+Secondary Font
 JetBrains Mono
 
-Usage:
+Used for:
 
-* Code Snippets
-* Terminal Elements
-* Tags
-* Labels
-* Statistics
+Code snippets
+Developer branding
+Labels
+Statistics
 
 Reason:
 
-Creates a strong developer identity.
+Creates a strong engineering identity.
 
----
-
-## Typography Scale
-
-### Hero Heading
-
+Typography Scale
+Hero Title
 64px
-
-Weight:
-
-700
-
----
-
-### Section Heading
-
-36px
-
-Weight:
-
-600
-
----
-
-### Card Title
-
-24px
-
-Weight:
-
-600
-
----
-
-### Body Text
-
+Font Weight: 700
+Section Heading
+40px
+Font Weight: 700
+Card Title
+22px
+Font Weight: 600
+Body Text
 16px
-
-Weight:
-
-400
-
----
-
-### Small Text
-
+Font Weight: 400
+Small Text
 14px
+Font Weight: 400
+Caption
+12px
+Font Weight: 400
+Spacing System
 
-Weight:
+Uses an 8px grid system.
 
-400
-
----
-
-# Layout System
-
-## Container Width
-
-Maximum Width:
-
-```text
-1200px
-```
-
----
-
-## Section Spacing
+Small
+8px
+Medium
+16px
+Large
+24px
+Section Gap
 
 Desktop:
 
-```text
 120px
-```
-
-between sections.
-
----
 
 Mobile:
 
-```text
 80px
-```
+Layout System
+Maximum Width
+1280px
+Container Padding
 
-between sections.
+Desktop:
 
----
+24px
 
-# Navigation Design
+Tablet:
 
-## Structure
+20px
 
-```text
-Home
-Projects
-Journey
-Blog
+Mobile:
+
+16px
+Border Radius System
+Small
+12px
+Medium
+16px
+Large
+24px
+Cards
+30px
+Shadow System
+Soft Shadow
+shadow-lg
+Premium Glow
+shadow-[0_0_40px_rgba(34,211,238,0.25)]
+Hero Glow
+shadow-[0_0_60px_rgba(34,211,238,0.5)]
+Component Design System
+Navbar
+
+Style:
+
+Sticky
+Transparent blur
+Border bottom
+Smooth transitions
+Buttons
+Primary Button
+
+Used for:
+
+Download Resume
+View Projects
+
+Style:
+
+Filled Cyan Button
+Secondary Button
+
+Used for:
+
+GitHub
 Contact
-Resume
-```
 
----
+Style:
 
-## Behavior
+Outlined Button
+Cards
 
-Sticky Navigation Bar
+Used for:
 
-Purpose:
+Projects
+Certifications
+Network Nodes
+Experience
 
-Maintain quick access to important sections.
+Properties:
 
----
+Rounded corners
+Soft shadows
+Hover interactions
+Glassmorphism effect
+Hero Section Design
 
-# Hero Section Design
+The Hero section is the most important section of the portfolio.
 
-## Layout
+Desktop Layout
+Introduction
+          |
+          |
+Interactive AI Network
+Hero Visual Components
+Floating profile image
+Animated rings
+Floating information cards
+Data flow animations
+Interactive network visualization
+Motion Design System
 
-Two Column Layout
+Animations should:
 
-```text
-Text Content
-       |
-       |
-Profile / Developer Visual
-```
+Feel premium
+Be subtle
+Support usability
+Allowed Animations
 
----
+✅ Floating
 
-## Elements
+✅ Fade In
 
-### Professional Title
+✅ Hover Scale
 
-Example:
+✅ Glow Effects
 
-```text
-Java Full Stack Developer
-```
+✅ Scroll Reveal
 
----
+✅ Data Flow Animation
 
-### Developer Identity
+Avoid
 
-Example:
+❌ Excessive bouncing
 
-```text
+❌ Long animations
+
+❌ Distracting motion
+
+❌ Flashing effects
+
+Animation Duration Standards
+
+Small:
+
+0.3s
+
+Medium:
+
+0.6s
+
+Large:
+
+1.0s
+
+Infinite Floating:
+
+3–5 seconds
+Responsive Design Strategy
+Mobile First
+
+Breakpoints:
+
+sm : 640px
+md : 768px
+lg : 1024px
+xl : 1280px
+Mobile Goals
+Simplified layout
+Faster loading
+Easy navigation
+Reduced complexity
+Accessibility Standards
+
+The portfolio should support:
+
+✅ Keyboard navigation
+
+✅ Sufficient contrast
+
+✅ Readable fonts
+
+✅ Semantic HTML
+
+✅ Alt text for images
+
+✅ Responsive layouts
+
+Performance Standards
+
+Goals:
+
+Lighthouse score above 90
+Fast initial load
+Optimized images
+Lazy loading
+Minimal bundle size
+Developer Identity Elements
+
+Examples:
+
+Terminal Prompt:
+
+praveen@portfolio:~$
+
+Code Snippets:
+
 const developer = {
   name: "Praveen",
-  focus: "Full Stack Development"
-}
-```
+  role: "Software Engineer",
+  passion: "Building Products"
+};
 
----
+Component Labels:
 
-### CTA Buttons
-
-* View Projects
-* Download Resume
-
----
-
-# Card Design System
-
-Used For:
-
-* Projects
-* Certifications
-* Learning Journeys
-
----
-
-## Style
-
-Rounded Corners:
-
-```text
-16px
-```
-
----
-
-Border:
-
-```text
-1px solid #30363D
-```
-
----
-
-Hover Effect
-
-Subtle elevation and border highlight.
-
----
-
-# Button Design System
-
-## Primary Button
-
-Purpose:
-
-Main actions.
-
-Examples:
-
-* Download Resume
-* View Project
-
----
-
-## Secondary Button
-
-Purpose:
-
-Supporting actions.
-
-Examples:
-
-* GitHub Repository
-* Contact Me
-
----
-
-# Developer Identity Elements
-
-These elements create the coding feel.
-
----
-
-## Terminal Components
-
-Example:
-
-```text
-praveen@portfolio:~$
-```
-
----
-
-## Code Snippets
-
-Example:
-
-```text
-const skills = [
-  "Java",
-  "React",
-  "Spring Boot"
-];
-```
-
----
-
-## Monospace Labels
-
-Example:
-
-```text
 <Projects />
 <Experience />
 <Skills />
-```
+Future Design Enhancements
 
----
+Version 1.1
 
-# Icon System
+Project detail pages
+Timeline animations
+GitHub statistics
 
-Preferred Library:
+Version 1.2
 
-Lucide React
+Blog system
+Learning journey
+Analytics
 
-Reason:
+Version 2.0
 
-* Modern
-* Lightweight
-* Developer Friendly
-
----
-
-# Dark Mode Strategy
-
-Dark Mode:
-
-Default Theme
-
-Reason:
-
-Developer-focused branding.
-
----
-
-Light Mode:
-
-Optional Toggle
-
-Reason:
-
-Accessibility for recruiters.
-
----
-
-# Animation Principles
-
-Animations should support usability.
-
-Avoid:
-
-* Excessive motion
-* Unnecessary visual effects
-
-Use:
-
-* Smooth transitions
-* Hover interactions
-* Scroll reveal animations
-
----
-
-# Accessibility Standards
-
-* Mobile Responsive
-* Keyboard Accessible
-* High Contrast
-* Readable Typography
-
----
-
-# Design Success Criteria
+AI assistant
+Interactive dashboard
+Personalized experiences
+Design Success Criteria
 
 The design system is successful if:
 
-* Recruiters can easily read content.
-* The portfolio feels modern and professional.
-* Developer identity is clearly visible.
-* The design remains consistent across all pages.
-* Components can be reused efficiently.
+✅ Recruiters can navigate easily.
 
----
+✅ Technical interviewers can explore deeply.
 
-# Final Design Vision
+✅ The portfolio feels modern and professional.
 
-The portfolio should feel like a combination of:
+✅ Developer identity is clearly visible.
 
-* Professional Resume
-* Developer Workspace
-* Project Showcase
-* Engineering Journal
+✅ Components remain reusable.
 
-while maintaining clarity, simplicity, and technical credibility.
+✅ Future features can be added without redesign.
+
+Final Design Vision
+
+The Master Portfolio should feel like a combination of:
+
+Professional Resume
++
+Developer Workspace
++
+Interactive AI Dashboard
++
+Project Showcase
++
+Engineering Journal
+
+The final experience should communicate:
+
+"This is not just a portfolio website. This is the digital representation of an engineer's journey, skills, and growth."
