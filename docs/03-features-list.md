@@ -1,379 +1,660 @@
 # Features List
 
-## Purpose
+---
 
-This document defines all planned features for the Master Portfolio project and prioritizes them based on importance.
+# Purpose
 
-The goal is to ensure that development remains focused on delivering a professional portfolio while avoiding unnecessary complexity during the initial stages.
+This document defines all planned features for the Master Portfolio project and prioritizes them based on business value, user needs, and development complexity.
+
+The goal is to:
+
+- Build a professional portfolio.
+- Maintain development focus.
+- Avoid unnecessary complexity.
+- Deliver value incrementally.
+- Create a roadmap for future enhancements.
 
 ---
 
-# Feature Prioritization Strategy
+# Feature Prioritization Framework
 
 Features are categorized into four groups:
 
+1. Must Have
+2. Should Have
+3. Nice to Have
+4. Future Scope
+
+---
+
+# Priority Definitions
+
 ## Must Have
 
-Essential features required for Version 1.0.
+Essential features required for the Minimum Viable Product (MVP).
 
-Without these features, the portfolio cannot fulfill its primary objective.
+Without these features, the portfolio cannot achieve its primary objective.
 
 ---
 
 ## Should Have
 
-Important enhancements that improve user experience and professionalism.
+Features that significantly improve user experience and professionalism.
 
-These features are planned after the MVP is completed.
+They are important but not blockers for initial release.
 
 ---
 
 ## Nice to Have
 
-Additional features that provide extra value but are not critical.
+Features that provide additional value but can be postponed.
 
 ---
 
 ## Future Scope
 
-Advanced features that may be implemented in future versions.
+Advanced features planned for future versions.
 
 ---
 
-# Must Have Features (Version 1.0)
+# Version 1.0 – MVP Features
 
-## Hero Section
+---
 
-### Description
+# Hero Section
+
+## Description
 
 The first section visitors see.
 
-### Purpose
+## Objective
 
-Immediately communicate:
+Create a strong first impression.
 
-* Name
-* Role
-* Professional Summary
-* Call-to-Action
+## Displays
 
-### Priority
+- Name
+- Professional Role
+- Short Introduction
+- Call-To-Action Buttons
+- Social Links
+- Interactive Network Visualization
 
-Critical
+## Primary Users
 
----
+- Recruiters
+- Hiring Managers
 
-## About Section
+## Business Value
 
-### Description
+High
 
-Professional introduction.
-
-### Purpose
-
-Provide background, interests, goals, and technical focus.
-
-### Priority
+## Priority
 
 Critical
 
 ---
 
-## Experience Section
+# About Section
 
-### Description
+## Description
 
-Internships and professional experience.
+Professional introduction and background.
 
-### Purpose
+## Displays
 
-Show practical industry exposure.
+- Personal Introduction
+- Career Goals
+- Interests
+- Technical Focus
+- Professional Journey
 
-### Priority
+## Business Value
 
-Critical
+High
 
----
-
-## Skills Section
-
-### Description
-
-Technical skills grouped by category.
-
-### Purpose
-
-Help recruiters quickly understand technical expertise.
-
-### Priority
+## Priority
 
 Critical
 
 ---
 
-## Projects Section
+# Skills Section
 
-### Description
+## Description
 
-Showcase major projects.
+Visual representation of technical skills.
 
-### Purpose
+## Displays
 
-Demonstrate practical application of skills.
+### Programming Languages
 
-### Priority
+- Java
+- JavaScript
+- SQL
+
+### Frontend Technologies
+
+- React
+- Tailwind CSS
+- HTML
+- CSS
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Postman
+- Figma
+
+### Platforms
+
+- n8n
+- Vercel
+
+## Business Value
+
+High
+
+## Priority
 
 Critical
 
 ---
 
-## Education Section
+# Experience Section
 
-### Description
+## Description
 
-Academic information.
+Professional and internship experience.
 
-### Purpose
+## Displays
 
-Provide educational background.
+- Company Name
+- Role
+- Duration
+- Responsibilities
+- Achievements
+- Technologies Used
 
-### Priority
+## Business Value
+
+High
+
+## Priority
+
+Critical
+
+---
+
+# Projects Section
+
+## Description
+
+Showcase practical engineering experience.
+
+## Displays
+
+- Project Name
+- Description
+- Tech Stack
+- Features
+- GitHub Repository
+- Live Demo
+- Screenshots
+- Challenges
+- Learnings
+
+## Business Value
+
+Very High
+
+## Priority
+
+Critical
+
+---
+
+# Education Section
+
+## Description
+
+Academic background.
+
+## Displays
+
+- Degree
+- Institution
+- CGPA
+- Graduation Year
+
+## Business Value
+
+Medium
+
+## Priority
 
 High
 
 ---
 
-## Certifications Section
+# Certifications Section
 
-### Description
+## Description
 
-Relevant certifications and training programs.
+Additional learning and certifications.
 
-### Purpose
+## Displays
 
-Highlight additional learning.
+- Certification Name
+- Organization
+- Completion Date
+- Credential Link
 
-### Priority
+## Business Value
 
-High
+Medium
 
----
-
-## Contact Section
-
-### Description
-
-Communication channels.
-
-### Purpose
-
-Enable recruiters and professionals to reach out.
-
-### Priority
-
-Critical
-
----
-
-## Resume Download
-
-### Description
-
-Downloadable resume.
-
-### Purpose
-
-Provide easy access to candidate information.
-
-### Priority
-
-Critical
-
----
-
-## Responsive Design
-
-### Description
-
-Mobile, tablet, and desktop support.
-
-### Purpose
-
-Ensure accessibility across devices.
-
-### Priority
-
-Critical
-
----
-
-## Dark Mode
-
-### Description
-
-Theme switching capability.
-
-### Purpose
-
-Improve user experience.
-
-### Priority
+## Priority
 
 High
 
 ---
 
-# Should Have Features (Version 1.1)
+# Contact Section
 
-## GitHub Statistics
+## Description
 
-### Purpose
+Provides communication channels.
 
-Show coding activity and open-source contributions.
+## Displays
 
----
+- Email
+- Phone Number
+- LinkedIn
+- GitHub
+- Resume Download
 
-## Project Filtering
+## Business Value
 
-### Purpose
+Very High
 
-Allow users to filter projects by technology or category.
+## Priority
 
----
-
-## Timeline Section
-
-### Purpose
-
-Visualize career and learning journey.
+Critical
 
 ---
 
-## Project Detail Pages
+# Resume Download
 
-### Purpose
+## Description
 
-Provide detailed information about each project.
+Downloadable professional resume.
 
----
+## Objective
 
-## Case Studies
+Allow recruiters to access detailed information quickly.
 
-### Purpose
+## Business Value
 
-Explain project problems, solutions, challenges, and outcomes.
+Very High
 
----
+## Priority
 
-# Nice to Have Features (Version 1.2)
-
-## Blog Section
-
-### Purpose
-
-Share technical knowledge and learning experiences.
+Critical
 
 ---
 
-## Learning Journey Section
+# Responsive Design
 
-### Purpose
+## Description
 
-Document progress and growth over time.
+Support multiple screen sizes.
 
----
+## Supported Devices
 
-## Visitor Counter
+- Mobile
+- Tablet
+- Desktop
 
-### Purpose
+## Business Value
 
-Track portfolio visits.
+Very High
 
----
+## Priority
 
-## Analytics Integration
-
-### Purpose
-
-Understand user engagement and traffic sources.
+Critical
 
 ---
 
-# Future Scope (Version 2.0)
+# Animations
 
-## AI Chatbot
+## Description
 
-### Purpose
+Improve visual engagement.
 
-Allow visitors to ask questions about the portfolio.
+## Includes
+
+- Floating Profile Image
+- Floating Cards
+- Animated Data Flow
+- Smooth Transitions
+- Hover Effects
+
+## Business Value
+
+Medium
+
+## Priority
+
+High
 
 ---
 
-## CMS Integration
+# Scroll To Top
 
-### Purpose
+## Description
+
+Improves navigation experience.
+
+## Business Value
+
+Medium
+
+## Priority
+
+High
+
+---
+
+# Loading Screen
+
+## Description
+
+Professional entry experience.
+
+## Business Value
+
+Medium
+
+## Priority
+
+Medium
+
+---
+
+# Mobile Navigation
+
+## Description
+
+Responsive navigation system.
+
+## Features
+
+- Hamburger Menu
+- Smooth Navigation
+- Section Links
+
+## Business Value
+
+High
+
+## Priority
+
+Critical
+
+---
+
+# Version 1.1 Features
+
+---
+
+# GitHub Statistics
+
+## Purpose
+
+Show development activity.
+
+## Displays
+
+- Contributions
+- Repositories
+- Streaks
+
+---
+
+# Project Filtering
+
+## Purpose
+
+Filter projects by:
+
+- Technology
+- Category
+- Type
+
+---
+
+# Project Detail Pages
+
+## Purpose
+
+Provide deeper project information.
+
+---
+
+# Case Studies
+
+## Purpose
+
+Explain:
+
+- Problem
+- Solution
+- Architecture
+- Challenges
+- Learnings
+
+---
+
+# Timeline Section
+
+## Purpose
+
+Visualize professional and learning journey.
+
+---
+
+# Version 1.2 Features
+
+---
+
+# Technical Blog
+
+## Purpose
+
+Share knowledge and learning.
+
+---
+
+# Learning Journey
+
+## Purpose
+
+Document growth over time.
+
+---
+
+# Visitor Analytics
+
+## Purpose
+
+Understand user engagement.
+
+---
+
+# Portfolio Search
+
+## Purpose
+
+Search projects and articles.
+
+---
+
+# Featured Project Carousel
+
+## Purpose
+
+Highlight important projects.
+
+---
+
+# Open Source Contributions
+
+## Purpose
+
+Show contribution history.
+
+---
+
+# Version 2.0 Features
+
+---
+
+# AI Portfolio Assistant
+
+## Purpose
+
+Allow users to ask questions about the portfolio.
+
+---
+
+# Admin Dashboard
+
+## Purpose
 
 Manage content dynamically.
 
 ---
 
-## Admin Dashboard
+# CMS Integration
 
-### Purpose
+## Purpose
 
-Manage projects and blog posts.
+Manage:
 
----
-
-## Advanced Animations
-
-### Purpose
-
-Improve visual appeal.
+- Projects
+- Blogs
+- Experience
+- Certifications
 
 ---
 
-## Multi-Language Support
+# Theme Customization
 
-### Purpose
+## Purpose
+
+Allow multiple themes.
+
+---
+
+# Multi-Language Support
+
+## Purpose
 
 Support multiple languages.
 
 ---
 
-# Features Excluded from Initial Version
+# Advanced Analytics Dashboard
 
-The following features are intentionally excluded:
+## Purpose
 
-* Authentication Systems
-* User Registration
-* Payment Systems
-* E-Commerce Features
-* Complex Backend Services
-* Real-Time Chat Systems
-* Multi-User Management
+Track:
 
-These features do not directly support the primary objective of the portfolio.
+- Visitors
+- Traffic
+- Popular Projects
+
+---
+
+# Interactive Resume
+
+## Purpose
+
+Dynamic resume experience.
+
+---
+
+# Features Intentionally Excluded
+
+The following features are outside the scope of the current version:
+
+- Authentication
+- User Registration
+- Payment Systems
+- E-Commerce
+- Backend Services
+- Databases
+- Real-Time Chat
+- Multi-User Management
+
+These features do not directly contribute to the primary objective of the portfolio.
 
 ---
 
 # MVP Definition
 
-The Minimum Viable Product (MVP) consists of:
+The Minimum Viable Product includes:
 
-* Hero Section
-* About Section
-* Skills Section
-* Experience Section
-* Projects Section
-* Education Section
-* Certifications Section
-* Contact Section
-* Resume Download
-* Responsive Design
-* Dark Mode
+✅ Hero Section
 
-Completing the MVP is the primary goal before any advanced features are considered.
+✅ About Section
+
+✅ Skills Section
+
+✅ Experience Section
+
+✅ Projects Section
+
+✅ Education Section
+
+✅ Certifications Section
+
+✅ Contact Section
+
+✅ Resume Download
+
+✅ Responsive Design
+
+✅ Mobile Navigation
+
+✅ Animations
+
+✅ Loading Screen
+
+---
+
+# Dependencies
+
+## Frontend
+
+- React
+- Vite
+- Tailwind CSS
+
+## Animation
+
+- Framer Motion
+
+## Icons
+
+- React Icons
+
+## Deployment
+
+- Vercel
 
 ---
 
@@ -381,8 +662,25 @@ Completing the MVP is the primary goal before any advanced features are consider
 
 The feature planning phase is successful if:
 
-* MVP features are clearly identified.
-* Development priorities are defined.
-* Scope creep is minimized.
-* Future enhancements are documented.
-* Development can proceed with a clear roadmap.
+- MVP features are completed.
+- Portfolio is fully responsive.
+- Navigation is intuitive.
+- Projects are clearly showcased.
+- Recruiters can understand the profile within 30 seconds.
+- Technical interviewers can evaluate projects within 10 minutes.
+- Future enhancements are documented.
+
+---
+
+# Final Goal
+
+The portfolio should not simply display information.
+
+It should provide an engaging and professional experience that communicates:
+
+- Who I am
+- What I build
+- How I solve problems
+- How I learn
+- How I approach software engineering
+- Why I am a valuable engineer.
