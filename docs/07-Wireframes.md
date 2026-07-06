@@ -1,427 +1,438 @@
 # Wireframes
 
-## Purpose
+---
 
-The purpose of this document is to define the layout structure of the portfolio before creating visual designs or writing code.
+# Purpose
 
-Wireframes focus on content placement, hierarchy, navigation, and user flow rather than colors, typography, or styling.
+The purpose of this document is to define the structural layout of the Master Portfolio before implementing visual designs or writing code.
 
-This document acts as the blueprint for the portfolio user interface.
+Wireframes focus on:
+
+- Content Placement
+- User Flow
+- Information Hierarchy
+- Navigation Structure
+- Section Organization
+- Responsive Layout Planning
+
+Wireframes intentionally ignore:
+
+- Colors
+- Typography
+- Animations
+- Final Styling
+
+This document serves as the blueprint for the portfolio user interface and guides both design and development.
 
 ---
 
-# Wireframe Strategy
+# Wireframe Objectives
 
-The portfolio is designed for two primary audiences:
+The wireframes should:
+
+✅ Create a strong first impression.
+
+✅ Help recruiters understand the profile within 30 seconds.
+
+✅ Help technical interviewers explore projects in depth.
+
+✅ Maintain a clean and intuitive navigation experience.
+
+✅ Support future scalability.
+
+✅ Ensure responsiveness across devices.
+
+---
+
+# User Personas
+
+The wireframes are designed primarily for:
+
+1. Recruiters
+2. Technical Interviewers
+3. Hiring Managers
+4. Developers
+5. Professional Connections
+
+---
+
+# User Journey Goals
+
+---
 
 ## Recruiters
 
 Goal:
 
-Understand the candidate within 30 seconds.
+Understand:
 
-## Technical Interviewers
+- Who I am
+- What I do
+- My skills
+- My projects
+
+within:
+
+```text
+30 Seconds
+Technical Interviewers
 
 Goal:
 
-Evaluate projects and technical capabilities within 10 minutes.
+Understand:
 
----
+Technical capabilities
+Projects
+Architecture
+Problem-solving skills
 
-# Homepage Wireframe
+within:
 
-```text
--------------------------------------------------
-| Logo                         Resume Button    |
--------------------------------------------------
-| Home | Projects | Journey | Blog | Contact   |
--------------------------------------------------
+10 Minutes
+Desktop Homepage Wireframe
+┌──────────────────────────────────────────────┐
+│                  NAVBAR                      │
+│ Logo | Home | About | Projects | Contact    │
+└──────────────────────────────────────────────┘
 
-|                                              |
-|                HERO SECTION                  |
-|                                              |
-|  Name                                        |
-|  Professional Title                          |
-|  Short Introduction                          |
-|                                              |
-| [View Projects] [Download Resume]            |
-|                                              |
--------------------------------------------------
+┌──────────────────────────────────────────────┐
+│                 HERO SECTION                 │
+│                                              │
+│ Introduction         Interactive Network     │
+│ CTA Buttons           Animated Profile       │
+│ Social Links          Floating Cards         │
+│                        Data Flow Animation   │
+└──────────────────────────────────────────────┘
 
-|                ABOUT SECTION                 |
--------------------------------------------------
-| Profile Image | Professional Summary         |
--------------------------------------------------
+┌──────────────────────────────────────────────┐
+│                 ABOUT SECTION                │
+└──────────────────────────────────────────────┘
 
-|              EXPERIENCE SECTION              |
--------------------------------------------------
-| Timeline of Internships & Experience         |
--------------------------------------------------
+┌──────────────────────────────────────────────┐
+│               EXPERIENCE SECTION             │
+└──────────────────────────────────────────────┘
 
-|                SKILLS SECTION                |
+┌──────────────────────────────────────────────┐
+│                 SKILLS SECTION               │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│                PROJECTS SECTION              │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│             CERTIFICATIONS SECTION           │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│                CONTACT SECTION               │
+└──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────┐
+│                    FOOTER                    │
+└──────────────────────────────────────────────┘
+Navigation Wireframe
 -------------------------------------------------
-| Frontend | Backend | Database | Tools        |
+| Logo | Home | About | Projects | Contact |
 -------------------------------------------------
+Navigation Goals
 
-|           FEATURED PROJECTS SECTION          |
--------------------------------------------------
-| Project 1 | Project 2 | Project 3            |
--------------------------------------------------
+Provide:
 
-|          LEARNING JOURNEY HIGHLIGHTS         |
--------------------------------------------------
-| APIs | n8n | ServiceNow | Java | Portfolio   |
--------------------------------------------------
+Fast navigation
+Simple structure
+Minimal cognitive load
+Hero Section Wireframe
 
-|             GITHUB ACTIVITY                  |
--------------------------------------------------
-| GitHub Stats | Recent Repositories           |
--------------------------------------------------
+The Hero Section acts as the portfolio's landing experience.
 
-|               CONTACT SECTION                |
--------------------------------------------------
-| Email | LinkedIn | GitHub | Contact Form     |
--------------------------------------------------
+Desktop Layout
+-----------------------------------------------------------
+| Introduction                     Interactive Network     |
+|                                                     |
+| Name                                                |
+| Professional Title                                  |
+| Professional Summary                                |
+|                                                     |
+| [View Projects] [Download Resume]                   |
+|                                                     |
+| Social Links                Animated Profile Image  |
+|                             Floating Cards          |
+|                             Data Flow Effects       |
+-----------------------------------------------------------
+Hero Components
+Left Side
+Introduction
 
-|                    FOOTER                    |
--------------------------------------------------
-```
-
----
-
-# Hero Section Wireframe
-
-## Objective
-
-Create a strong first impression.
-
-## Components
-
-### Professional Introduction
-
-Example:
+Displays:
 
 Name
-
-Role
-
+Professional Title
 Professional Summary
+CTA Buttons
+View Projects
+Download Resume
+Contact
+Social Links
+GitHub
+LinkedIn
+Email
+Right Side
+Interactive Network Visualization
 
----
+Displays:
 
-### Call To Action
+Profile Image
+Floating Information Cards
+Animated Data Flow
+Professional Highlights
+Hero Objectives
 
-Buttons:
+Create:
 
-* View Projects
-* Download Resume
+Strong first impression
+Interactive experience
+Personal branding
+About Section Wireframe
+-----------------------------------------------------
+| Profile Image | Professional Introduction         |
+-----------------------------------------------------
 
----
+-----------------------------------------------------
+| Background                                        |
+-----------------------------------------------------
 
-### Social Links
+-----------------------------------------------------
+| Career Goals                                      |
+-----------------------------------------------------
 
-* GitHub
-* LinkedIn
-* Email
+-----------------------------------------------------
+| Technical Interests                               |
+-----------------------------------------------------
+Experience Section Wireframe
+-----------------------------------------------------
+|               Professional Timeline              |
+-----------------------------------------------------
 
----
+Internship 1
+↓
 
-# About Section Wireframe
+Internship 2
+↓
 
-```text
------------------------------------
-| Profile Image | About Content   |
------------------------------------
-```
+Internship 3
+Objectives
 
-## Objective
+Demonstrate:
 
-Introduce yourself professionally.
+Industry exposure
+Growth
+Responsibilities
+Professional experience
+Skills Section Wireframe
+-----------------------------------------------------
+| Programming Languages                             |
+-----------------------------------------------------
 
-## Content
+-----------------------------------------------------
+| Frontend Technologies                             |
+-----------------------------------------------------
 
-* Background
-* Career Goals
-* Technical Interests
-* Current Focus
+-----------------------------------------------------
+| Backend Technologies                              |
+-----------------------------------------------------
 
----
+-----------------------------------------------------
+| Database Technologies                             |
+-----------------------------------------------------
 
-# Experience Section Wireframe
+-----------------------------------------------------
+| Tools & Platforms                                 |
+-----------------------------------------------------
+Objectives
 
-```text
------------------------------------------
-|          Career Timeline              |
------------------------------------------
-| Internship 1                          |
-| Internship 2                          |
-| Internship 3                          |
------------------------------------------
-```
+Provide:
 
-## Objective
+Quick skill assessment
+Technical overview
+Categorized presentation
+Projects Section Wireframe
+---------------------------------------------------------
+| Project Card | Project Card | Project Card            |
+---------------------------------------------------------
 
-Show practical industry exposure.
+---------------------------------------------------------
+| Project Card | Project Card | Project Card            |
+---------------------------------------------------------
+Project Card Structure
+Project Image
 
----
+Project Name
 
-# Skills Section Wireframe
+Short Description
 
-```text
------------------------------------------
-| Frontend                              |
------------------------------------------
-| React | HTML | CSS | JavaScript       |
------------------------------------------
+Tech Stack
 
------------------------------------------
-| Backend                               |
------------------------------------------
-| Java | Spring Boot                    |
------------------------------------------
+[GitHub]
 
------------------------------------------
-| Database                              |
------------------------------------------
-| MySQL                                 |
------------------------------------------
+[Live Demo]
 
------------------------------------------
-| Tools                                 |
------------------------------------------
-| Git | GitHub | Postman | VS Code      |
------------------------------------------
-```
+[Details]
+Objectives
 
-## Objective
+Showcase:
 
-Present technical skills clearly.
-
----
-
-# Featured Projects Section Wireframe
-
-```text
+Technical projects
+Practical experience
+Problem-solving ability
+Certifications Section Wireframe
 ---------------------------------------------------
-| Project Card | Project Card | Project Card      |
----------------------------------------------------
-```
-
-Each card should contain:
-
-* Project Name
-* Description
-* Tech Stack
-* GitHub Link
-* Live Demo Link
-* View Details
-
----
-
-# Learning Journey Section Wireframe
-
-```text
----------------------------------------------------
-| API Journey                                     |
----------------------------------------------------
-
----------------------------------------------------
-| n8n Journey                                     |
+| Certification Card                              |
 ---------------------------------------------------
 
 ---------------------------------------------------
-| ServiceNow Journey                              |
+| Certification Card                              |
 ---------------------------------------------------
-
+Information Displayed
+Certification Name
+Organization
+Completion Date
+Credential Link
+Contact Section Wireframe
 ---------------------------------------------------
-| Java Journey                                    |
----------------------------------------------------
-```
-
-## Objective
-
-Demonstrate consistency and growth.
-
----
-
-# GitHub Activity Wireframe
-
-```text
----------------------------------------------------
-| GitHub Stats                                    |
----------------------------------------------------
-
----------------------------------------------------
-| Contribution Activity                           |
----------------------------------------------------
-
----------------------------------------------------
-| Recent Repositories                             |
----------------------------------------------------
-```
-
-## Objective
-
-Show development activity.
-
----
-
-# Contact Section Wireframe
-
-```text
----------------------------------------------------
-| Contact Form                                    |
+| Contact Information                             |
 ---------------------------------------------------
 
 ---------------------------------------------------
 | Email                                           |
 | LinkedIn                                        |
 | GitHub                                          |
----------------------------------------------------
-```
-
-## Objective
-
-Enable easy communication.
-
----
-
-# Project Listing Page Wireframe
-
-```text
----------------------------------------------------
-| Search Projects                                 |
+| Phone                                           |
 ---------------------------------------------------
 
 ---------------------------------------------------
-| Filter Options                                  |
+| Contact Form                                    |
 ---------------------------------------------------
-
+Footer Wireframe
 ---------------------------------------------------
-| Project Cards Grid                              |
+| Logo                                            |
+| Quick Links                                     |
+| Social Links                                    |
+| Copyright                                       |
 ---------------------------------------------------
-```
+Mobile Wireframe
+Mobile Navigation
+-----------------------------------
+| Logo              ☰             |
+-----------------------------------
 
-## Features
+Navigation becomes:
 
-* Search
-* Filtering
-* Category Selection
+Hamburger Menu
+Mobile Hero Layout
+-----------------------------------
+| Name                            |
+| Professional Title              |
+| Summary                         |
+|                                 |
+| CTA Buttons                     |
+|                                 |
+| Social Links                    |
+|                                 |
+| Profile Image                   |
+|                                 |
+| Floating Cards                  |
+-----------------------------------
+Mobile Section Order
+Hero
+↓
+About
+↓
+Projects
+↓
+Experience
+↓
+Skills
+↓
+Certifications
+↓
+Contact
+Tablet Wireframe Strategy
 
----
+Tablet layout uses:
 
-# Project Detail Page Wireframe
+2-column layout where possible.
 
-```text
----------------------------------------------------
-| Project Title                                   |
----------------------------------------------------
+Otherwise:
 
----------------------------------------------------
-| Project Overview                                |
----------------------------------------------------
+single-column stacked layout.
+Responsive Goals
 
----------------------------------------------------
-| Problem Statement                               |
----------------------------------------------------
+The wireframes should support:
 
----------------------------------------------------
-| Solution Approach                               |
----------------------------------------------------
+Mobile
+Tablet
+Desktop
+Large Displays
+Future Wireframes
 
----------------------------------------------------
-| Architecture Diagram                            |
----------------------------------------------------
+Future versions may include:
 
----------------------------------------------------
-| Technology Stack                                |
----------------------------------------------------
+Blog Page
+Learning Journey Page
+Project Detail Pages
+AI Chat Assistant
+Admin Dashboard
+Wireframe Design Principles
+Clarity
 
----------------------------------------------------
-| Screenshots                                     |
----------------------------------------------------
+Information should be immediately understandable.
 
----------------------------------------------------
-| Challenges & Lessons Learned                    |
----------------------------------------------------
-
----------------------------------------------------
-| GitHub Repository                               |
-| Live Demo                                       |
----------------------------------------------------
-```
-
-## Objective
-
-Provide technical depth.
-
----
-
-# Mobile Wireframe Considerations
-
-## Mobile Navigation
-
-Use:
-
-* Hamburger Menu
-
-Instead of:
-
-* Full Navigation Bar
-
----
-
-## Mobile Layout
-
-All sections should stack vertically.
-
-Priority:
-
-1. Hero
-2. About
-3. Projects
-4. Experience
-5. Skills
-6. Contact
-
----
-
-# Wireframe Design Principles
-
-## Clarity
-
-Users should immediately understand the content.
-
-## Simplicity
+Simplicity
 
 Avoid unnecessary complexity.
 
-## Professionalism
+Professionalism
 
-Focus on content rather than visual effects.
+Content should remain the focus.
 
-## Accessibility
+Accessibility
 
-Ensure usability across devices.
+Usable on all devices.
 
-## Scalability
+Scalability
 
-Support future feature additions.
+Support future features without redesign.
 
----
+Consistency
 
-# Success Criteria
+Maintain uniform layouts and patterns.
+
+Success Criteria
 
 The wireframe phase is successful if:
 
-* Page layouts are defined.
-* Content hierarchy is clear.
-* Navigation structure is established.
-* User flow is optimized.
-* Development can begin without structural uncertainty.
+✅ Page layouts are finalized.
 
----
+✅ User flow is clear.
 
-# Conclusion
+✅ Content hierarchy is established.
 
-These wireframes establish the structural foundation of the portfolio and will guide the visual design and frontend development phases.
+✅ Navigation structure is defined.
+
+✅ Responsive layouts are planned.
+
+✅ Development can begin without structural ambiguity.
+
+Conclusion
+
+These wireframes establish the structural blueprint of the Master Portfolio project.
+
+They define:
+
+How information is organized.
+How users navigate the portfolio.
+How content is prioritized.
+How future features can be integrated.
+
+The wireframes serve as the bridge between planning and implementation and provide a clear direction for UI design and frontend development.
