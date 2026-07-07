@@ -286,23 +286,6 @@ function HeroNetwork() {
         />
       </div>
 
-      {/* Mobile Version */}
-      <div
-        className="
-          md:hidden
-          flex
-          flex-col
-          items-center
-          justify-center
-          gap-6
-          pt-6
-          px-4
-          text-center
-          w-full
-        "
-      >
-        <HeroImage />
-
         {/* Mobile Version */}
 <div
   className="
