@@ -83,15 +83,3 @@ Important information should be accessible within one or two clicks.
 
 ---
 
-# 4. Progressive Disclosure
-
-Show essential information first and provide additional details only when needed.
-
-Example:
-
-```text
-Project Card
-↓
-Project Detail Page
-↓
-Case Study
