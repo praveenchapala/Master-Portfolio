@@ -581,3 +581,4 @@ Engineering Showcase
 
 rather than a collection of static pages.
 
+The ultimate goal of this architecture is to create a codebase that demonstrates not only frontend development skills but also software engineering thinking, project organization, and long-term maintainability.
