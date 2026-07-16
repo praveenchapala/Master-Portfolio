@@ -434,3 +434,5 @@ How information is organized.
 How users navigate the portfolio.
 How content is prioritized.
 How future features can be integrated.
+
+The wireframes serve as the bridge between planning and implementation and provide a clear direction for UI design and frontend development.
