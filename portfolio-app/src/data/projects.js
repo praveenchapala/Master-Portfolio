@@ -1,3 +1,5 @@
+import aiOnCallPreview from "../assets/images/AI On call Engineer.png";
+
 const projects = {
   featured: [
     {
@@ -151,7 +153,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: aiOnCallPreview,
     },
     {
       id: 7,
