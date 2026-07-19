@@ -1,6 +1,6 @@
 import aiOnCallPreview from "../assets/images/AI On call Engineer.png";
 import DeveloperproductivitySystem from "../assets/images/Developer Productivity.png";
-
+import productionImpactPredictor from "../assets/images/Production Impact Predictor.png";
 
 const projects = {
   featured: [
@@ -216,7 +216,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: productionImpactPredictor,
     },
     {
       id: 9,
