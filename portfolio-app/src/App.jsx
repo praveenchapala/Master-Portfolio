@@ -1,15 +1,11 @@
-import Navbar from "./components/layout/Navbar";
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
-import Experience from "./components/experience/Experience";
-import Certifications from "./components/certifications/Certifications";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import ScrollToTop from "./components/common/ScrollToTop";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import Loader from "./components/common/Loader";
+
+import Home from "./pages/Home";
+import WorkWithMe from "./pages/WorkWithMe";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -26,19 +22,19 @@ function App() {
   }
 
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Experience />
-      <Certifications />
-      <Contact/>
-      <Footer/>
-      <ScrollToTop />
-     
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/work-with-me"
+          element={<WorkWithMe />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
