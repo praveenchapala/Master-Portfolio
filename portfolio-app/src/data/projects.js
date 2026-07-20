@@ -7,6 +7,9 @@ import HappyPaws from "../assets/images/HappyPaws.png";
 import ProfessionalPortfolio from "../assets/images/ProfessionalPortfolio.png";
 import SoftwarefactorySupervisor from "../assets/images/SoftwarefactorySupervisor.png";
 import AISalescrm from "../assets/images/AISalescrm.png";
+import HotfixRiskAssessmentSystem from "../assets/images/Hotfix Risk Assessment.png";
+import AILogAnalyzer from "../assets/images/AI Log Analyzer.png";
+import ProductionChangeRiskAssessment from "../assets/images/ProductionChangeRiskAssessment.png";
 const projects = {
   featured: [
     {
@@ -462,7 +465,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: ProductionChangeRiskAssessment,
     },
 
     
@@ -493,26 +496,26 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AILogAnalyzer,
     },
 
 
     
 {
       id: 19,
-      title: "AI-Customer Support Agent",
+      title: "AI Hotfix Risk Assessment System",
 
       description:
-        "AI Customer Support Agent is an intelligent system that automatically handles customer queries, resolves common issues, and escalates critical cases to the appropriate teams.",
+        "AI Hotfix Risk Assessment System is an intelligent system that analyzes proposed hotfixes and predicts their potential impact, failure risks, and deployment outcomes before release.",
 
       problem:
-        "Support teams struggle to manage large volumes of customer requests efficiently, leading to slow response times, SLA breaches, and poor customer experience.",
+        "Engineering teams struggle to assess the risks of hotfixes, leading to failed deployments, service outages, and costly rollbacks.",
 
       features: [
-  "Automated Ticket Resolution",
-  "Customer Sentiment Analysis",
-  "Smart Ticket Routing",
-  "AI-Powered Escalation Management",
+  "Hotfix Risk Prediction",
+  "Change Impact Analysis",
+  "Rollback Recommendation Engine",
+  "Executive Risk Reporting",
 ],
 
       tech: [
@@ -525,7 +528,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: HotfixRiskAssessmentSystem,
     },
 
 
