@@ -1,7 +1,10 @@
 import aiOnCallPreview from "../assets/images/AI On call Engineer.png";
 import DeveloperproductivitySystem from "../assets/images/Developer Productivity.png";
 import productionImpactPredictor from "../assets/images/Production Impact Predictor.png";
-
+import PRInvestigationCopilot from "../assets/images/PR Investigation.png";
+import productionWarRoom from "../assets/images/Production War room.png";
+import HappyPaws from "../assets/images/HappyPaws.png";
+import ProfessionalPortfolio from "../assets/images/ProfessionalPortfolio.png";
 const projects = {
   featured: [
     {
@@ -94,7 +97,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: HappyPaws,
     },
 
     {
@@ -124,7 +127,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: ProfessionalPortfolio,
     },
 
 
@@ -246,7 +249,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: PRInvestigationCopilot,
     },
     {
       id: 10,
@@ -276,7 +279,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: productionWarRoom,
     },
     {
       id: 11,
