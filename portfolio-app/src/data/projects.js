@@ -13,6 +13,8 @@ import ProductionChangeRiskAssessment from "../assets/images/ProductionChangeRis
 import AutonomousHotfixDecisionEngine from "../assets/images/Autonomous Hotfix Decision Engine.png";
 import AutonomousProjectDeliveryManager from "../assets/images/AutonomousProjectDeliveryManager.png";
 import CustomerEscalationManagement from "../assets/images/CustomerEscalationManagement.png";
+import AICloudCostOptimizorAdvisor from "../assets/images/AI Cloud Cost Optimizer Advisor.png";
+import AiPoweredProductionLogsIncidentIntelligencePlatform from "../assets/images/AI-Powered Production Logs Incident Intelligence Platform.png";
 const projects = {
   featured: [
     {
@@ -408,7 +410,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AiPoweredProductionLogsIncidentIntelligencePlatform,
     },
 
 {
@@ -438,7 +440,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AICloudCostOptimizorAdvisor,
     },
     
 {
