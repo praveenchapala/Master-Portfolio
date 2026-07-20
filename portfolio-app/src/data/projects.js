@@ -5,23 +5,26 @@ import PRInvestigationCopilot from "../assets/images/PR Investigation.png";
 import productionWarRoom from "../assets/images/Production War room.png";
 import HappyPaws from "../assets/images/HappyPaws.png";
 import ProfessionalPortfolio from "../assets/images/ProfessionalPortfolio.png";
+import SoftwarefactorySupervisor from "../assets/images/SoftwarefactorySupervisor.png";
+import AISalescrm from "../assets/images/AISalescrm.png";
 const projects = {
   featured: [
     {
       id: 1,
-      title: "AI Production Incident Management System",
+      title: "Autonomous Software Factory supervisor",
 
       description:
-        "An AI-powered platform that automates production incident detection, analysis, and communication.",
+        "Autonomous Software Factory Supervisor is an AI-powered system that autonomously monitors production incidents, identifies root causes, predicts severity, and generates executive summaries to streamline incident management and reduce downtime.",
 
       problem:
-        "Production incidents often require manual coordination, increasing response time and downtime.",
+        "Production incidents often require manual investigation and coordination, leading to delayed resolutions and increased downtime.",
 
       features: [
-        "AI Root Cause Analysis",
+        "Automated Incident Monitoring",
+        "Root Cause Analysis",
         "Severity Prediction",
-        "Automated Communication",
         "Executive Summary Generation",
+        "Incident Resolution Recommendations",
       ],
 
       tech: [
@@ -35,7 +38,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: SoftwarefactorySupervisor,
     },
 
     {
@@ -66,7 +69,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AISalescrm,
     },
 
     {
