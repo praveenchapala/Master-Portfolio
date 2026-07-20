@@ -10,6 +10,9 @@ import AISalescrm from "../assets/images/AISalescrm.png";
 import HotfixRiskAssessmentSystem from "../assets/images/Hotfix Risk Assessment.png";
 import AILogAnalyzer from "../assets/images/AI Log Analyzer.png";
 import ProductionChangeRiskAssessment from "../assets/images/ProductionChangeRiskAssessment.png";
+import AutonomousHotfixDecisionEngine from "../assets/images/Autonomous Hotfix Decision Engine.png";
+import AutonomousProjectDeliveryManager from "../assets/images/AutonomousProjectDeliveryManager.png";
+import CustomerEscalationManagement from "../assets/images/CustomerEscalationManagement.png";
 const projects = {
   featured: [
     {
@@ -314,7 +317,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AutonomousHotfixDecisionEngine,
     },
     {
       id: 12,
@@ -343,7 +346,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: AutonomousProjectDeliveryManager,
     },
 
 
@@ -374,7 +377,7 @@ const projects = {
 
       github: "",
       demo: "",
-      image: "",
+      image: CustomerEscalationManagement,
     },
 
 
