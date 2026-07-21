@@ -13,7 +13,7 @@ function Hero() {
         text-white
         flex
         items-center
-        pt-8
+        pt-16 md:pt-8
         overflow-x-hidden
       "
     >
@@ -24,13 +24,14 @@ function Hero() {
           w-full
           px-5
           md:px-6
-          py-20
+          py-12 md:py-20
           grid
           grid-cols-1
           lg:grid-cols-2
-          gap-12
-          lg:gap-20
+          gap-8 md:gap-12 lg:gap-20
           items-center
+justify-items-center
+lg:justify-items-stretch
         "
       >
         {/* Hero Network */}
