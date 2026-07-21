@@ -7,18 +7,33 @@ function HeroImage() {
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex justify-center"
+      className="
+        w-full
+        flex
+        justify-center
+        items-center
+        overflow-hidden
+        px-4
+      "
     >
-      <div className="relative">
-
+      <div
+        className="
+          relative
+          w-full
+          max-w-[420px]
+          flex
+          justify-center
+        "
+      >
         {/* Soft Glow */}
         <div
           className="
             absolute
-            -inset-6
-            rounded-[36px]
-            bg-cyan-500/20
-            blur-3xl
+            inset-0
+            scale-105
+            rounded-[32px]
+            bg-cyan-500/15
+            blur-2xl
           "
         />
 
@@ -26,14 +41,17 @@ function HeroImage() {
         <div
           className="
             absolute
-            -inset-[2px]
+            inset-0
             rounded-[32px]
             bg-gradient-to-br
             from-cyan-400
             via-blue-500
             to-purple-500
+            p-[2px]
           "
-        />
+        >
+          <div className="w-full h-full rounded-[30px] bg-slate-950" />
+        </div>
 
         {/* Image */}
         <motion.img
@@ -41,23 +59,19 @@ function HeroImage() {
           alt="Praveen Chapala"
           className="
             relative
+            w-full
+            max-w-[260px]
+            sm:max-w-[300px]
+            md:max-w-[360px]
+            lg:max-w-[400px]
+
+            h-auto
+
             rounded-[30px]
             object-cover
             object-center
 
-            w-[280px]
-            h-[420px]
-
-            sm:w-[320px]
-            sm:h-[470px]
-
-            md:w-[380px]
-            md:h-[560px]
-
-            lg:w-[420px]
-            lg:h-[620px]
-
-            shadow-2xl
+            shadow-[0_20px_60px_rgba(0,0,0,0.45)]
           "
           whileHover={{
             scale: 1.02,
