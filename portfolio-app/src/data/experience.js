@@ -3,24 +3,20 @@ const experience = [
     id: 1,
     stage: "Foundation",
     icon: "🎓",
-    role: "B.Tech Computer Science (AI & ML)",
+    role: "B.Tech CSE (AI & ML)",
     company: "Sri Venkateswara College of Engineering & Technology",
     duration: "2022 – Present",
 
     achievements: [
-      "Built strong foundations in Computer Science",
-      "Learned Java, SQL and Software Engineering",
-      "Developed Full Stack Development skills",
-      "Explored AI, Automation and Problem Solving",
+      "Built strong Computer Science fundamentals",
+      "Developed skills in Java, SQL and Full Stack Development",
     ],
 
     technologies: [
       "Java",
       "SQL",
-      "React",
-      "Spring Boot",
-      "Git",
       "DSA",
+      "React",
     ],
 
     status: "Completed",
@@ -36,18 +32,15 @@ const experience = [
     duration: "2026",
 
     achievements: [
-      "Developed backend applications",
-      "Designed REST APIs",
-      "Integrated databases with applications",
-      "Built full-stack development experience",
+      "Built REST APIs using Spring Boot",
+      "Developed backend modules and database integrations",
     ],
 
     technologies: [
       "Java",
       "Spring Boot",
-      "REST APIs",
+      "REST API",
       "MySQL",
-      "Git",
     ],
 
     status: "Completed",
@@ -63,9 +56,7 @@ const experience = [
     duration: "Mar 2026 – Jun 2026",
 
     achievements: [
-      "Performed functional and manual testing",
-      "Validated enterprise AI platform features",
-      "Reported and tracked defects using Jira",
+      "Performed functional testing and defect reporting",
       "Worked closely with developers throughout the SDLC",
     ],
 
@@ -74,7 +65,6 @@ const experience = [
       "Jira",
       "SDLC",
       "Bug Tracking",
-      "Quality Assurance",
     ],
 
     status: "Completed",
@@ -90,18 +80,15 @@ const experience = [
     duration: "Mar 2026 – Jun 2026",
 
     achievements: [
-      "Collaborated with developers and product teams",
-      "Supported developer onboarding",
-      "Improved communication between engineering teams",
-      "Contributed to product documentation and developer experience",
+      "Supported developer onboarding and collaboration",
+      "Improved developer communication and documentation",
     ],
 
     technologies: [
-      "Developer Relations",
-      "Documentation",
       "GitHub",
+      "Documentation",
       "Communication",
-      "Product Collaboration",
+      "Developer Relations",
     ],
 
     status: "Completed",
@@ -117,10 +104,8 @@ const experience = [
     duration: "2026 – Present",
 
     achievements: [
-      "Built enterprise AI workflow automations using n8n",
-      "Developed production incident management systems",
-      "Created AI-powered cloud optimization solutions",
-      "Built multiple Agentic AI applications",
+      "Built 50+ AI workflow automations using n8n",
+      "Developed enterprise Agentic AI applications",
     ],
 
     technologies: [
@@ -128,7 +113,6 @@ const experience = [
       "Gemini",
       "PostgreSQL",
       "JavaScript",
-      "Workflow Automation",
     ],
 
     status: "Current Focus",
@@ -144,18 +128,15 @@ const experience = [
     duration: "Next Chapter",
 
     achievements: [
-      "Build autonomous software factories",
-      "Design enterprise multi-agent AI platforms",
-      "Create scalable intelligent systems",
-      "Lead AI-driven engineering teams",
+      "Build enterprise multi-agent AI platforms",
+      "Engineer autonomous intelligent software systems",
     ],
 
     technologies: [
       "Agentic AI",
       "LLMs",
       "Multi-Agent Systems",
-      "Enterprise Automation",
-      "System Architecture",
+      "System Design",
     ],
 
     status: "Future Vision",

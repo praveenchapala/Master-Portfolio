@@ -1,14 +1,11 @@
 import experience from "../../../data/experience";
 import TimelineItem from "./TimelineItem";
-import TimelineLine from "./TimelineLine";
 
 function JourneyTimeline() {
   return (
     <section className="relative mt-24">
-
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-
         <div
           className="
             absolute
@@ -22,15 +19,11 @@ function JourneyTimeline() {
             blur-[150px]
           "
         />
-
       </div>
 
       <div className="relative z-10">
-
         {/* Heading */}
-
         <div className="text-center mb-20">
-
           <p
             className="
               uppercase
@@ -45,7 +38,7 @@ function JourneyTimeline() {
           <h2
             className="
               mt-5
-              text-4xl
+              text-3xl
               md:text-5xl
               font-bold
               text-white
@@ -63,45 +56,27 @@ function JourneyTimeline() {
               max-w-2xl
               mx-auto
               leading-8
+              px-5
             "
           >
-            Every milestone represents a step toward
-            becoming an engineer focused on building
-            scalable software, enterprise automation,
-            and intelligent AI systems.
+            Every milestone represents a step toward becoming a
+            software engineer focused on scalable applications,
+            enterprise automation, and intelligent AI systems.
           </p>
-
         </div>
 
         {/* Timeline */}
-
-        <div className="max-w-5xl mx-auto">
-
+        <div className="max-w-6xl mx-auto">
           {experience.map((item, index) => (
-
-            <div
+            <TimelineItem
               key={item.id}
-              className="
-                flex
-                flex-col
-                items-center
-              "
-            >
-
-              <TimelineItem {...item} />
-
-              <TimelineLine
-                isLast={index === experience.length - 1}
-              />
-
-            </div>
-
+              item={item}
+              index={index}
+              isLast={index === experience.length - 1}
+            />
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

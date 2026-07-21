@@ -1,26 +1,94 @@
 import { motion } from "framer-motion";
-import {
-  Calendar,
-  Building2,
-  CheckCircle2,
-} from "lucide-react";
+
+import TimelineDot from "./TimelineDot";
+import TimelineLine from "./TimelineLine";
+import TechPill from "./TechPill";
+import DateBadge from "./DateBadge";
 
 function TimelineItem({
-  stage,
-  icon,
-  role,
-  company,
-  duration,
-  achievements,
-  technologies,
-  status,
-  color,
+  item,
+  index,
+  isLast,
 }) {
+  const isLeft = index % 2 === 0;
+
+  return (
+    <div className="relative">
+
+      {/* Desktop */}
+
+      <div className="hidden lg:grid grid-cols-[1fr_80px_1fr]">
+
+        {/* LEFT */}
+
+        <div
+          className={`flex ${
+            isLeft ? "justify-end pr-10" : ""
+          }`}
+        >
+          {isLeft && (
+            <Card item={item} />
+          )}
+        </div>
+
+        {/* CENTER */}
+
+        <div className="flex flex-col items-center">
+
+          <TimelineDot />
+
+          {!isLast && (
+            <TimelineLine />
+          )}
+
+        </div>
+
+        {/* RIGHT */}
+
+        <div
+          className={`flex ${
+            !isLeft ? "justify-start pl-10" : ""
+          }`}
+        >
+          {!isLeft && (
+            <Card item={item} />
+          )}
+        </div>
+
+      </div>
+
+      {/* MOBILE */}
+
+      <div className="lg:hidden flex gap-5">
+
+        <div className="flex flex-col items-center">
+
+          <TimelineDot />
+
+          {!isLast && (
+            <TimelineLine />
+          )}
+
+        </div>
+
+        <div className="flex-1 pb-12">
+
+          <Card item={item} />
+
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Card({ item }) {
   return (
     <motion.div
       initial={{
         opacity: 0,
-        y: 50,
+        y: 30,
       }}
       whileInView={{
         opacity: 1,
@@ -28,202 +96,111 @@ function TimelineItem({
       }}
       viewport={{
         once: true,
-        amount: 0.25,
       }}
       transition={{
-        duration: 0.7,
+        duration: 0.6,
       }}
-      className="
-        relative
-        group
-      "
+      whileHover={{
+        y: -6,
+      }}
+      className={`
+        w-full
+        max-w-md
+        rounded-3xl
+        border
+        ${item.color}
+        bg-slate-900/70
+        backdrop-blur-xl
+        p-6
+        transition-all
+        duration-300
+        hover:shadow-[0_0_35px_rgba(34,211,238,0.15)]
+      `}
     >
-      {/* Glow */}
 
-      <div
-        className="
-          absolute
-          inset-0
-          rounded-3xl
-          bg-cyan-500/10
-          blur-2xl
-          opacity-0
-          group-hover:opacity-100
-          transition
-          duration-500
-        "
-      />
+      {/* Header */}
 
-      {/* Card */}
+      <div className="flex justify-between items-start gap-4">
 
-      <div
-        className={`
-          relative
-          overflow-hidden
-          rounded-3xl
-          border
-          ${color}
-          bg-slate-900/70
-          backdrop-blur-xl
-          p-8
-          transition-all
-          duration-500
-          hover:-translate-y-2
-          hover:shadow-[0_0_35px_rgba(34,211,238,0.15)]
-        `}
-      >
-        {/* Top */}
+        <div>
 
-        <div className="flex justify-between items-start gap-5">
-
-          <div className="flex items-center gap-5">
-
-            <div
-              className="
-                w-16
-                h-16
-                rounded-2xl
-                bg-slate-800
-                border
-                border-slate-700
-                flex
-                items-center
-                justify-center
-                text-3xl
-              "
-            >
-              {icon}
-            </div>
-
-            <div>
-
-              <p className="uppercase tracking-[0.3em] text-cyan-400 text-xs">
-                {stage}
-              </p>
-
-              <h3 className="text-2xl font-bold text-white mt-2">
-                {role}
-              </h3>
-
-            </div>
-
+          <div className="text-3xl">
+            {item.icon}
           </div>
 
-          <span
-            className={`
-              px-4
-              py-2
-              rounded-full
-              text-xs
-              font-semibold
+          <h3 className="mt-3 text-xl font-bold text-white">
+            {item.role}
+          </h3>
 
-              ${
-                status === "Completed"
-                  ? "bg-green-500/20 text-green-300"
-                  : status === "Current Focus"
-                  ? "bg-cyan-500/20 text-cyan-300"
-                  : "bg-fuchsia-500/20 text-fuchsia-300"
-              }
-            `}
+          <p className="mt-1 text-slate-400">
+            {item.company}
+          </p>
+
+        </div>
+
+        <DateBadge
+          date={item.duration}
+        />
+
+      </div>
+
+      {/* Status */}
+
+      <div className="mt-5">
+
+        <span
+          className="
+            px-3
+            py-1
+            rounded-full
+            text-xs
+            font-medium
+            bg-cyan-500/10
+            border
+            border-cyan-500/20
+            text-cyan-300
+          "
+        >
+          {item.status}
+        </span>
+
+      </div>
+
+      {/* Technologies */}
+
+      <div className="mt-6 flex flex-wrap gap-2">
+
+        {item.technologies.map((tech) => (
+          <TechPill
+            key={tech}
+            tech={tech}
+          />
+        ))}
+
+      </div>
+
+      {/* Achievements */}
+
+      <div className="mt-6 space-y-3">
+
+        {item.achievements.map((achievement) => (
+
+          <div
+            key={achievement}
+            className="flex gap-3"
           >
-            {status}
-          </span>
 
-        </div>
-
-        {/* Company */}
-
-        <div className="mt-8 flex flex-wrap gap-6 text-slate-400">
-
-          <div className="flex items-center gap-2">
-
-            <Building2 size={18} />
-
-            {company}
-
-          </div>
-
-          <div className="flex items-center gap-2">
-
-            <Calendar size={18} />
-
-            {duration}
-
-          </div>
-
-        </div>
-
-        {/* Divider */}
-
-        <div className="h-px bg-slate-800 my-8" />
-
-        {/* Achievements */}
-
-        <h4 className="text-white font-semibold mb-5">
-          Key Contributions
-        </h4>
-
-        <div className="space-y-4">
-
-          {achievements.map((item) => (
-
-            <div
-              key={item}
-              className="flex items-start gap-3"
-            >
-
-              <CheckCircle2
-                size={18}
-                className="text-cyan-400 mt-1 flex-shrink-0"
-              />
-
-              <p className="text-slate-300 leading-7">
-                {item}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
-        {/* Divider */}
-
-        <div className="h-px bg-slate-800 my-8" />
-
-        {/* Technologies */}
-
-        <h4 className="text-white font-semibold mb-5">
-          Technologies
-        </h4>
-
-        <div className="flex flex-wrap gap-3">
-
-          {technologies.map((tech) => (
-
-            <span
-              key={tech}
-              className="
-                px-4
-                py-2
-                rounded-full
-                bg-slate-950
-                border
-                border-slate-700
-                text-sm
-                text-slate-300
-                transition
-                duration-300
-                hover:border-cyan-400
-                hover:text-cyan-300
-              "
-            >
-              {tech}
+            <span className="text-cyan-400">
+              ✓
             </span>
 
-          ))}
+            <p className="text-slate-300 text-sm leading-7">
+              {achievement}
+            </p>
 
-        </div>
+          </div>
+
+        ))}
 
       </div>
 
