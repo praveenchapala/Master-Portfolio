@@ -1,3 +1,4 @@
+import SkillCategoryCard from "./SkillCategoryCard";
 import skills from "../../data/skills";
 
 function SkillsMobile() {
@@ -5,80 +6,185 @@ function SkillsMobile() {
     {
       title: "Frontend",
       icon: "🎨",
-      color: "border-fuchsia-500/30 text-fuchsia-300",
-      items: skills.frontend,
+      color: "bg-fuchsia-400",
+      skills: skills.frontend,
     },
     {
       title: "Backend",
       icon: "⚙️",
-      color: "border-cyan-500/30 text-cyan-300",
-      items: skills.backend,
+      color: "bg-cyan-400",
+      skills: skills.backend,
     },
     {
       title: "AI & Automation",
       icon: "🤖",
-      color: "border-yellow-500/30 text-yellow-300",
-      items: skills.ai,
+      color: "bg-yellow-400",
+      skills: skills.ai,
     },
     {
       title: "Tools",
       icon: "🛠️",
-      color: "border-green-500/30 text-green-300",
-      items: skills.tools,
+      color: "bg-green-400",
+      skills: skills.tools,
     },
   ];
 
   return (
-    <div className="space-y-8 mt-12">
-      {categories.map((category) => (
+    <section className="relative mt-14">
+
+      {/* Background Glow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+
         <div
-          key={category.title}
           className="
-            bg-slate-900/60
-            border
-            border-slate-800
-            rounded-3xl
-            p-6
-            backdrop-blur-xl
+            absolute
+            top-0
+            left-1/2
+            -translate-x-1/2
+            w-72
+            h-72
+            rounded-full
+            bg-cyan-500/10
+            blur-[120px]
+          "
+        />
+
+      </div>
+
+      <div className="relative z-10">
+
+        {/* Heading */}
+
+        <div className="text-center mb-12">
+
+          <p className="uppercase tracking-[0.4em] text-cyan-400 text-xs">
+            Tech Stack
+          </p>
+
+          <h2
+            className="
+              mt-4
+              text-3xl
+              font-bold
+              text-white
+            "
+          >
+            Building Intelligent
+            <br />
+            Software Solutions
+          </h2>
+
+          <p
+            className="
+              mt-5
+              text-slate-400
+              text-sm
+              leading-7
+              max-w-sm
+              mx-auto
+            "
+          >
+            My engineering toolkit for building
+            scalable applications, enterprise software,
+            AI systems and workflow automation.
+          </p>
+
+        </div>
+
+        {/* Cards */}
+
+        <div className="space-y-6">
+
+          {categories.map((category) => (
+
+            <SkillCategoryCard
+              key={category.title}
+              {...category}
+            />
+
+          ))}
+
+        </div>
+
+        {/* Bottom Statistics */}
+
+        <div
+          className="
+            grid
+            grid-cols-3
+            gap-4
+            mt-12
           "
         >
-          <div className="flex items-center gap-3 mb-5">
-            <span className="text-3xl">
-              {category.icon}
-            </span>
 
-            <h3
-              className={`
-                text-xl
-                font-bold
-                ${category.color.split(" ")[1]}
-              `}
-            >
-              {category.title}
+          <div
+            className="
+              rounded-2xl
+              bg-slate-900/70
+              border
+              border-slate-800
+              p-4
+              text-center
+            "
+          >
+
+            <h3 className="text-2xl font-bold text-cyan-400">
+              40+
             </h3>
+
+            <p className="text-xs text-slate-400 mt-1">
+              Technologies
+            </p>
+
           </div>
 
-          <div className="flex flex-wrap gap-3">
-            {category.items.map((skill) => (
-              <span
-                key={skill}
-                className={`
-                  px-4
-                  py-2
-                  rounded-full
-                  border
-                  text-sm
-                  font-medium
-                  ${category.color}
-                `}
-              >
-                {skill}
-              </span>
-            ))}
+          <div
+            className="
+              rounded-2xl
+              bg-slate-900/70
+              border
+              border-slate-800
+              p-4
+              text-center
+            "
+          >
+
+            <h3 className="text-2xl font-bold text-cyan-400">
+              50+
+            </h3>
+
+            <p className="text-xs text-slate-400 mt-1">
+              Projects
+            </p>
+
           </div>
+
+          <div
+            className="
+              rounded-2xl
+              bg-slate-900/70
+              border
+              border-slate-800
+              p-4
+              text-center
+            "
+          >
+
+            <h3 className="text-2xl font-bold text-cyan-400">
+              AI
+            </h3>
+
+            <p className="text-xs text-slate-400 mt-1">
+              Focused
+            </p>
+
+          </div>
+
         </div>
-      ))}
-    </div>
+
+      </div>
+
+    </section>
   );
 }
 

@@ -17,7 +17,17 @@ function Skills() {
         <SkillsHeader />
 
         <div className="hidden lg:block">
-    <MandalaSkills />
+    {/* Desktop */}
+
+<div className="hidden lg:block">
+  <MandalaSkills />
+</div>
+
+{/* Mobile */}
+
+<div className="lg:hidden">
+  <SkillsMobile />
+</div>
 </div>
 
 <div className="lg:hidden">
