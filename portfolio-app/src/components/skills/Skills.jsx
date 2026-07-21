@@ -1,6 +1,7 @@
 import SkillsHeader from "./SkillsHeader";
 import MandalaSkills from "./MandalaSkills";
 import StatsBar from "./StatsBar";
+import SkillsMobile from "./SkillsMobile";
 
 function Skills() {
   return (
@@ -15,7 +16,13 @@ function Skills() {
       <div className="max-w-7xl mx-auto px-6">
         <SkillsHeader />
 
-        <MandalaSkills />
+        <div className="hidden lg:block">
+    <MandalaSkills />
+</div>
+
+<div className="lg:hidden">
+    <SkillsMobile />
+</div>
 
         {/* Divider */}
         <div
