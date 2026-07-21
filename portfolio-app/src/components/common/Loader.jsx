@@ -44,7 +44,7 @@ function Loader() {
             break-words
           "
         >
-          {"<Praveen.Dev.QA.AI/>"}
+          {"</>"}
         </h1>
 
         {/* Icon */}
