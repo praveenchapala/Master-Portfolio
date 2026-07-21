@@ -1,6 +1,6 @@
 import ExperienceHeader from "./ExperienceHeader";
 import ExperienceStats from "./ExperienceStats";
-import JourneyPipeline from "./JourneyPipeline";
+import JourneyTimeline from "./Timeline/JourneyTimeline";
 import FutureRoadmap from "./FutureRoadmap";
 
 function Experience() {
@@ -18,7 +18,7 @@ function Experience() {
 
         <ExperienceStats />
 
-        <JourneyPipeline />
+        <JourneyTimeline />
         <FutureRoadmap />
 
         {/* Closing Quote */}
