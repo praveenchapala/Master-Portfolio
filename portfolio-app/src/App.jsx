@@ -1,40 +1,49 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Experience from "./components/experience/Experience";
+import Projects from "./components/projects/Projects";
+import Certifications from "./components/certifications/Certifications";
+import Contact from "./components/contact/Contact";
+import ScrollToTop from "./components/common/ScrollToTop";
+import Loader from "./components/common/Loader";
+import Footer from "./components/layout/Footer";
+
 import { useEffect, useState } from "react";
 
-import Loader from "./components/common/Loader";
-
-import Home from "./pages/Home";
-import WorkWithMe from "./pages/WorkWithMe";
-
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
+      setLoading(false);
     }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) {
+  if (loading) {
     return <Loader />;
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
+    <>
+      <Navbar />
 
-        <Route
-          path="/work-with-me"
-          element={<WorkWithMe />}
-        />
-      </Routes>
-    </BrowserRouter>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Contact />
+      </main>
+
+      <Footer />
+      <ScrollToTop />
+    </>
   );
 }
 
