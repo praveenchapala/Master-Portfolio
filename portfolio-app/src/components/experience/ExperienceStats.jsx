@@ -1,20 +1,38 @@
+import ExperienceStatCard from "./ExperienceStatCard";
+
 function ExperienceStats() {
   const stats = [
     {
-      value: "3+",
+      icon: "🚀",
+      value: 3,
+      suffix: "+",
       label: "Internships",
+      description: "Industry experience across QA, Backend and AI.",
+      color: "bg-cyan-500/20 text-cyan-400",
     },
     {
-      value: "15+",
+      icon: "💻",
+      value: 15,
+      suffix: "+",
       label: "Projects",
+      description: "Full Stack, AI and enterprise software projects.",
+      color: "bg-fuchsia-500/20 text-fuchsia-400",
     },
     {
-      value: "50+",
+      icon: "⚙️",
+      value: 50,
+      suffix: "+",
       label: "Automations",
+      description: "AI workflows built using n8n and Gemini.",
+      color: "bg-yellow-500/20 text-yellow-400",
     },
     {
-      value: "3 Months",
+      icon: "🧠",
+      value: 3,
+      suffix: " Months",
       label: "QA Experience",
+      description: "Hands-on enterprise quality engineering experience.",
+      color: "bg-green-500/20 text-green-400",
     },
   ];
 
@@ -22,32 +40,18 @@ function ExperienceStats() {
     <div
       className="
         grid
-        md:grid-cols-2
-        lg:grid-cols-4
+        grid-cols-1
+        sm:grid-cols-2
+        xl:grid-cols-4
         gap-6
         mb-24
       "
     >
       {stats.map((item) => (
-        <div
+        <ExperienceStatCard
           key={item.label}
-          className="
-            bg-slate-900/60
-            border
-            border-slate-800
-            rounded-3xl
-            p-8
-            text-center
-          "
-        >
-          <h3 className="text-4xl font-bold text-cyan-400">
-            {item.value}
-          </h3>
-
-          <p className="text-slate-400 mt-3">
-            {item.label}
-          </p>
-        </div>
+          {...item}
+        />
       ))}
     </div>
   );

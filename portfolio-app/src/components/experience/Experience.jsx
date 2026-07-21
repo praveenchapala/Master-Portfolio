@@ -2,6 +2,7 @@ import ExperienceHeader from "./ExperienceHeader";
 import ExperienceStats from "./ExperienceStats";
 import JourneyTimeline from "./Timeline/JourneyTimeline";
 import FutureRoadmap from "./FutureRoadmap";
+import CurrentFocus from "./currentFocus/CurrentFocus";
 
 function Experience() {
   return (
@@ -16,10 +17,13 @@ function Experience() {
       <div className="max-w-7xl mx-auto px-6">
         <ExperienceHeader />
 
-        <ExperienceStats />
+       <ExperienceStats />
 
-        <JourneyTimeline />
-        <FutureRoadmap />
+<JourneyTimeline />
+
+<CurrentFocus />
+
+<FutureRoadmap />
 
         {/* Closing Quote */}
         <div className="mt-32 flex justify-center">
