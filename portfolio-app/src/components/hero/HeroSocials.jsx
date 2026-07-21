@@ -25,7 +25,7 @@ function HeroSocials() {
     },
     {
       icon: <SiLeetcode size={20} />,
-      link: "https://leetcode.com/",
+      link: "https://leetcode.com/u/Praveenchapala/",
       label: "LeetCode",
     },
   ];

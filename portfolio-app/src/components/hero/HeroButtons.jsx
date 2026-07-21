@@ -41,7 +41,7 @@ function HeroButtons() {
 
       {/* Resume Button */}
       <a
-        href="/resume.pdf"
+        href="https://drive.google.com/file/d/13s1c5Tr_4mx1slQ6VYMGfB4BzvafhKpT/view?usp=sharing"
         download
         className="
           inline-flex
