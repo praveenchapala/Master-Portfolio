@@ -6,7 +6,7 @@ import productionWarRoom from "../assets/images/Production War room.png";
 import HappyPaws from "../assets/images/HappyPaws.png";
 import ProfessionalPortfolio from "../assets/images/ProfessionalPortfolio.png";
 import SoftwarefactorySupervisor from "../assets/images/SoftwarefactorySupervisor.png";
-import AISalescrm from "../assets/images/AISalescrm.png";
+import AISalescrm from "../assets/images/AISalesCrm.png";
 import HotfixRiskAssessmentSystem from "../assets/images/Hotfix Risk Assessment.png";
 import AILogAnalyzer from "../assets/images/AI Log Analyzer.png";
 import ProductionChangeRiskAssessment from "../assets/images/ProductionChangeRiskAssessment.png";
