@@ -1,7 +1,7 @@
 import HeroContent from "./HeroContent";
 import HeroButtons from "./HeroButtons";
 import HeroSocials from "./HeroSocials";
-import HeroNetwork from "./HeroNetwork";
+import HeroImage from "./HeroImage";
 
 function Hero() {
   return (
@@ -13,45 +13,67 @@ function Hero() {
         text-white
         flex
         items-center
-        pt-16 md:pt-8
-        overflow-x-hidden
+        overflow-hidden
       "
     >
+      {/* Background Glow */}
       <div
         className="
-          max-w-7xl
-          mx-auto
-          w-full
-          px-5
-          md:px-6
-          py-12 md:py-20
-          grid
-          grid-cols-1
-          lg:grid-cols-2
-          gap-8 md:gap-12 lg:gap-20
-          items-center
-justify-items-center
-lg:justify-items-stretch
+          absolute
+          inset-0
+          pointer-events-none
         "
       >
-        {/* Hero Network */}
+        <div
+          className="
+            absolute
+            top-20
+            left-1/2
+            -translate-x-1/2
+            w-[700px]
+            h-[700px]
+            rounded-full
+            bg-cyan-500/10
+            blur-[180px]
+          "
+        />
+      </div>
+
+      <div
+        className="
+          relative
+          z-10
+          max-w-7xl
+          mx-auto
+          px-6
+          py-20
+          grid
+          lg:grid-cols-2
+          gap-16
+          items-center
+        "
+      >
+        {/* Left Side */}
+
+        <div className="order-2 lg:order-1">
+          <HeroContent />
+
+          <HeroButtons />
+
+          <HeroSocials />
+        </div>
+
+        {/* Right Side */}
+
         <div
           className="
             order-1
             lg:order-2
             flex
             justify-center
-            items-center
           "
         >
-          <HeroNetwork />
-        </div>
-
-        {/* Hero Content */}
-        <div className="order-2 lg:order-1">
-          <HeroContent />
-          <HeroButtons />
-          <HeroSocials />
+          <HeroImage />
         </div>
       </div>
     </section>

@@ -1,23 +1,73 @@
-import socials from "../../data/socials";
+import { ArrowRight, Download } from "lucide-react";
 
 function HeroButtons() {
   return (
-    <div className="flex flex-wrap gap-4 mt-8">
+    <div className="mt-10 flex flex-wrap gap-5">
+
+      {/* Projects Button */}
       <a
         href="#projects"
-        className="px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-xl hover:bg-cyan-400 transition"
+        className="
+          group
+          inline-flex
+          items-center
+          gap-3
+          rounded-2xl
+          bg-gradient-to-r
+          from-cyan-500
+          to-blue-500
+          px-7
+          py-4
+          text-white
+          font-semibold
+          shadow-[0_10px_30px_rgba(34,211,238,0.35)]
+          transition-all
+          duration-300
+          hover:-translate-y-1
+          hover:scale-105
+        "
       >
         View Projects
+
+        <ArrowRight
+          size={20}
+          className="
+            transition-transform
+            duration-300
+            group-hover:translate-x-1
+          "
+        />
       </a>
 
+      {/* Resume Button */}
       <a
-        href={socials.resume}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-6 py-3 border border-slate-700 rounded-xl hover:border-cyan-400 hover:text-cyan-400 transition"
+        href="/resume.pdf"
+        download
+        className="
+          inline-flex
+          items-center
+          gap-3
+          rounded-2xl
+          border
+          border-slate-700
+          bg-slate-900/60
+          backdrop-blur-xl
+          px-7
+          py-4
+          text-white
+          font-semibold
+          transition-all
+          duration-300
+          hover:border-cyan-400
+          hover:text-cyan-400
+          hover:-translate-y-1
+        "
       >
-        View Resume
+        <Download size={20} />
+
+        Download Resume
       </a>
+
     </div>
   );
 }
