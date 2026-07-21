@@ -27,28 +27,46 @@ function Loader() {
         items-center
         justify-center
         z-[9999]
+        px-6
       "
     >
-      <div className="text-center">
+      <div className="w-full max-w-md text-center">
+
         {/* Logo */}
         <h1
           className="
-            text-5xl
+            text-2xl
+            sm:text-3xl
+            md:text-5xl
             font-bold
             text-cyan-400
-            mb-8
-            drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]
+            drop-shadow-[0_0_20px_rgba(34,211,238,0.45)]
+            break-words
           "
         >
           {"<Praveen.Dev.QA.AI/>"}
         </h1>
 
-        {/* Text */}
+        {/* Icon */}
+        <div
+          className="
+            mt-6
+            text-3xl
+            md:text-5xl
+            animate-pulse
+          "
+        >
+          ⚡
+        </div>
+
+        {/* Loading Text */}
         <p
           className="
+            mt-6
             text-slate-400
-            text-xl
-            mb-8
+            text-sm
+            sm:text-base
+            md:text-lg
           "
         >
           Initializing Portfolio...
@@ -57,20 +75,22 @@ function Loader() {
         {/* Progress Bar */}
         <div
           className="
-            w-80
-            h-3
+            mt-8
+            w-full
+            h-2.5
             bg-slate-800
             rounded-full
             overflow-hidden
-            mx-auto
           "
         >
           <div
             className="
               h-full
+              rounded-full
               bg-gradient-to-r
               from-cyan-400
-              to-blue-500
+              via-sky-500
+              to-blue-600
               transition-all
               duration-300
             "
@@ -86,10 +106,13 @@ function Loader() {
             mt-4
             text-cyan-400
             font-semibold
+            text-sm
+            md:text-base
           "
         >
           {progress}%
         </p>
+
       </div>
     </div>
   );
