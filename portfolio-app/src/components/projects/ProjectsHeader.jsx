@@ -1,51 +1,45 @@
 function ProjectsHeader() {
   return (
-    <div className="text-center mb-20">
-      {/* Small Heading */}
-      <p
-        className="
-          text-cyan-400
-          uppercase
-          tracking-[0.35em]
-          text-sm
-          mb-4
-          font-semibold
-        "
-      >
-        Projects
-      </p>
+    <div className="mb-16 text-center">
 
-      {/* Main Heading */}
-      <h2
-        className="
-          text-4xl
-          md:text-5xl
-          lg:text-6xl
-          font-bold
-          leading-tight
-          text-white
-        "
-      >
-        Building Solutions,
-        <br />
+  <p
+    className="
+      uppercase
+      tracking-[0.35em]
+      text-cyan-400
+      text-sm
+      mb-3
+    "
+  >
+    More Work
+  </p>
 
-        <span className="text-slate-400">
-          One Project at a Time
-        </span>
-      </h2>
+  <h2
+    className="
+      text-4xl
+      md:text-5xl
+      font-bold
+      text-white
+    "
+  >
+    Other Projects
+  </h2>
 
-      {/* Divider */}
-      <div
-        className="
-          w-28
-          h-1
-          bg-cyan-400
-          rounded-full
-          mx-auto
-          mt-8
-        "
-      />
-    </div>
+  <p
+    className="
+      mt-5
+      text-slate-400
+      max-w-2xl
+      mx-auto
+      leading-8
+    "
+  >
+    A collection of additional applications,
+    experiments, and learning projects that
+    strengthened my software engineering skills.
+  </p>
+
+</div>
   );
 }
 
