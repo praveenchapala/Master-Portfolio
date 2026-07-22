@@ -44,8 +44,8 @@ const projects = {
 
       status: "Completed",
 
-      github: "",
-      demo: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems/tree/main/Autonomous%20Software%20Factory%20Supervisor",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_n8n-aiagents-agenticai-activity-7475202325989478401-agbY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: SoftwarefactorySupervisor,
     },
 
@@ -76,7 +76,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_n8n-automation-workflowautomation-activity-7468722833011933185-Cj8a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: AISalescrm,
     },
 
@@ -107,7 +107,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://happy-paws-eight.vercel.app/",
       image: HappyPaws,
     },
 
@@ -136,8 +136,8 @@ const projects = {
 
       status: "In Progress",
 
-      github: "",
-      demo: "",
+      github: "https://github.com/praveenchapala/Master-Portfolio",
+      demo: "https://master-portfolio-nine.vercel.app/",
       image: ProfessionalPortfolio,
     },
 
@@ -167,8 +167,8 @@ const projects = {
 
       status: "Completed",
 
-      github: "",
-      demo: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems/tree/main/AI-OnCallEngineer%20System",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_day45-agenticai-artificialintelligence-activity-7477612260044034048-6rYI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: aiOnCallPreview,
     },
     {
@@ -197,8 +197,8 @@ const projects = {
 
       status: "Completed",
 
-      github: "",
-      demo: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems/tree/main/Ai-Developer-ProductivitySystem",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_n8n-automation-workflowautomation-activity-7469803454526312448-MrPY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: DeveloperproductivitySystem,
     },
 
@@ -229,7 +229,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_day42-agenticai-artificialintelligence-activity-7476570600690331648-oix1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: productionImpactPredictor,
     },
     {
@@ -288,7 +288,7 @@ const projects = {
 
       status: "Completed",
 
-      github: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems/tree/main/AI%20Production%20War%20Room",
       demo: "",
       image: productionWarRoom,
     },
@@ -347,7 +347,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_agenticai-aiagents-aiengineering-activity-7474361062298132480-4eVN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: AutonomousProjectDeliveryManager,
     },
 
@@ -439,7 +439,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_n8n-workflowautomation-automation-activity-7470764259619065856-OkkW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: AICloudCostOptimizorAdvisor,
     },
     
@@ -469,7 +469,7 @@ const projects = {
       status: "Completed",
 
       github: "",
-      demo: "",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_n8n-workflowautomation-changemanagement-activity-7470751305137852417-QiFD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: ProductionChangeRiskAssessment,
     },
 
@@ -531,8 +531,8 @@ const projects = {
 ],
       status: "Completed",
 
-      github: "",
-      demo: "",
+      github: "https://github.com/praveenchapala/Agentic-AI-Systems/tree/main/AI-Hotfix-Risk-Assessment-Agent",
+      demo: "https://www.linkedin.com/posts/chapala-praveen_agenticai-aiengineering-artificialintelligence-activity-7476892992294027264-3Kjl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQtb50B_8wlZSEs_4wGZ_XyuHuaHbweCl0",
       image: HotfixRiskAssessmentSystem,
     },
 

@@ -3,11 +3,14 @@ import { ArrowUpRight } from "lucide-react";
 import TechBadge from "./TechBadge";
 
 function ProjectCard({
+  index,
   title,
   description,
   tech,
   github,
 }) {
+  const projectNumber = String((index ?? 0) + 1).padStart(2, "0");
+
   return (
     <div
       className="
@@ -44,8 +47,7 @@ function ProjectCard({
 
       <div className="relative p-7">
 
-        {/* Small Label */}
-
+        {/* Project Number */}
         <p
           className="
             uppercase
@@ -55,11 +57,10 @@ function ProjectCard({
             mb-3
           "
         >
-          SIDE PROJECT
+          PROJECT {projectNumber}
         </p>
 
         {/* Title */}
-
         <h3
           className="
             text-2xl
@@ -72,7 +73,6 @@ function ProjectCard({
         </h3>
 
         {/* Description */}
-
         <p
           className="
             text-slate-400
@@ -83,19 +83,17 @@ function ProjectCard({
           {description}
         </p>
 
-        {/* Tech */}
-
+        {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-8">
-          {tech.map((item, index) => (
+          {tech.map((item, i) => (
             <TechBadge
-              key={index}
+              key={i}
               tech={item}
             />
           ))}
         </div>
 
-        {/* Button */}
-
+        {/* GitHub */}
         <a
           href={github}
           target="_blank"
@@ -106,7 +104,8 @@ function ProjectCard({
             gap-2
             text-cyan-400
             font-semibold
-            transition
+            transition-all
+            duration-300
             group-hover:gap-3
           "
         >
