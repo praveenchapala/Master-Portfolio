@@ -22,8 +22,8 @@ function ProjectsHeader() {
       text-white
     "
   >
-    Other Projects
-  </h2>
+    Important Projects
+</h2>
 
   <p
     className="

@@ -17,12 +17,13 @@ function FeaturedProjects() {
       </div>
 
       <div className="space-y-12">
-        {projects.featured.map((project) => (
-          <FeaturedProjectCard
-            key={project.id}
-            {...project}
-          />
-        ))}
+        {projects.featured.map((project, index) => (
+  <FeaturedProjectCard
+    key={project.id}
+    {...project}
+    index={index}
+  />
+))}
       </div>
     </section>
   );

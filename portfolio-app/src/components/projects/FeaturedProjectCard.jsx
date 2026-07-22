@@ -35,7 +35,7 @@ function FeaturedProjectCard({
         {/* Project Number */}
 
         <p className="text-cyan-400 tracking-[0.3em] uppercase text-sm mb-3">
-          PROJECT {(index + 1).toString().padStart(2, "0")}
+          const projectNumber = String((index ?? 0) + 1).padStart(2, "0");
         </p>
 
         {/* Status */}
