@@ -15,54 +15,6 @@ function FeaturedProjects() {
 
   return (
     <section>
-      {/* Header */}
-
-      <div className="text-center mb-16">
-        <p
-          className="
-            uppercase
-            tracking-[0.35em]
-            text-cyan-400
-            text-sm
-            mb-3
-          "
-        >
-          Featured Work
-        </p>
-
-        <h2
-          className="
-            text-4xl
-            md:text-5xl
-            font-bold
-            text-white
-          "
-        >
-          Featured Projects
-        </h2>
-
-        <p
-          className="
-            mt-5
-            text-slate-400
-            max-w-3xl
-            mx-auto
-            leading-8
-          "
-        >
-          A collection of enterprise AI systems,
-          automation platforms, full-stack
-          applications and engineering solutions
-          that demonstrate my software development
-          journey.
-        </p>
-
-        <p className="mt-6 text-cyan-400 font-medium">
-          Showing {visibleProjects.length} of{" "}
-          {projects.featured.length} Projects
-        </p>
-      </div>
-
       {/* Projects */}
 
       <div className="space-y-12">
@@ -75,7 +27,7 @@ function FeaturedProjects() {
         ))}
       </div>
 
-      {/* Button */}
+      {/* View More Button */}
 
       {projects.featured.length > initialProjects && (
         <div className="flex justify-center mt-16">

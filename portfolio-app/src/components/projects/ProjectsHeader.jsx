@@ -1,46 +1,19 @@
-function ProjectsHeader() {
+function ProjectHeader() {
   return (
-    <div className="mb-16 text-center">
-
-  <p
-    className="
-      uppercase
-      tracking-[0.35em]
-      text-cyan-400
-      text-sm
-      mb-3
-    "
-  >
-    More Work
-  </p>
-
-  <h2
-    className="
-      text-4xl
-      md:text-5xl
-      font-bold
-      text-white
-    "
-  >
-    Important Projects
-</h2>
-
-  <p
-    className="
-      mt-5
-      text-slate-400
-      max-w-2xl
-      mx-auto
-      leading-8
-    "
-  >
-    A collection of additional applications,
-    experiments, and learning projects that
-    strengthened my software engineering skills.
-  </p>
-
-</div>
+    <div className="text-center mb-8">
+      <p
+        className="
+          uppercase
+          tracking-[0.35em]
+          text-cyan-400
+          text-sm
+          mb-4
+        "
+      >
+        Projects
+      </p>
+    </div>
   );
 }
 
-export default ProjectsHeader;
+export default ProjectHeader;

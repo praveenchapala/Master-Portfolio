@@ -38,7 +38,7 @@ function FooterBrand() {
       >
         Building intelligent software,
         scalable web applications,
-        AI-powered automation and
+        AI-powered automation, and
         enterprise solutions that solve
         real-world engineering problems.
       </p>
@@ -46,7 +46,6 @@ function FooterBrand() {
       {/* Tech Stack */}
 
       <div className="space-y-4">
-
         <p
           className="
             text-sm
@@ -59,34 +58,31 @@ function FooterBrand() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-
           <TechIcon
-            icon={<SiReact />}
+            icon={<SiReact className="text-cyan-400 text-xl" />}
             text="React"
           />
 
           <TechIcon
-            icon={<SiVite />}
+            icon={<SiVite className="text-cyan-400 text-xl" />}
             text="Vite"
           />
 
           <TechIcon
-            icon={<SiTailwindcss />}
+            icon={<SiTailwindcss className="text-cyan-400 text-xl" />}
             text="Tailwind"
           />
 
           <TechIcon
-            icon={<RiRobot2Line />}
+            icon={<RiRobot2Line className="text-cyan-400 text-xl" />}
             text="EmailJS"
           />
 
           <TechIcon
-            icon={<SiVercel />}
+            icon={<SiVercel className="text-cyan-400 text-xl" />}
             text="Vercel"
           />
-
         </div>
-
       </div>
     </div>
   );
@@ -98,24 +94,24 @@ function TechIcon({ icon, text }) {
       className="
         flex
         items-center
-        gap-2
-        px-4
-        py-2
+        gap-3
+        px-5
+        py-3
         rounded-full
-        bg-slate-900
+        bg-slate-800/70
         border
-        border-slate-800
+        border-slate-700
+        text-slate-200
         hover:border-cyan-400
         hover:text-cyan-400
+        hover:bg-slate-800
         transition-all
         duration-300
       "
     >
-      <span className="text-lg">
-        {icon}
-      </span>
+      <span>{icon}</span>
 
-      <span className="text-sm">
+      <span className="text-sm font-medium">
         {text}
       </span>
     </div>

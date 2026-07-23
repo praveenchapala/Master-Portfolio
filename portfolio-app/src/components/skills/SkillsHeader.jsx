@@ -6,10 +6,8 @@ function SkillsHeader() {
       </p>
 
       <h2 className="text-6xl font-bold">
-        Stack Of{" "}
-        <span className="text-cyan-400">
-          Technologies
-        </span>
+        Tech Stack
+      
       </h2>
 
       <p className="text-slate-400 mt-4 text-xl">
