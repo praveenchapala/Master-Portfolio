@@ -6,9 +6,8 @@ import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
 import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
-import ScrollToTop from "./components/common/ScrollToTop";
 import Loader from "./components/common/Loader";
-import Footer from "./components/layout/Footer";
+import Footer from "./components/footer/Footer";
 
 import { useEffect, useState } from "react";
 
@@ -42,7 +41,6 @@ function App() {
       </main>
 
       <Footer />
-      <ScrollToTop />
     </>
   );
 }

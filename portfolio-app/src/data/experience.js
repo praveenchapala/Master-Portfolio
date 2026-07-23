@@ -73,9 +73,9 @@ const experience = [
 
   {
     id: 4,
-    stage: "Developer Relations",
+    stage: "Developer Relationship Manager",
     icon: "🤝",
-    role: "Developer Relations Manager",
+    role: "Developer Relationship Manager",
     company: "Neeroma Technologies",
     duration: "Mar 2026 – Jun 2026",
 

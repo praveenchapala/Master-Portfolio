@@ -94,7 +94,7 @@ function Footer() {
           </p>
 
           <p className="text-slate-500 text-sm mt-3 md:mt-0">
-            Built with React • Vite • Tailwind CSS
+            Built with ❤️ by Praveen
           </p>
 
         </div>

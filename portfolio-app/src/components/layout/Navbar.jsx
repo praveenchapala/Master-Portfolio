@@ -6,9 +6,7 @@ import site from "../../data/site";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <>
@@ -19,10 +17,9 @@ function Navbar() {
           top-0
           z-50
           bg-slate-900/80
-          backdrop-blur-md
+          backdrop-blur-xl
           border-b
           border-slate-800
-          text-white
         "
       >
         <div
@@ -30,7 +27,6 @@ function Navbar() {
             max-w-7xl
             mx-auto
             px-5
-            md:px-6
             py-4
             flex
             items-center
@@ -38,6 +34,7 @@ function Navbar() {
           "
         >
           {/* Logo */}
+
           <a
             href="#home"
             className="
@@ -51,8 +48,9 @@ function Navbar() {
             {site.logo}
           </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Menu */}
+
+          <div className="hidden md:flex gap-8">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -61,15 +59,6 @@ function Navbar() {
                   text-slate-300
                   hover:text-cyan-400
                   transition
-                  relative
-                  after:absolute
-                  after:left-0
-                  after:-bottom-1
-                  after:h-[2px]
-                  after:w-0
-                  after:bg-cyan-400
-                  after:transition-all
-                  hover:after:w-full
                 "
               >
                 {item.name}
@@ -78,13 +67,12 @@ function Navbar() {
           </div>
 
           {/* Mobile Button */}
+
           <button
             onClick={() => setIsOpen(true)}
             className="
               md:hidden
               text-cyan-400
-              hover:text-white
-              transition
             "
           >
             <Menu size={30} />
@@ -92,16 +80,17 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Full Screen Menu */}
+      {/* Mobile Menu */}
+
       <div
         className={`
           fixed
           inset-0
           z-[999]
-          bg-slate-950/95
-          backdrop-blur-xl
+          bg-slate-950
           transition-all
           duration-300
+          overflow-y-auto
           ${
             isOpen
               ? "opacity-100 visible"
@@ -109,37 +98,49 @@ function Navbar() {
           }
         `}
       >
-        {/* Close Button */}
-        <button
-          onClick={closeMenu}
+        {/* Header */}
+
+        <div
           className="
-            absolute
-            top-6
-            right-6
-            text-cyan-400
-            hover:text-white
-            transition
+            flex
+            items-center
+            justify-between
+            px-6
+            py-6
+            border-b
+            border-slate-800
           "
         >
-          <X size={34} />
-        </button>
-
-        {/* Logo */}
-        <div className="pt-10 text-center">
-          <h2 className="text-2xl font-bold text-cyan-400 font-mono">
+          <h2
+            className="
+              text-2xl
+              font-bold
+              text-cyan-400
+              font-mono
+            "
+          >
             {site.logo}
           </h2>
+
+          <button
+            onClick={closeMenu}
+            className="
+              text-cyan-400
+            "
+          >
+            <X size={34} />
+          </button>
         </div>
 
         {/* Navigation */}
+
         <div
           className="
             flex
             flex-col
             items-center
-            justify-center
-            h-[70vh]
             gap-8
+            py-14
           "
         >
           {navigation.map((item) => (
@@ -149,7 +150,7 @@ function Navbar() {
               onClick={closeMenu}
               className="
                 text-3xl
-                font-semibold
+                font-bold
                 text-slate-300
                 hover:text-cyan-400
                 transition
@@ -160,18 +161,33 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Bottom Area */}
-        <div className="absolute bottom-10 left-0 right-0 text-center">
-          <p className="text-slate-500 text-sm">
-            Available for Opportunities
+        {/* Footer */}
+
+        <div
+          className="
+            border-t
+            border-slate-800
+            mt-10
+            px-6
+            py-8
+            text-center
+          "
+        >
+          <p className="text-slate-500 mb-6">
+            Open to Software Engineering Opportunities
           </p>
 
-          <div className="mt-5 flex justify-center gap-6">
+          <div className="flex justify-center gap-8">
+
             <a
               href="https://github.com/praveenchapala"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyan-400 hover:text-white transition"
+              className="
+                text-cyan-400
+                hover:text-white
+                transition
+              "
             >
               GitHub
             </a>
@@ -180,19 +196,29 @@ function Navbar() {
               href="https://linkedin.com/in/chapala-praveen"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyan-400 hover:text-white transition"
+              className="
+                text-cyan-400
+                hover:text-white
+                transition
+              "
             >
               LinkedIn
             </a>
 
             <a
               href="mailto:praveenpraveensimhadri@gmail.com"
-              className="text-cyan-400 hover:text-white transition"
+              className="
+                text-cyan-400
+                hover:text-white
+                transition
+              "
             >
               Email
             </a>
+
           </div>
         </div>
+
       </div>
     </>
   );
