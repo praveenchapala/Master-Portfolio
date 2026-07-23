@@ -98,28 +98,7 @@ function FooterSocials() {
 
       </div>
 
-      {/* Status */}
-
-      <div
-        className="
-          mt-10
-          inline-flex
-          items-center
-          gap-3
-          px-5
-          py-3
-          rounded-full
-          bg-emerald-500/10
-          border
-          border-emerald-500/20
-        "
-      >
-        <span className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
-
-        <span className="text-emerald-300 text-sm">
-          Open to Software Engineering Opportunities
-        </span>
-      </div>
+      
 
     </div>
   );
