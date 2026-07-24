@@ -1,16 +1,32 @@
+import { useEffect, useState } from "react";
 import profile from "../../data/profile";
 
 function HeroContent() {
+  const [currentRole, setCurrentRole] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+
+      setTimeout(() => {
+        setCurrentRole((prev) => (prev + 1) % profile.roles.length);
+        setVisible(true);
+      }, 300);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       className="
-        space-y-4
-        md:space-y-6
-        text-center
-        lg:text-left
+        space-y-5
+        text-left
       "
     >
       {/* Welcome */}
+
       <p
         className="
           text-cyan-400
@@ -24,28 +40,28 @@ function HeroContent() {
       </p>
 
       {/* Name */}
+
       <div>
-        <h1
+        <span
           className="
             inline-block
             px-4
             py-2
             rounded-full
             bg-cyan-500/10
-            text-cyan-400
             border
             border-cyan-500/20
-            text-sm
-            md:text-base
+            text-cyan-400
             code-font
+            text-sm
           "
         >
           Hi, I'm
-        </h1>
+        </span>
 
         <h1
           className="
-            mt-3
+            mt-4
             font-bold
             leading-tight
             text-4xl
@@ -60,37 +76,45 @@ function HeroContent() {
         </h1>
       </div>
 
-      {/* Role */}
-      <h2
-        className="
-          text-lg
-          sm:text-xl
-          md:text-2xl
-          lg:text-3xl
-          font-semibold
-          text-slate-300
-        "
-      >
-        {profile.role}
-      </h2>
+      {/* Animated Role */}
+
+      <div className="h-10 md:h-12 overflow-hidden">
+        <h2
+          className={`
+            text-xl
+            md:text-2xl
+            lg:text-3xl
+            font-semibold
+            text-cyan-300
+            transition-all
+            duration-300
+            ${
+              visible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-3"
+            }
+          `}
+        >
+          {profile.roles[currentRole]}
+        </h2>
+      </div>
 
       {/* Description */}
+
       <p
         className="
           text-base
           md:text-lg
           text-slate-400
-          leading-7
-          md:leading-8
+          leading-8
           max-w-xl
-          mx-auto
-          lg:mx-0
         "
       >
         {profile.tagline}
       </p>
 
       {/* Location */}
+
       <p
         className="
           text-sm

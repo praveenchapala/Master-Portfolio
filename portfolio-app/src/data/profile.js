@@ -1,8 +1,11 @@
 const profile = {
   name: "Chapala Praveen",
 
-  role:
-  "QA Automation Engineer • Software Developer • Agentic AI Enthusiast",
+  roles: [
+  "QA Automation Engineer",
+  "Software Developer",
+  "Agentic AI Enthusiast",
+],
 
   tagline:
     "Engineering reliable software, automating workflows, and building AI-powered solutions.",
