@@ -1,7 +1,6 @@
 import SkillCircle from "./SkillCircle";
 import TechBadge from "./TechBadge";
 
-
 import {
   Monitor,
   Server,
@@ -9,6 +8,7 @@ import {
   Wrench,
   Code2,
 } from "lucide-react";
+
 import {
   SiReact,
   SiJavascript,
@@ -26,7 +26,12 @@ import {
   SiPostman,
   SiFigma,
   SiFirebase,
+  SiJira,
 } from "react-icons/si";
+
+import { FaJava } from "react-icons/fa";
+import { TbBrandVscode, TbApi } from "react-icons/tb";
+import { BsDatabaseFill } from "react-icons/bs";
 function MandalaSkills() {
   return (
     <div className="relative h-[1450px] overflow-hidden">
@@ -349,60 +354,180 @@ function MandalaSkills() {
 />
 
       {/* ===== FRONTEND BADGES ===== */}
-      <TechBadge
+
+<TechBadge
   icon={<SiReact className="text-cyan-400 text-xl" />}
   label="React"
   className="top-[220px] left-[320px]"
 />
-      <TechBadge label="JavaScript" className="top-[290px] left-[230px] border-fuchsia-500/40 text-fuchsia-300" />
-      <TechBadge label="HTML" className="top-[380px] left-[180px] border-fuchsia-500/40 text-fuchsia-300" />
-      <TechBadge label="CSS" className="top-[380px] right-[180px] border-fuchsia-500/40 text-fuchsia-300" />
-      <TechBadge label="Tailwind" className="top-[290px] right-[230px] border-fuchsia-500/40 text-fuchsia-300" />
-      <TechBadge label="Vite" className="top-[220px] right-[320px] border-fuchsia-500/40 text-fuchsia-300" />
 
-      {/* ===== BACKEND BADGES ===== */}
-      <TechBadge label="Java" className="top-[430px] right-[200px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="Spring Boot" className="top-[520px] right-[110px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="Node.js" className="top-[620px] right-[80px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="SQL" className="top-[720px] right-[110px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="MongoDB" className="top-[810px] right-[190px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="PostgreSQL" className="top-[900px] right-[280px] border-cyan-500/40 text-cyan-300" />
-      <TechBadge label="REST APIs" className="top-[980px] right-[380px] border-cyan-500/40 text-cyan-300" />
+<TechBadge
+  icon={<SiJavascript className="text-yellow-400 text-lg" />}
+  label="JavaScript"
+  className="top-[290px] left-[230px]"
+/>
 
-      {/* ===== AI BADGES ===== */}
-      <TechBadge label="Gemini" className="top-[430px] left-[200px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge label="Agentic AI" className="top-[520px] left-[110px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge label="n8n" className="top-[620px] left-[80px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge
+<TechBadge
+  icon={<SiHtml5 className="text-orange-500 text-lg" />}
+  label="HTML"
+  className="top-[380px] left-[180px]"
+/>
+
+<TechBadge
+  icon={<SiCss className="text-blue-500 text-lg" />}
+  label="CSS"
+  className="top-[380px] right-[180px]"
+/>
+
+<TechBadge
+  icon={<SiTailwindcss className="text-cyan-400 text-lg" />}
+  label="Tailwind"
+  className="top-[290px] right-[230px]"
+/>
+
+<TechBadge
+  icon={<SiVite className="text-violet-400 text-lg" />}
+  label="Vite"
+  className="top-[220px] right-[320px]"
+/>
+
+{/* ===== BACKEND BADGES ===== */}
+
+<TechBadge
+  icon={<FaJava className="text-red-500 text-lg" />}
+  label="Java"
+  className="top-[430px] right-[200px]"
+/>
+
+<TechBadge
+  icon={<SiSpringboot className="text-green-500 text-lg" />}
+  label="Spring Boot"
+  className="top-[520px] right-[110px]"
+/>
+
+<TechBadge
+  icon={<SiNodedotjs className="text-green-500 text-lg" />}
+  label="Node.js"
+  className="top-[620px] right-[80px]"
+/>
+
+<TechBadge
+  icon={<BsDatabaseFill className="text-cyan-400 text-base" />}
+  label="SQL"
+  className="top-[720px] right-[110px]"
+/>
+
+<TechBadge
+  icon={<SiMongodb className="text-green-500 text-lg" />}
+  label="MongoDB"
+  className="top-[810px] right-[190px]"
+/>
+
+<TechBadge
+  icon={<SiPostgresql className="text-blue-500 text-lg" />}
+  label="PostgreSQL"
+  className="top-[900px] right-[280px]"
+/>
+
+<TechBadge
+  icon={<BsDatabaseFill className="text-cyan-400 text-base" />}
+  label="REST APIs"
+  className="top-[980px] right-[380px]"
+/>
+
+{/* ===== AI BADGES ===== */}
+
+<TechBadge
+  icon={<Bot className="text-violet-400" size={18} />}
+  label="Gemini"
+  className="top-[430px] left-[200px]"
+/>
+
+<TechBadge
+  icon={<Bot className="text-yellow-400" size={18} />}
+  label="Agentic AI"
+  className="top-[520px] left-[110px]"
+/>
+
+<TechBadge
+  icon={<Bot className="text-orange-400" size={18} />}
+  label="n8n"
+  className="top-[620px] left-[80px]"
+/>
+
+<TechBadge
+  icon={<Bot className="text-pink-400" size={18} />}
   label="Prompt Engineering"
-  className="
-    top-[680px]
-    left-[10px]
-    border-yellow-500/40
-    text-yellow-300
-  "
+  className="top-[680px] left-[10px]"
 />
-      <TechBadge
-  label="Workflow Automation"
-  className="
-    top-[810px]
-    left-[60px]
-    border-yellow-500/40
-    text-yellow-300
-  "
-/>
-      <TechBadge label="LLM Integration" className="top-[900px] left-[200px] border-yellow-500/40 text-yellow-300" />
-      <TechBadge label="AI Agents" className="top-[980px] left-[320px] border-yellow-500/40 text-yellow-300" />
 
-      {/* ===== TOOLS BADGES ===== */}
-      <TechBadge label="Git" className="bottom-[230px] left-[350px] border-green-500/40 text-green-300" />
-      <TechBadge label="GitHub" className="bottom-[150px] left-[250px] border-green-500/40 text-green-300" />
-      <TechBadge label="Postman" className="bottom-[150px] left-[470px] border-green-500/40 text-green-300" />
-      <TechBadge label="VS Code" className="bottom-[230px] right-[350px] border-green-500/40 text-green-300" />
-      <TechBadge label="Docker" className="bottom-[150px] right-[250px] border-green-500/40 text-green-300" />
-      <TechBadge label="Jira" className="bottom-[150px] right-[470px] border-green-500/40 text-green-300" />
-      <TechBadge label="Figma" className="bottom-[70px] left-[430px] border-green-500/40 text-green-300" />
-      <TechBadge label="Firebase" className="bottom-[70px] right-[430px] border-green-500/40 text-green-300" />
+<TechBadge
+  icon={<Bot className="text-cyan-400" size={18} />}
+  label="Workflow Automation"
+  className="top-[810px] left-[60px]"
+/>
+
+<TechBadge
+  icon={<Bot className="text-violet-400" size={18} />}
+  label="LLM Integration"
+  className="top-[900px] left-[200px]"
+/>
+
+<TechBadge
+  icon={<Bot className="text-green-400" size={18} />}
+  label="AI Agents"
+  className="top-[980px] left-[320px]"
+/>
+
+{/* ===== TOOLS BADGES ===== */}
+
+<TechBadge
+  icon={<SiGit className="text-orange-500 text-lg" />}
+  label="Git"
+  className="bottom-[230px] left-[350px]"
+/>
+
+<TechBadge
+  icon={<SiGithub className="text-white text-lg" />}
+  label="GitHub"
+  className="bottom-[150px] left-[250px]"
+/>
+
+<TechBadge
+  icon={<SiPostman className="text-orange-500 text-lg" />}
+  label="Postman"
+  className="bottom-[150px] left-[470px]"
+/>
+
+<TechBadge
+  icon={<TbBrandVscode className="text-blue-500 text-lg" />}
+  label="VS Code"
+  className="bottom-[230px] right-[350px]"
+/>
+
+<TechBadge
+  icon={<SiDocker className="text-blue-500 text-lg" />}
+  label="Docker"
+  className="bottom-[150px] right-[250px]"
+/>
+
+<TechBadge
+  icon={<Wrench className="text-green-400" size={18} />}
+  label="Jira"
+  className="bottom-[150px] right-[470px]"
+/>
+
+<TechBadge
+  icon={<SiFigma className="text-pink-500 text-lg" />}
+  label="Figma"
+  className="bottom-[70px] left-[430px]"
+/>
+
+<TechBadge
+  icon={<SiFirebase className="text-yellow-400 text-lg" />}
+  label="Firebase"
+  className="bottom-[70px] right-[430px]"
+/>
     </div>
   );
 }

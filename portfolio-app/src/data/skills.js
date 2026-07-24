@@ -31,9 +31,9 @@ const skills = {
   tools: [
     "Git",
     "GitHub",
+    "Docker",
     "Postman",
     "VS Code",
-    "Docker",
     "Jira",
     "Figma",
     "Firebase",

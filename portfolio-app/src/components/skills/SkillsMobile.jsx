@@ -55,42 +55,6 @@ function SkillsMobile() {
 
         {/* Heading */}
 
-        <div className="text-center mb-12">
-
-          <p className="uppercase tracking-[0.4em] text-cyan-400 text-xs">
-            Tech Stack
-          </p>
-
-          <h2
-            className="
-              mt-4
-              text-3xl
-              font-bold
-              text-white
-            "
-          >
-            Building Intelligent
-            <br />
-            Software Solutions
-          </h2>
-
-          <p
-            className="
-              mt-5
-              text-slate-400
-              text-sm
-              leading-7
-              max-w-sm
-              mx-auto
-            "
-          >
-            My engineering toolkit for building
-            scalable applications, enterprise software,
-            AI systems and workflow automation.
-          </p>
-
-        </div>
-
         {/* Cards */}
 
         <div className="space-y-6">
