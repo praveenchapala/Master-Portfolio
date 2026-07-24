@@ -1,9 +1,7 @@
 import TerminalAbout from "./TerminalAbout";
-import FadeInSection from "../common/FadeInSection";
 
 function About() {
   return (
-    <FadeInSection>
       <section
         id="about"
         className="
@@ -60,7 +58,6 @@ function About() {
           <TerminalAbout />
         </div>
       </section>
-    </FadeInSection>
   );
 }
 

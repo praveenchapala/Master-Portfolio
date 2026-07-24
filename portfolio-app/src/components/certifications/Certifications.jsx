@@ -6,21 +6,15 @@ function Certifications() {
     <section
       id="certifications"
       className="
-        py-20
+        py-32
         bg-slate-950
         text-white
       "
     >
       <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
-
         <CertificationHeader />
 
-        {/* Certificates */}
-
-        <div className="mt-8">
-          <CertificationGrid />
-        </div>
+        <CertificationGrid />
       </div>
     </section>
   );

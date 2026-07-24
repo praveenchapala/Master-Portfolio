@@ -4,32 +4,32 @@ import OtherProjects from "./OtherProjects";
 
 function Projects() {
   return (
-    <section
-      id="projects"
-      className="
-        py-20
-        bg-slate-950
-        text-white
-      "
-    >
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
+      <section
+        id="projects"
+        className="
+          py-20
+          bg-slate-950
+          text-white
+        "
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Section Header */}
 
-        <ProjectsHeader />
+          <ProjectsHeader />
 
-        {/* Featured Projects */}
+          {/* Featured Projects */}
 
-        <div className="mt-8">
-          <FeaturedProjects />
+          <div className="mt-8">
+            <FeaturedProjects />
+          </div>
+
+          {/* Other Projects */}
+
+          <div className="mt-20">
+            <OtherProjects />
+          </div>
         </div>
-
-        {/* Other Projects */}
-
-        <div className="mt-20">
-          <OtherProjects />
-        </div>
-      </div>
-    </section>
+      </section>
   );
 }
 

@@ -4,32 +4,32 @@ import JourneyTimeline from "./Timeline/JourneyTimeline";
 
 function Experience() {
   return (
-    <section
-      id="experience"
-      className="
-        py-20
-        bg-slate-950
-        text-white
-      "
-    >
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
+      <section
+        id="experience"
+        className="
+          py-20
+          bg-slate-950
+          text-white
+        "
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Section Header */}
 
-        <ExperienceHeader />
+          <ExperienceHeader />
 
-        {/* Experience Statistics */}
+          {/* Experience Statistics */}
 
-        <div className="mt-10">
-          <ExperienceStats />
+          <div className="mt-10">
+            <ExperienceStats />
+          </div>
+
+          {/* Journey Timeline */}
+
+          <div className="mt-12">
+            <JourneyTimeline />
+          </div>
         </div>
-
-        {/* Timeline */}
-
-        <div className="mt-12">
-          <JourneyTimeline />
-        </div>
-      </div>
-    </section>
+      </section>
   );
 }
 
