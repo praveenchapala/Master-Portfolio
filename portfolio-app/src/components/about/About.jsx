@@ -7,8 +7,8 @@ function About() {
   className="
     bg-slate-950
     text-white
-    py-20
-    md:py-32
+    py-16
+md:py-20
   "
 >
       <div
@@ -24,7 +24,6 @@ function About() {
   className="
     text-center
     mb-10
-    md:mb-16
   "
 >
   <p

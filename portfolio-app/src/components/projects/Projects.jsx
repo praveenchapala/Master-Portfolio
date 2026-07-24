@@ -7,17 +7,27 @@ function Projects() {
     <section
       id="projects"
       className="
+        py-20
         bg-slate-950
         text-white
-        py-32
       "
     >
       <div className="max-w-7xl mx-auto px-6">
+        {/* Section Header */}
+
         <ProjectsHeader />
 
-        <FeaturedProjects />
+        {/* Featured Projects */}
 
-        <OtherProjects />
+        <div className="mt-8">
+          <FeaturedProjects />
+        </div>
+
+        {/* Other Projects */}
+
+        <div className="mt-20">
+          <OtherProjects />
+        </div>
       </div>
     </section>
   );

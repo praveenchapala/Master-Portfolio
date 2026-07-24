@@ -7,17 +7,27 @@ function Experience() {
     <section
       id="experience"
       className="
-        py-32
+        py-20
         bg-slate-950
         text-white
       "
     >
       <div className="max-w-7xl mx-auto px-6">
+        {/* Section Header */}
+
         <ExperienceHeader />
 
-       <ExperienceStats />
+        {/* Experience Statistics */}
 
-<JourneyTimeline />
+        <div className="mt-10">
+          <ExperienceStats />
+        </div>
+
+        {/* Timeline */}
+
+        <div className="mt-12">
+          <JourneyTimeline />
+        </div>
       </div>
     </section>
   );

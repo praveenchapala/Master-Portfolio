@@ -8,7 +8,7 @@ function Contact() {
       id="contact"
       className="
         relative
-        py-32
+        py-20
         bg-slate-950
         text-white
         overflow-hidden
@@ -48,58 +48,21 @@ function Contact() {
           px-6
         "
       >
-        {/* Heading */}
+        {/* Header */}
 
         <ContactHeader />
 
         {/* Contact Form */}
 
-        <ContactForm />
+        <div className="mt-8">
+          <ContactForm />
+        </div>
 
         {/* Social Icons */}
 
-        <SocialIcons />
-
-        {/* Bottom Quote */}
-
-        <div className="mt-24 text-center">
-
-          <div
-            className="
-              w-24
-              h-px
-              bg-slate-700
-              mx-auto
-              mb-10
-            "
-          />
-
-          <p
-            className="
-              text-3xl
-              md:text-4xl
-              italic
-              text-slate-300
-            "
-          >
-            Great software begins with
-            <span className="text-cyan-400">
-              {" "}great conversations.
-            </span>
-          </p>
-
-          <p
-            className="
-              mt-5
-              text-slate-500
-              text-lg
-            "
-          >
-            Let's build something impactful together.
-          </p>
-
+        <div className="mt-10">
+          <SocialIcons />
         </div>
-
       </div>
     </section>
   );
