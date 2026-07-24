@@ -6,26 +6,9 @@ import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
 import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
-import Loader from "./components/common/Loader";
 import Footer from "./components/footer/Footer";
 
-import { useEffect, useState } from "react";
-
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
-
   return (
     <>
       <Navbar />
