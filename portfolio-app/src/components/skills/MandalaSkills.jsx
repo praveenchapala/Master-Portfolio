@@ -1,6 +1,7 @@
 import SkillCircle from "./SkillCircle";
 import TechBadge from "./TechBadge";
 
+
 import {
   Monitor,
   Server,
@@ -8,6 +9,24 @@ import {
   Wrench,
   Code2,
 } from "lucide-react";
+import {
+  SiReact,
+  SiJavascript,
+  SiHtml5,
+  SiCss,
+  SiTailwindcss,
+  SiVite,
+  SiSpringboot,
+  SiNodedotjs,
+  SiMongodb,
+  SiPostgresql,
+  SiGit,
+  SiGithub,
+  SiDocker,
+  SiPostman,
+  SiFigma,
+  SiFirebase,
+} from "react-icons/si";
 function MandalaSkills() {
   return (
     <div className="relative h-[1450px] overflow-hidden">
@@ -330,7 +349,11 @@ function MandalaSkills() {
 />
 
       {/* ===== FRONTEND BADGES ===== */}
-      <TechBadge label="React" className="top-[220px] left-[320px] border-fuchsia-500/40 text-fuchsia-300" />
+      <TechBadge
+  icon={<SiReact className="text-cyan-400 text-xl" />}
+  label="React"
+  className="top-[220px] left-[320px]"
+/>
       <TechBadge label="JavaScript" className="top-[290px] left-[230px] border-fuchsia-500/40 text-fuchsia-300" />
       <TechBadge label="HTML" className="top-[380px] left-[180px] border-fuchsia-500/40 text-fuchsia-300" />
       <TechBadge label="CSS" className="top-[380px] right-[180px] border-fuchsia-500/40 text-fuchsia-300" />
