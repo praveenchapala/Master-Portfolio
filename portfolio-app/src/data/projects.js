@@ -15,10 +15,10 @@ import AutonomousProjectDeliveryManager from "../assets/images/AutonomousProject
 import CustomerEscalationManagement from "../assets/images/CustomerEscalationManagement.png";
 import AICloudCostOptimizorAdvisor from "../assets/images/AI Cloud Cost Optimizer Advisor.png";
 import AiPoweredProductionLogsIncidentIntelligencePlatform from "../assets/images/AI-Powered Production Logs Incident Intelligence Platform.png";
-const projects = {
-  featured: [
+const projects = [
     {
       id: 1,
+      category: "automation",
       title: "Autonomous Software Factory supervisor",
 
       description:
@@ -51,6 +51,7 @@ const projects = {
 
     {
       id: 2,
+      category: "automation",
       title: "AI Sales CRM Automation",
 
       description:
@@ -82,6 +83,7 @@ const projects = {
 
     {
       id: 3,
+      category:"full stack",
       title: "Spring Pet Clinic Application",
 
       description:
@@ -113,6 +115,7 @@ const projects = {
 
     {
       id: 5,
+      category:"opensource",
       title: "Professional Portfolio",
 
       description:
@@ -144,6 +147,7 @@ const projects = {
 
     {
       id: 6,
+      category: "automation",
       title: "AI-OnCall-Engineer-Assistant",
 
       description:
@@ -173,6 +177,7 @@ const projects = {
     },
     {
       id: 7,
+      category: "automation",
       title: "AI-Developer-Productivity Analytics System",
 
       description:
@@ -204,6 +209,7 @@ const projects = {
 
     {
       id: 8,
+      category: "automation",
       title: "AI-Production Impact Predictor",
 
       description:
@@ -234,6 +240,7 @@ const projects = {
     },
     {
       id: 9,
+      category: "automation",
       title: "AI-PullRequest Investigation Copilot",
 
       description:
@@ -264,6 +271,7 @@ const projects = {
     },
     {
       id: 10,
+      category: "automation",
       title: "AI-Production War Room",
 
       description:
@@ -294,6 +302,8 @@ const projects = {
     },
     {
       id: 11,
+      category: "automation",
+
       title: "Autonomous Hotfix Decision Engine",
 
       description:
@@ -323,6 +333,7 @@ const projects = {
     },
     {
       id: 12,
+      category: "automation",
       title: "Autonomous Project Delivery Manager",
 
       description:
@@ -354,6 +365,7 @@ const projects = {
 
 {
       id: 14,
+      category: "automation",
       title: "Customer Escalation Management",
 
       description:
@@ -386,6 +398,7 @@ const projects = {
     
 {
       id: 15,
+      category: "automation",
       title: "AI-Powered Production Logs Incident Intelligence Platform",
 
       description:
@@ -415,6 +428,7 @@ const projects = {
 
 {
       id: 16,
+      category: "automation",
       title: "AI-Cloud Cost Optimizor Advisor",
 
       description:
@@ -445,6 +459,7 @@ const projects = {
     
 {
       id: 17,
+      category: "automation",
       title: "AI Production Change Risk Assessment",
 
       description:
@@ -476,6 +491,7 @@ const projects = {
     
 {
       id: 18,
+      category: "automation",
       title: "AI-Log Analyzer",
 
       description:
@@ -508,6 +524,7 @@ const projects = {
     
 {
       id: 19,
+      category: "automation",
       title: "AI Hotfix Risk Assessment System",
 
       description:
@@ -545,54 +562,57 @@ const projects = {
 
 
 
+
+
+  
+    {
+  id: 20,
+  featured: false,
+  category: "opensource",
+  title: "API Learning Journey",
+  description:
+    "Hands-on projects for learning APIs and integrations.",
+
+  tech: [
+    "JavaScript",
+    "HTML",
+    "CSS",
   ],
 
+  github: "https://github.com/praveenchapala/api-learning-journey",
+},
 
-  others: [
-    {
-      id: 5,
-      title: "API Learning Journey",
-      description:
-        "Hands-on projects for learning APIs and integrations.",
+{
+  id: 21,
+  featured: false,
+  category: "opensource",   // <-- Fix spelling
+  title: "Master SQL With Me",
+  description:
+    "A repository documenting SQL concepts and practice.",
 
-      tech: [
-        "JavaScript",
-        "HTML",
-        "CSS",
-      ],
-
-      github: "https://github.com/praveenchapala/api-learning-journey",
-    },
-
-    {
-      id: 6,
-      title: "Master SQL With Me",
-      description:
-        "A repository documenting SQL concepts and practice.",
-
-      tech: [
-        "SQL",
-      ],
-
-      github: "https://github.com/praveenchapala/Master-SQL-With-Me",
-    },
-
-
-    {
-      id: 8,
-      title: "Building-Agentic-AI-Systems",
-      description:
-        "Collection of Workflow automations and Building Agentic AI Systems built using n8n.",
-
-      tech: [
-        "n8n",
-        "Automation",
-      ],
-
-      github: "https://github.com/praveenchapala/Agentic-AI-Systems",
-    },
-
+  tech: [
+    "SQL",
   ],
-};
+
+  github: "https://github.com/praveenchapala/Master-SQL-With-Me",
+},
+
+{
+  id:22,
+  featured: false,
+  category: "automation",
+  title: "Building-Agentic-AI-Systems",
+  description:
+    "Collection of Workflow automations and Building Agentic AI Systems built using n8n.",
+
+  tech: [
+    "n8n",
+    "Automation",
+  ],
+
+  github: "https://github.com/praveenchapala/Agentic-AI-Systems",
+}
+
+];
 
 export default projects;
