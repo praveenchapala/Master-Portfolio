@@ -30,7 +30,7 @@ function ProjectGrid({ activeTab, projects }) {
   if (filteredProjects.length === 0) {
   const emptyState = {
     aiengineering: {
-      title: "🚀 AI Engineering Projects",
+      title: "🚀 AI&ML Projects",
       description:
         "I'm currently building enterprise-grade AI Engineering projects focused on Multi-Agent Systems, MCP, RAG, LLM Evaluation and AI Infrastructure.",
     },

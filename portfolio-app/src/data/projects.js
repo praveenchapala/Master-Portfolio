@@ -18,6 +18,7 @@ import AiPoweredProductionLogsIncidentIntelligencePlatform from "../assets/image
 const projects = [
     {
       id: 1,
+      featured:true,
       category: "automation",
       title: "Autonomous Software Factory supervisor",
 
@@ -51,6 +52,7 @@ const projects = [
 
     {
       id: 2,
+      featured:true,
       category: "automation",
       title: "AI Sales CRM Automation",
 
@@ -83,7 +85,8 @@ const projects = [
 
     {
       id: 3,
-      category:"full stack",
+      featured:true,
+      category:"fullstack",
       title: "Spring Pet Clinic Application",
 
       description:
@@ -114,7 +117,8 @@ const projects = [
     },
 
     {
-      id: 5,
+      id: 4,
+      featured:true,
       category:"opensource",
       title: "Professional Portfolio",
 
@@ -146,7 +150,8 @@ const projects = [
 
 
     {
-      id: 6,
+      id: 5,
+      featured:true,
       category: "automation",
       title: "AI-OnCall-Engineer-Assistant",
 
@@ -176,7 +181,8 @@ const projects = [
       image: aiOnCallPreview,
     },
     {
-      id: 7,
+      id: 6,
+      featured:true,
       category: "automation",
       title: "AI-Developer-Productivity Analytics System",
 
@@ -208,7 +214,8 @@ const projects = [
     },
 
     {
-      id: 8,
+      id: 7,
+      featured:true,
       category: "automation",
       title: "AI-Production Impact Predictor",
 
@@ -239,7 +246,8 @@ const projects = [
       image: productionImpactPredictor,
     },
     {
-      id: 9,
+      id: 8,
+      featured:true,
       category: "automation",
       title: "AI-PullRequest Investigation Copilot",
 
@@ -270,7 +278,8 @@ const projects = [
       image: PRInvestigationCopilot,
     },
     {
-      id: 10,
+      id: 9,
+      featured:true,
       category: "automation",
       title: "AI-Production War Room",
 
@@ -301,7 +310,8 @@ const projects = [
       image: productionWarRoom,
     },
     {
-      id: 11,
+      id: 10,
+      featured:true,
       category: "automation",
 
       title: "Autonomous Hotfix Decision Engine",
@@ -332,7 +342,8 @@ const projects = [
       image: AutonomousHotfixDecisionEngine,
     },
     {
-      id: 12,
+      id: 11,
+      featured:true,
       category: "automation",
       title: "Autonomous Project Delivery Manager",
 
@@ -364,7 +375,8 @@ const projects = [
 
 
 {
-      id: 14,
+      id: 12,
+      featured:true,
       category: "automation",
       title: "Customer Escalation Management",
 
@@ -397,7 +409,8 @@ const projects = [
 
     
 {
-      id: 15,
+      id: 13,
+      featured:true,
       category: "automation",
       title: "AI-Powered Production Logs Incident Intelligence Platform",
 
@@ -427,7 +440,8 @@ const projects = [
     },
 
 {
-      id: 16,
+      id: 14,
+      featured:true,
       category: "automation",
       title: "AI-Cloud Cost Optimizor Advisor",
 
@@ -458,7 +472,8 @@ const projects = [
     },
     
 {
-      id: 17,
+      id: 15,
+      featured:true,
       category: "automation",
       title: "AI Production Change Risk Assessment",
 
@@ -490,7 +505,8 @@ const projects = [
 
     
 {
-      id: 18,
+      id: 16,
+      featured:true,
       category: "automation",
       title: "AI-Log Analyzer",
 
@@ -523,7 +539,8 @@ const projects = [
 
     
 {
-      id: 19,
+      id: 17,
+      featured:true,
       category: "automation",
       title: "AI Hotfix Risk Assessment System",
 
@@ -566,7 +583,7 @@ const projects = [
 
   
     {
-  id: 20,
+  id: 18,
   featured: false,
   category: "opensource",
   title: "API Learning Journey",

@@ -9,7 +9,7 @@ import projects from "../../data/projects";
 function Projects() {
   const [activeTab, setActiveTab] = useState("all");
 
-  // All projects
+  // All Projects
   const allProjects = useMemo(() => projects, []);
 
   // Dynamic Counts
@@ -22,7 +22,7 @@ function Projects() {
       ).length,
 
       fullstack: allProjects.filter(
-        (project) => project.category === "full stack"
+        (project) => project.category === "fullstack"
       ).length,
 
       opensource: allProjects.filter(
@@ -46,14 +46,17 @@ function Projects() {
     >
       <div className="max-w-7xl mx-auto px-6">
 
+        {/* Header */}
         <ProjectsHeader />
 
+        {/* Filter Tabs */}
         <ProjectTabs
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           counts={counts}
         />
 
+        {/* Project Grid */}
         <div className="mt-10">
           <ProjectGrid
             activeTab={activeTab}
