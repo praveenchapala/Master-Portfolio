@@ -8,11 +8,18 @@ import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
+import AIVoice from "./components/AIVoice";
+
 function App() {
   return (
     <>
+      {/* AI Voice */}
+      <AIVoice />
+
+      {/* Navigation */}
       <Navbar />
 
+      {/* Main Content */}
       <main>
         <Hero />
         <About />
@@ -23,6 +30,7 @@ function App() {
         <Contact />
       </main>
 
+      {/* Footer */}
       <Footer />
     </>
   );
