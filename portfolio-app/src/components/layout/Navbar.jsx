@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+
 import navigation from "../../data/navigation";
 import site from "../../data/site";
 
@@ -10,17 +11,20 @@ function Navbar() {
 
   return (
     <>
-      {/* Navbar */}
+      {/* ================= NAVBAR ================= */}
+
       <nav
         className="
           sticky
           top-0
           z-50
-          bg-slate-900/80
           backdrop-blur-xl
           border-b
-          border-slate-800
         "
+        style={{
+          background: "color-mix(in srgb, var(--surface) 80%, transparent)",
+          borderColor: "var(--border)",
+        }}
       >
         <div
           className="
@@ -41,53 +45,59 @@ function Navbar() {
               text-xl
               md:text-2xl
               font-bold
-              text-cyan-400
               font-mono
             "
+            style={{
+              color: "var(--accent)",
+            }}
           >
             {site.logo}
           </a>
 
-          {/* Desktop Menu */}
+          {/* Desktop Navigation */}
 
           <div className="hidden md:flex gap-8">
             {navigation.map((item) => (
               <a
                 key={item.id}
                 href={item.href}
-                className="
-                  text-slate-300
-                  hover:text-cyan-400
-                  transition
-                "
+                className="transition duration-300"
+                style={{
+                  color: "var(--muted)",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = "var(--accent)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = "var(--muted)";
+                }}
               >
                 {item.name}
               </a>
             ))}
           </div>
 
-          {/* Mobile Button */}
+          {/* Mobile Menu Button */}
 
           <button
             onClick={() => setIsOpen(true)}
-            className="
-              md:hidden
-              text-cyan-400
-            "
+            className="md:hidden transition"
+            style={{
+              color: "var(--accent)",
+            }}
           >
             <Menu size={30} />
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* ================= MOBILE MENU ================= */}
 
       <div
         className={`
           fixed
           inset-0
           z-[999]
-          bg-slate-950
           transition-all
           duration-300
           overflow-y-auto
@@ -97,6 +107,9 @@ function Navbar() {
               : "opacity-0 invisible"
           }
         `}
+        style={{
+          background: "var(--bg)",
+        }}
       >
         {/* Header */}
 
@@ -108,31 +121,35 @@ function Navbar() {
             px-6
             py-6
             border-b
-            border-slate-800
           "
+          style={{
+            borderColor: "var(--border)",
+          }}
         >
           <h2
             className="
               text-2xl
               font-bold
-              text-cyan-400
               font-mono
             "
+            style={{
+              color: "var(--accent)",
+            }}
           >
             {site.logo}
           </h2>
 
           <button
             onClick={closeMenu}
-            className="
-              text-cyan-400
-            "
+            style={{
+              color: "var(--accent)",
+            }}
           >
             <X size={34} />
           </button>
         </div>
 
-        {/* Navigation */}
+        {/* Mobile Navigation */}
 
         <div
           className="
@@ -151,10 +168,17 @@ function Navbar() {
               className="
                 text-3xl
                 font-bold
-                text-slate-300
-                hover:text-cyan-400
                 transition
               "
+              style={{
+                color: "var(--muted)",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.color = "var(--accent)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.color = "var(--muted)";
+              }}
             >
               {item.name}
             </a>
@@ -165,15 +189,22 @@ function Navbar() {
 
         <div
           className="
-            border-t
-            border-slate-800
             mt-10
             px-6
             py-8
             text-center
+            border-t
           "
+          style={{
+            borderColor: "var(--border)",
+          }}
         >
-          <p className="text-slate-500 mb-6">
+          <p
+            className="mb-6"
+            style={{
+              color: "var(--muted)",
+            }}
+          >
             Open to Software Engineering Opportunities
           </p>
 
@@ -183,11 +214,10 @@ function Navbar() {
               href="https://github.com/praveenchapala"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-cyan-400
-                hover:text-white
-                transition
-              "
+              className="transition"
+              style={{
+                color: "var(--accent)",
+              }}
             >
               GitHub
             </a>
@@ -196,22 +226,20 @@ function Navbar() {
               href="https://linkedin.com/in/chapala-praveen"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-cyan-400
-                hover:text-white
-                transition
-              "
+              className="transition"
+              style={{
+                color: "var(--accent)",
+              }}
             >
               LinkedIn
             </a>
 
             <a
               href="mailto:praveenpraveensimhadri@gmail.com"
-              className="
-                text-cyan-400
-                hover:text-white
-                transition
-              "
+              className="transition"
+              style={{
+                color: "var(--accent)",
+              }}
             >
               Email
             </a>

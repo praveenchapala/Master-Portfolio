@@ -1,3 +1,8 @@
+import { useEffect } from "react";
+import toast from "react-hot-toast";
+
+import { useTheme } from "./context/ThemeContext";
+
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
@@ -11,27 +16,50 @@ import Footer from "./components/footer/Footer";
 import AIVoice from "./components/AIVoice";
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
+
+  // Double Click Anywhere
+  useEffect(() => {
+    const handleDoubleClick = () => {
+      toggleTheme();
+
+      toast.success(
+        theme === "dark"
+          ? "☀ Light Theme Enabled"
+          : "🌙 Dark Theme Enabled"
+      );
+    };
+
+    window.addEventListener("dblclick", handleDoubleClick);
+
+    return () => {
+      window.removeEventListener("dblclick", handleDoubleClick);
+    };
+  }, [theme, toggleTheme]);
+
   return (
     <>
       {/* AI Voice */}
       <AIVoice />
 
-      {/* Navigation */}
-      <Navbar />
+      {/* Portfolio */}
+      <div className="portfolio-container">
 
-      {/* Main Content */}
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Contact />
-      </main>
+        <Navbar />
 
-      {/* Footer */}
-      <Footer />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Certifications />
+          <Contact />
+        </main>
+
+        <Footer />
+
+      </div>
     </>
   );
 }
